@@ -13,14 +13,17 @@ Usage:
 
 import asyncio
 import sys
+import json
+import re
 from pathlib import Path
+from datetime import datetime
 
 # Add config directory to path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from playwright.async_api import async_playwright
 from playwright_stealth import Stealth
-from config import IndeedConfig, PlaywrightConfig
+from config import IndeedConfig, PlaywrightConfig, IndeedSelectors
 from utils import Logger
 
 
@@ -114,7 +117,7 @@ async def load_indeed():
             logger.log("STEP 4", f"Entering search query: '{IndeedConfig.SEARCH_QUERY}'...", "⌨️")
             
             # Find and fill the search input
-            search_input = page.locator('input[id="text-input-what"], input[name="q"]').first
+            search_input = page.locator(IndeedSelectors.SEARCH_INPUT).first
             await search_input.click()
             await search_input.fill(IndeedConfig.SEARCH_QUERY)
             
@@ -126,7 +129,7 @@ async def load_indeed():
             logger.log("STEP 5", f"Entering location: '{IndeedConfig.LOCATION}'...", "📍")
             
             # Find and fill the location input
-            location_input = page.locator('input[id="text-input-where"], input[name="l"]').first
+            location_input = page.locator(IndeedSelectors.LOCATION_INPUT).first
             await location_input.click()
             await location_input.clear()
             await location_input.fill(IndeedConfig.LOCATION)
@@ -144,7 +147,7 @@ async def load_indeed():
             logger.log("STEP 6", "Submitting search...", "🔍")
             
             # Click the search button
-            search_button = page.locator('button[type="submit"]').first
+            search_button = page.locator(IndeedSelectors.SEARCH_BUTTON).first
             await search_button.click()
             
             # Wait a bit for page to start loading
@@ -207,7 +210,91 @@ async def load_indeed():
                 logger.log("SCREENSHOT", f"Saved: {screenshot_path}", "📸")
             
             # ---------------------------------------------------------
-            # STEP 9: Keep Browser Open for Viewing
+            # STEP 9: Parse Job Listings
+            # ---------------------------------------------------------
+            logger.log("STEP 9", "Parsing job listings...", "📊")
+            
+            # Wait for job cards to load
+            await asyncio.sleep(2)
+            
+            jobs = []
+            
+            # Find all job cards
+            job_cards = await page.locator(IndeedSelectors.JOB_CARD).all()
+            
+            logger.log("STEP 9", f"Found {len(job_cards)} job cards", "📋")
+            
+            for idx, card in enumerate(job_cards):
+                try:
+                    # Extract job title
+                    title_elem = card.locator(IndeedSelectors.JOB_TITLE).first
+                    job_title = await title_elem.text_content() if await title_elem.count() > 0 else ""
+                    job_title = job_title.strip() if job_title else ""
+                    
+                    # Extract company name
+                    company_elem = card.locator(IndeedSelectors.COMPANY_NAME).first
+                    company = await company_elem.text_content() if await company_elem.count() > 0 else ""
+                    company = company.strip() if company else ""
+                    
+                    # Extract location
+                    location_elem = card.locator(IndeedSelectors.COMPANY_LOCATION).first
+                    company_location = await location_elem.text_content() if await location_elem.count() > 0 else ""
+                    company_location = company_location.strip() if company_location else ""
+                    
+                    # Extract job link and ID
+                    link_elem = card.locator(IndeedSelectors.JOB_LINK).first
+                    job_link = ""
+                    job_id = ""
+                    
+                    if await link_elem.count() > 0:
+                        href = await link_elem.get_attribute('href')
+                        if href:
+                            job_link = f"{IndeedConfig.BASE_URL}{href}" if href.startswith('/') else href
+                            # Extract job ID from URL
+                            if 'jk=' in href:
+                                job_id = href.split('jk=')[1].split('&')[0]
+                            elif 'vjk=' in href:
+                                job_id = href.split('vjk=')[1].split('&')[0]
+                    
+                    # Extract contact email from card text
+                    card_text = await card.text_content() or ""
+                    email_match = re.search(IndeedSelectors.EMAIL_PATTERN, card_text)
+                    contact_email = email_match.group(0) if email_match else ""
+                    
+                    # Only add if we have at least a title
+                    if job_title:
+                        job_data = {
+                            "job_title": job_title,
+                            "company": company,
+                            "company_location": company_location,
+                            "job_id": job_id,
+                            "job_link": job_link,
+                            "contact_email": contact_email
+                        }
+                        jobs.append(job_data)
+                        logger.log("JOB", f"{idx+1}. {job_title} @ {company}", "💼")
+                
+                except Exception as e:
+                    logger.log("PARSE", f"Error parsing job card {idx+1}: {str(e)}", "⚠️")
+                    continue
+            
+            # Save jobs to JSON file
+            json_path = output_dir / "jobs.json"
+            jobs_output = {
+                "search_query": IndeedConfig.SEARCH_QUERY,
+                "search_location": IndeedConfig.LOCATION,
+                "scraped_at": datetime.now().isoformat(),
+                "total_jobs": len(jobs),
+                "jobs": jobs
+            }
+            
+            with open(json_path, "w", encoding="utf-8") as f:
+                json.dump(jobs_output, f, indent=2, ensure_ascii=False)
+            
+            logger.log("STEP 9", f"Saved {len(jobs)} jobs to {json_path}", "✅")
+            
+            # ---------------------------------------------------------
+            # STEP 10: Keep Browser Open for Viewing
             # ---------------------------------------------------------
             logger.separator("-")
             logger.log("DONE", "Indeed loaded successfully!", "🎉")
@@ -219,7 +306,7 @@ async def load_indeed():
                 await asyncio.sleep(30)
             
             # ---------------------------------------------------------
-            # STEP 10: Cleanup
+            # STEP 11: Cleanup
             # ---------------------------------------------------------
             logger.log("CLEANUP", "Closing browser...", "🧹")
             await browser.close()
@@ -232,6 +319,7 @@ async def load_indeed():
         print("✅ SCRIPT COMPLETED")
         print(f"📁 Screenshots saved to: {screenshot_dir}")
         print(f"📄 Log saved to: {logger.get_log_path()}")
+        print(f"📊 Jobs saved to: {output_dir / 'jobs.json'}")
         print("=" * 60 + "\n")
         
     except Exception as e:

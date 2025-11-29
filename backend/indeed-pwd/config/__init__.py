@@ -20,6 +20,9 @@ load_dotenv(CONFIG_DIR / "indeed_config.env")
 # Load Playwright settings from playwright_config.env
 load_dotenv(CONFIG_DIR / "playwright_config.env")
 
+# Import page selectors
+from .page_selectors import IndeedSelectors
+
 
 class IndeedConfig:
     """

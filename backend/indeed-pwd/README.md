@@ -16,11 +16,13 @@ indeed-pwd/
 ├── config/
 │   ├── __init__.py           # Loads env files into Python config classes
 │   ├── indeed_config.env     # Indeed website settings (URL, search query, location)
-│   └── playwright_config.env # Browser settings (headless, slow_mo, viewport size)
+│   ├── playwright_config.env # Browser settings (headless, slow_mo, viewport size)
+│   └── page_selectors.py     # CSS selectors for Indeed page elements
 ├── utils/
 │   ├── __init__.py           # Exports Logger class
 │   └── logger.py             # Logger helper with documented methods
 ├── output/
+│   ├── jobs.json             # Parsed job listings (overwritten on each run)
 │   ├── log.txt               # Log file (overwritten on each run)
 │   └── screenshots/          # Screenshots captured during execution
 ├── requirements.txt          # Python dependencies
@@ -72,10 +74,48 @@ The browser will open and:
 | `PLAYWRIGHT_VIEWPORT_WIDTH` | Browser width | `1280` |
 | `PLAYWRIGHT_VIEWPORT_HEIGHT` | Browser height | `800` |
 
+### Page Selectors (`config/page_selectors.py`)
+
+CSS selectors used to find elements on Indeed pages. Update these if Indeed changes their page structure.
+
+| Selector | Description |
+|----------|-------------|
+| `SEARCH_INPUT` | Job search input field |
+| `LOCATION_INPUT` | Location input field |
+| `SEARCH_BUTTON` | Search submit button |
+| `JOB_CARD` | Job listing container |
+| `JOB_TITLE` | Job title element |
+| `COMPANY_NAME` | Company name element |
+| `COMPANY_LOCATION` | Job location element |
+| `JOB_LINK` | Job URL anchor tag |
+| `EMAIL_PATTERN` | Regex pattern to extract contact emails |
+
 ## Output
 
 After each run:
+- **Jobs** are saved to `output/jobs.json` (parsed job listings)
 - **Screenshots** are saved to `output/screenshots/`
 - **Logs** are saved to `output/log.txt`
 
-Both are overwritten on each run to show only the latest results.
+All output files are overwritten on each run to show only the latest results.
+
+### Jobs JSON Format
+
+```json
+{
+  "search_query": "python developer",
+  "search_location": "Remote",
+  "scraped_at": "2025-11-29T17:30:00",
+  "total_jobs": 15,
+  "jobs": [
+    {
+      "job_title": "Senior Python Developer",
+      "company": "Tech Company",
+      "company_location": "Remote",
+      "job_id": "abc123",
+      "job_link": "https://www.indeed.com/viewjob?jk=abc123",
+      "contact_email": "jobs@techcompany.com"
+    }
+  ]
+}
+```
