@@ -27,20 +27,16 @@ jobs:
             ${{ runner.os }}-node-
       
       - name: Install dependencies
-        working-directory: frontend
-        run: npm ci
+        run: cd frontend && npm ci
       
       - name: Prettier format check
-        working-directory: frontend
-        run: npx prettier --check "src/**/*.{ts,html,scss,css}" || echo "Run: npm run format"
+        run: cd frontend && npx prettier --check "src/**/*.{ts,html,scss,css}" || true
       
       - name: Build
-        working-directory: frontend
-        run: npm run build
+        run: cd frontend && npm run build
       
       - name: Run unit tests
-        working-directory: frontend
-        run: npm test -- --watch=false --browsers=ChromeHeadless 2>&1 || echo "No tests configured yet"
+        run: cd frontend && npm test -- --watch=false --browsers=ChromeHeadless 2>&1 || true
 
   backend:
     name: Backend — Lint & Test
@@ -62,29 +58,30 @@ jobs:
             ${{ runner.os }}-pip-
       
       - name: Install dependencies
-        working-directory: backend
         run: |
+          cd backend
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install flake8 black pylint
       
       - name: Lint with flake8
-        working-directory: backend
         run: |
+          cd backend
           flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=120 --statistics
       
       - name: Format check with black
-        working-directory: backend
-        run: black --check . || echo "Run: black ."
+        run: |
+          cd backend
+          black --check . || true
       
       - name: Import smoke test
-        working-directory: backend
         run: |
+          cd backend
           python -c "from app import create_app; app = create_app(); print('✓ Backend imports OK')"
       
       - name: Run unit tests
-        working-directory: backend
         run: |
+          cd backend
           pip install pytest pytest-cov
-          pytest . -v --cov=app --cov-report=term-summary 2>&1 || echo "No tests configured yet"
+          pytest . -v --cov=app --cov-report=term-summary 2>&1 || true
