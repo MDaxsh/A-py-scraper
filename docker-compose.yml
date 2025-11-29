@@ -10,7 +10,7 @@ services:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=myapp
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     networks:
@@ -26,7 +26,7 @@ services:
     build: ./backend
     container_name: app-backend
     ports:
-      - "5000:5000"
+      - "5001:5000"
     environment:
       - FLASK_ENV=development
       - DATABASE_URL=postgresql://postgres:postgres@db:5432/myapp
@@ -44,17 +44,13 @@ services:
     build: ./frontend
     container_name: app-frontend
     ports:
-      - "4200:4200"
+      - "4201:4200"
     environment:
-      - NODE_ENV=development
+      - NODE_ENV=production
     depends_on:
       - backend
-    volumes:
-      - ./frontend:/app
-      - /app/node_modules
     networks:
       - app-network
-    command: ng serve --host 0.0.0.0
 
 volumes:
   postgres_data:
