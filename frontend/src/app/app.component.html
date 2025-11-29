@@ -1,7 +1,30 @@
-<h1>{{ title }}</h1>
-<div class="container">
-  <p>Backend Status: <strong>{{ backendStatus }}</strong></p>
-  <p>Welcome to your Angular application!</p>
-</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="assets/logo.svg" alt="logo" width="28" height="28" class="me-2">
+      <span>{{ title }}</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<app-footer></app-footer>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+      </ul>
+      <div class="d-flex text-light align-items-center">
+        <small class="me-2">Backend:</small>
+        <span class="badge bg-light text-dark">{{ backendStatus }}</span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="main-container container mt-4">
+  <p>Welcome to your Angular application!</p>
+  <!-- app content here -->
+</main>
+
+<footer class="container mt-4">
+  <app-footer></app-footer>
+</footer>

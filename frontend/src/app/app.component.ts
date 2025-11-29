@@ -11,7 +11,7 @@ import { FooterComponent } from './footer/footer.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'My Application';
+  title = 'Py scraper';
   backendStatus = 'Loading...';
 
   constructor(private http: HttpClient) {}
@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   }
 
   checkBackendHealth() {
-    this.http.get<any>('http://localhost:5000/api/health')
+    this.http.get<any>('http://localhost:5001/api/health')
       .subscribe({
         next: (response: any) => {
           this.backendStatus = response.status;
