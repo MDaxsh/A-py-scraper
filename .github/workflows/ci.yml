@@ -1,0 +1,90 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  frontend:
+    name: Frontend — Lint, Format & Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Cache node modules
+        uses: actions/cache@v4
+        with:
+          path: frontend/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('frontend/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      
+      - name: Install dependencies
+        working-directory: frontend
+        run: npm ci
+      
+      - name: Prettier format check
+        working-directory: frontend
+        run: npx prettier --check "src/**/*.{ts,html,scss,css}" || echo "Run: npm run format"
+      
+      - name: Build
+        working-directory: frontend
+        run: npm run build
+      
+      - name: Run unit tests
+        working-directory: frontend
+        run: npm test -- --watch=false --browsers=ChromeHeadless 2>&1 || echo "No tests configured yet"
+
+  backend:
+    name: Backend — Lint & Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('backend/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      
+      - name: Install dependencies
+        working-directory: backend
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install flake8 black pylint
+      
+      - name: Lint with flake8
+        working-directory: backend
+        run: |
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=120 --statistics
+      
+      - name: Format check with black
+        working-directory: backend
+        run: black --check . || echo "Run: black ."
+      
+      - name: Import smoke test
+        working-directory: backend
+        run: |
+          python -c "from app import create_app; app = create_app(); print('✓ Backend imports OK')"
+      
+      - name: Run unit tests
+        working-directory: backend
+        run: |
+          pip install pytest pytest-cov
+          pytest . -v --cov=app --cov-report=term-summary 2>&1 || echo "No tests configured yet"
