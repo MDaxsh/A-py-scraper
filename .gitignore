@@ -1,16 +1,78 @@
-# Database data directory - local disk storage
-pgdata/
+# Dependencies
+node_modules/
+__pycache__/
+*.egg-info/
+.venv/
+venv/
+env/
+.env
 
-# IDE and OS files
+# Build artifacts
+dist/
+build/
+*.dist/
+frontend/dist/
+backend/__pycache__/
+
+# Angular cache & build
+.angular/
+.cache/
+frontend/.angular/
+frontend/node_modules/
+frontend/dist/
+
+# Python cache
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+
+# IDE & editor
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 .DS_Store
+*.sublime-project
+*.sublime-workspace
 
-# Docker artifacts
-__pycache__/
-.angular/
-node_modules/
-dist/
+# Testing
+coverage/
+.coverage
+htmlcov/
+.pytest_cache/
+karma.conf.js.bak
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# Database
+pgdata/
+*.db
+*.sqlite
+*.sqlite3
+
+# OS
+.DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Misc
+*.bak
+*.tmp
+.tmp/
