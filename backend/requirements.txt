@@ -4,3 +4,12 @@ psycopg2-binary==2.9.6
 SQLAlchemy==2.0.19
 python-dotenv==1.0.0
 gunicorn==21.2.0
+
+# Scraping dependencies
+scrapy>=2.11.0
+scrapy-playwright>=0.0.34
+playwright>=1.40.0
+trafilatura>=1.6.0
+scrapy-llm>=0.1.0
+itemloaders>=1.1.0
+Pillow>=10.0.0

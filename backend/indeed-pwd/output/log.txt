@@ -1,0 +1,34 @@
+============================================================
+INDEED PAGE LOADER
+Run started at: 2025-11-29 17:22:44
+============================================================
+
+[17:22:44] CONFIG: Browser: chromium
+[17:22:44] CONFIG: Headless: False
+[17:22:44] CONFIG: Slow Mo: 1000ms
+[17:22:44] CONFIG: Search: python developer
+[17:22:44] CONFIG: Location: Remote
+------------------------------------------------------------
+[17:22:44] STEP 1: Launching browser...
+[17:22:44] STEP 1: Browser launched successfully!
+[17:22:44] STEP 2: Creating browser context...
+[17:22:44] STEP 2: Stealth mode applied!
+[17:22:44] STEP 2: Browser context ready!
+[17:22:44] STEP 3: Navigating to https://www.indeed.com...
+[17:22:48] STEP 3: Indeed homepage loaded!
+[17:22:48] SCREENSHOT: Saved: output/screenshots/01_homepage.png
+[17:22:48] STEP 4: Entering search query: 'python developer'...
+[17:22:50] STEP 4: Search query entered!
+[17:22:50] STEP 5: Entering location: 'Remote'...
+[17:22:53] STEP 5: Location entered!
+[17:22:53] SCREENSHOT: Saved: output/screenshots/02_search_filled.png
+[17:22:53] STEP 6: Submitting search...
+[17:22:57] STEP 6: Search submitted!
+[17:22:57] STEP 7: No verification needed!
+[17:22:57] STEP 8: Viewing search results page...
+[17:22:57] PAGE INFO: Title: Python Developer Jobs, Employment in Remote | Indeed
+[17:22:57] PAGE INFO: URL: https://www.indeed.com/jobs?q=python+developer&l=Remote&from=searchOnHP&vjk=85a1296d194f3042
+[17:22:58] SCREENSHOT: Saved: output/screenshots/04_search_results.png
+------------------------------------------------------------
+[17:22:58] DONE: Indeed loaded successfully!
+------------------------------------------------------------

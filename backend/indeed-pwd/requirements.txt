@@ -1,0 +1,14 @@
+# ============================================================
+# PYTHON DEPENDENCIES
+# ============================================================
+# Install with: pip3 install -r requirements.txt
+# ============================================================
+
+# Playwright - Browser automation tool
+playwright>=1.40.0
+
+# Playwright Stealth - Bypass bot detection and CAPTCHAs
+playwright-stealth>=1.0.6
+
+# python-dotenv - Loads settings from .env files
+python-dotenv>=1.0.0
