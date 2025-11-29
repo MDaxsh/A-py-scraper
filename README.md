@@ -2,7 +2,16 @@
 
 A complete boilerplate for a modern web application with Python backend, PostgreSQL database, and Angular frontend.
 
-## Project Structure
+## Quick Access
+
+Once services are running:
+
+- **Frontend**: http://localhost:4201
+- **Backend API**: http://localhost:5001/api/
+- **pgAdmin (Database UI)**: http://localhost:5050
+  - Email: `admin@example.com`
+  - Password: `admin`
+- **Database Direct**: `localhost:5433` (postgres:postgres)
 
 ```
 .
@@ -58,12 +67,13 @@ A complete boilerplate for a modern web application with Python backend, Postgre
 cd A-py-scraper
 
 # Start all services
-docker-compose up --build
+docker-compose up -d
 
 # Services will be available at:
-# Frontend: http://localhost:4200
-# Backend API: http://localhost:5000
-# Database: localhost:5432
+# Frontend: http://localhost:4201
+# Backend API: http://localhost:5001
+# pgAdmin: http://localhost:5050
+# Database: localhost:5433
 ```
 
 ### Run Individual Services
@@ -87,7 +97,7 @@ docker-compose up --build
 ## Service Details
 
 ### Backend (Python Flask)
-- **Port**: 5000
+- **Port**: 5001
 - **Framework**: Flask 2.3.2
 - **Database Driver**: psycopg2-binary
 - **Key Files**:
@@ -101,18 +111,27 @@ docker-compose up --build
 - `GET /api/info` - API information
 
 ### Database (PostgreSQL)
-- **Port**: 5432
+- **Port**: 5433 (5432 internal)
 - **Version**: PostgreSQL 15 Alpine
 - **Default Credentials**:
   - User: postgres
   - Password: postgres
   - Database: myapp
-- **Key Files**:
-  - `scripts/init.sql`: Initialization script
+- **Management UI**: pgAdmin at http://localhost:5050
+
+### pgAdmin Dashboard
+- **Port**: 5050
+- **Email**: admin@example.com
+- **Password**: admin
+- **Features**: 
+  - View database structure
+  - Browse tables (users, posts)
+  - Run SQL queries
+  - Manage connections
 
 ### Frontend (Angular)
-- **Port**: 4200
-- **Version**: Angular 17
+- **Port**: 4201
+- **Version**: Angular 20
 - **Key Files**:
   - `src/main.ts`: Bootstrap
   - `src/app/app.component.ts`: Root component
@@ -132,20 +151,38 @@ DATABASE_URL=postgresql://postgres:postgres@db:5432/myapp
 
 ```bash
 # Health check
-curl http://localhost:5000/api/health
+curl http://localhost:5001/api/health
 
 # API info
-curl http://localhost:5000/api/info
+curl http://localhost:5001/api/info
 ```
 
-## Database Access
+## Database Management
 
+### Using pgAdmin (Recommended)
+1. Open http://localhost:5050
+2. Login with: admin@example.com / admin
+3. Add server connection:
+   - Host: app-db
+   - Port: 5432
+   - Username: postgres
+   - Password: postgres
+   - Database: myapp
+4. Browse tables and run queries
+
+### Direct Connection
 ```bash
-# Connect to database
-psql -h localhost -U postgres -d myapp
+# Connect using psql
+psql -h localhost -p 5433 -U postgres -d myapp
 
-# Or use Docker
+# Or via Docker
 docker exec -it app-db psql -U postgres -d myapp
+
+# View tables
+\dt
+
+# View table structure
+\d users
 ```
 
 ## Development
