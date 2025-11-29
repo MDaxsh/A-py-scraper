@@ -1,0 +1,16 @@
+# Database data directory - local disk storage
+pgdata/
+
+# IDE and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Docker artifacts
+__pycache__/
+.angular/
+node_modules/
+dist/

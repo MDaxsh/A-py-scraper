@@ -1,0 +1,9 @@
+<footer class="app-footer">
+  <div *ngIf="loading">Loading app info...</div>
+  <div *ngIf="error" class="error">{{ error }}</div>
+  <div *ngIf="!loading && !error" class="info">
+    <span class="name">{{ appInfo.name }}</span>
+    <span class="version">v{{ appInfo.version }}</span>
+    <span class="status">{{ appInfo.status }}</span>
+  </div>
+</footer>

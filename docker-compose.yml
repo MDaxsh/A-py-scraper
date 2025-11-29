@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   # PostgreSQL Database
-  db:
+  py-scraper-db:
     build: ./database
     container_name: app-db
     environment:
@@ -12,7 +12,7 @@ services:
     ports:
       - "5433:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - ./pgdata:/var/lib/postgresql/data
     networks:
       - app-network
     healthcheck:
@@ -35,7 +35,7 @@ services:
     ports:
       - "5050:80"
     depends_on:
-      - db
+      - py-scraper-db
     networks:
       - app-network
     volumes:
@@ -50,9 +50,9 @@ services:
       - "5001:5000"
     environment:
       - FLASK_ENV=development
-      - DATABASE_URL=postgresql://postgres:postgres@db:5432/myapp
+      - DATABASE_URL=postgresql://postgres:postgres@py-scraper-db:5432/myapp
     depends_on:
-      db:
+      py-scraper-db:
         condition: service_healthy
     volumes:
       - ./backend:/app
@@ -74,7 +74,6 @@ services:
       - app-network
 
 volumes:
-  postgres_data:
   pgadmin_data:
 
 networks:
