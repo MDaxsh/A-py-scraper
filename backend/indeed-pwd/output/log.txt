@@ -1,60 +1,94 @@
 ============================================================
-INDEED PAGE LOADER
-Run started at: 2025-11-29 17:39:55
+JOB DETAILS EXTRACTOR
+Run started at: 2025-11-29 17:59:16
 ============================================================
 
-[17:39:55] CONFIG: Browser: chromium
-[17:39:55] CONFIG: Headless: False
-[17:39:55] CONFIG: Slow Mo: 1000ms
-[17:39:55] CONFIG: Search: python developer
-[17:39:55] CONFIG: Location: Remote
+[17:59:16] INFO: Found 16 jobs to process
 ------------------------------------------------------------
-[17:39:55] STEP 1: Launching browser...
-[17:39:56] STEP 1: Browser launched successfully!
-[17:39:56] STEP 2: Creating browser context...
-[17:39:56] STEP 2: Stealth mode applied!
-[17:39:56] STEP 2: Browser context ready!
-[17:39:56] STEP 3: Navigating to https://www.indeed.com...
-[17:40:00] STEP 3: Indeed homepage loaded!
-[17:40:00] SCREENSHOT: Saved: output/screenshots/01_homepage.png
-[17:40:00] STEP 4: Entering search query: 'python developer'...
-[17:40:02] STEP 4: Search query entered!
-[17:40:02] STEP 5: Entering location: 'Remote'...
-[17:40:05] STEP 5: Location entered!
-[17:40:05] SCREENSHOT: Saved: output/screenshots/02_search_filled.png
-[17:40:05] STEP 6: Submitting search...
-[17:40:10] STEP 6: Search submitted!
-[17:40:10] STEP 7: No verification needed!
-[17:40:10] STEP 8: Viewing search results page...
-[17:40:10] PAGE INFO: Title: Python Developer Jobs, Employment in Remote | Indeed
-[17:40:10] PAGE INFO: URL: https://www.indeed.com/jobs?q=python+developer&l=Remote&from=searchOnHP&vjk=078a0b5a11dd008d
-[17:40:10] SCREENSHOT: Saved: output/screenshots/04_search_results.png
-[17:40:10] STEP 9: Parsing job listings...
-[17:40:12] STEP 9: Found 16 job cards
-[17:40:12] JOB: 1. Software Developer @ JB&B
-[17:40:12] JOB: 2. ReactJs Developer @ Quantaleap
-[17:40:12] JOB: 3. Data Analyst, Tableau Developer @ Hornblower Group, Inc
-[17:40:12] JOB: 4. Backend Developer @ InstaTrainMe
-[17:40:12] JOB: 5. Backend Developer @ InstaTrainMe
-[17:40:12] JOB: 6. Remote Python Developer @ LookFar Labs
-[17:40:12] JOB: 7. Oracle/SQL DBA @ FedScale, Inc
-[17:40:12] JOB: 8. Senior React Developer @ Rapideagle
-[17:40:12] JOB: 9. Remote Instructional Designer/Curriculum Developer with Python Experience @ PulseLearning
-[17:40:12] JOB: 10. Junior RPA Developer - Remote @ OM Group Inc.
-[17:40:12] JOB: 11. Jr. Data Engineer @ Northside Center for Child Development
-[17:40:12] JOB: 12. Senior Backend Engineer (Python / Django) @ Beyond Mission Capable Solutions LLC
-[17:40:12] JOB: 13. AI Engineering Lead @ Vichara
-[17:40:12] JOB: 14. Scientific Application Developer @ Gap Solutions Inc
-[17:40:12] JOB: 15. Software Engineer - 2 (DevOps/IaC/Bash/Python) @ Akina, Inc.
-[17:40:12] JOB: 16. AI Software Engineer (Generative AI) - Remote @ Azumo
-[17:40:12] STEP 9: Saved 16 jobs to /Users/d/Workspace/C2C-Projects/A-py-scraper/backend/indeed-pwd/output/jobs.json
+[17:59:16] STEP 1: Launching browser...
+[17:59:16] STEP 1: Browser ready!
 ------------------------------------------------------------
-[17:40:12] DONE: Indeed loaded successfully!
+[17:59:16] JOB 1/16: Software Developer @ JB&B
+[17:59:20] SALARY: $120,000 - $130,000 a year
+[17:59:20] DESC: Description extracted (500 chars)
+[17:59:20] PHONE: 1278314023
+[17:59:20] EMAIL: No email found on this page
+[17:59:21] JOB 2/16: ReactJs Developer @ Quantaleap
+[17:59:25] DESC: Description extracted (500 chars)
+[17:59:25] PHONE: 1278314023
+[17:59:25] EMAIL: No email found on this page
+[17:59:26] JOB 3/16: Data Analyst, Tableau Developer @ Hornblower Group, Inc
+[17:59:29] SALARY: $70,000 - $80,000 a year
+[17:59:29] DESC: Description extracted (500 chars)
+[17:59:29] PHONE: 1278314023
+[17:59:29] C2C: Corp-to-Corp allowed!
+[17:59:29] EMAIL: No email found on this page
+[17:59:30] JOB 4/16: Backend Developer @ InstaTrainMe
+[17:59:34] DESC: Description extracted (500 chars)
+[17:59:34] PHONE: 1278314023
+[17:59:34] EMAIL: No email found on this page
+[17:59:35] JOB 5/16: Backend Developer @ InstaTrainMe
+[17:59:39] PHONE: 1278314023
+[17:59:39] EMAIL: No email found on this page
+[17:59:40] JOB 6/16: Remote Python Developer @ LookFar Labs
+[17:59:44] SALARY: $95,000.00 - $125,000.00 per year
+[17:59:44] DESC: Description extracted (500 chars)
+[17:59:44] PHONE: 1278314023
+[17:59:44] EMAIL: No email found on this page
+[17:59:45] JOB 7/16: Oracle/SQL DBA @ FedScale, Inc
+[17:59:49] SALARY: $95,000 - $115,000 a year
+[17:59:49] DESC: Description extracted (500 chars)
+[17:59:49] PHONE: 1637165268
+[17:59:49] EMAIL: No email found on this page
+[17:59:50] JOB 8/16: Senior React Developer @ Rapideagle
+[17:59:54] SALARY: $53.34 - $64.23
+[17:59:54] DESC: Description extracted (500 chars)
+[17:59:54] PHONE: 1278314023
+[17:59:54] EMAIL: No email found on this page
+[17:59:55] JOB 9/16: Remote Instructional Designer/Curriculum Developer with Python Experience @ PulseLearning
+[17:59:59] DESC: Description extracted (500 chars)
+[17:59:59] PHONE: 1278314023
+[17:59:59] EMAIL: No email found on this page
+[18:00:00] JOB 10/16: Junior RPA Developer - Remote @ OM Group Inc.
+[18:00:04] SALARY: $70,000 - $90,000 a year
+[18:00:04] DESC: Description extracted (500 chars)
+[18:00:04] PHONE: 1278314023
+[18:00:04] C2C: Corp-to-Corp allowed!
+[18:00:04] EMAIL: jobs@omgroupinc.us
+[18:00:05] JOB 11/16: Jr. Data Engineer @ Northside Center for Child Development
+[18:00:09] SALARY: $56 - $74
+[18:00:09] DESC: Description extracted (500 chars)
+[18:00:09] PHONE: 1278314023
+[18:00:09] C2C: Corp-to-Corp allowed!
+[18:00:09] EMAIL: No email found on this page
+[18:00:10] JOB 12/16: Senior Backend Engineer (Python / Django) @ Beyond Mission Capable Solutions LLC
+[18:00:13] SALARY: $175,000 - $220,000 a year
+[18:00:13] DESC: Description extracted (500 chars)
+[18:00:13] PHONE: 1278314023
+[18:00:13] EMAIL: No email found on this page
+[18:00:14] JOB 13/16: AI Engineering Lead @ Vichara
+[18:00:18] SALARY: $200,000 - $300,000 a year
+[18:00:18] DESC: Description extracted (500 chars)
+[18:00:18] PHONE: 1278314023
+[18:00:18] EMAIL: No email found on this page
+[18:00:19] JOB 14/16: Scientific Application Developer @ Gap Solutions Inc
+[18:00:22] DESC: Description extracted (500 chars)
+[18:00:22] PHONE: 1278314023
+[18:00:22] EMAIL: recruiting@gapsi.com
+[18:00:23] JOB 15/16: Software Engineer - 2 (DevOps/IaC/Bash/Python) @ Akina, Inc.
+[18:00:27] SALARY: $144,000 - $266,000 a year
+[18:00:27] DESC: Description extracted (500 chars)
+[18:00:27] PHONE: 1278314023
+[18:00:27] EMAIL: No email found on this page
+[18:00:28] JOB 16/16: AI Software Engineer (Generative AI) - Remote @ Azumo
+[18:00:32] DESC: Description extracted (500 chars)
+[18:00:32] PHONE: 1278314023
+[18:00:32] EMAIL: people@azumo.co
 ------------------------------------------------------------
-[17:40:42] CLEANUP: Closing browser...
-[17:40:42] CLEANUP: Browser closed!
+[18:00:33] CLEANUP: Closing browser...
+[18:00:33] SAVED: Updated jobs.json
 
 ============================================================
 Run COMPLETED SUCCESSFULLY
-Ended at: 2025-11-29 17:40:42
+Ended at: 2025-11-29 18:00:33
 ============================================================

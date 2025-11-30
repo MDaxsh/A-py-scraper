@@ -26,7 +26,8 @@ indeed-pwd/
 │   ├── log.txt               # Log file (overwritten on each run)
 │   └── screenshots/          # Screenshots captured during execution
 ├── requirements.txt          # Python dependencies
-└── run.py                    # Main script to run
+├── run.py                    # Main script - search and scrape jobs
+└── extract_emails.py         # Email extractor - visits each job page
 ```
 
 ## Installation
@@ -43,9 +44,14 @@ indeed-pwd/
 
 ## Usage
 
-Run the script:
+Run the main script to search and scrape job listings:
 ```bash
 python3 run.py
+```
+
+Run the email extractor to visit each job page and find contact emails:
+```bash
+python3 extract_emails.py
 ```
 
 The browser will open and:
