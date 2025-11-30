@@ -7,13 +7,18 @@ Searches Indeed and saves basic job listings to jobs.json.
 Then runs extract_details.py and extract_emails.py sequentially.
 
 Usage:
+    # Use config from .env files
     python3 run.py
+    
+    # Override with command line arguments
+    python3 run.py --search "react developer" --location "New York" --headless
 ============================================================
 """
 
 import asyncio
 import sys
 import json
+import argparse
 from pathlib import Path
 from datetime import datetime
 
@@ -26,8 +31,65 @@ from config import IndeedConfig, PlaywrightConfig, IndeedSelectors
 from utils import Logger, MouseHelper
 
 
-async def search_indeed():
-    """Search Indeed and save basic job listings."""
+def parse_arguments():
+    """Parse command line arguments."""
+    parser = argparse.ArgumentParser(
+        description='Indeed Job Scraper - Search and extract job listings',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+    python3 run.py                                    # Use config from .env files
+    python3 run.py --search "python developer"       # Override search query
+    python3 run.py --location "Remote"               # Override location
+    python3 run.py --headless                        # Run in headless mode
+    python3 run.py --search "react" --location "NYC" --headless
+        """
+    )
+    
+    parser.add_argument(
+        '-s', '--search',
+        type=str,
+        default=None,
+        help='Job search query (e.g., "python developer", "react engineer")'
+    )
+    
+    parser.add_argument(
+        '-l', '--location',
+        type=str,
+        default=None,
+        help='Job location (e.g., "Remote", "New York", "San Francisco")'
+    )
+    
+    parser.add_argument(
+        '--headless',
+        action='store_true',
+        default=None,
+        help='Run browser in headless mode (no visible window)'
+    )
+    
+    parser.add_argument(
+        '--no-headless',
+        action='store_true',
+        default=False,
+        help='Run browser with visible window (override config)'
+    )
+    
+    return parser.parse_args()
+
+
+async def search_indeed(search_query=None, location=None, headless=None):
+    """Search Indeed and save basic job listings.
+    
+    Args:
+        search_query: Override search query from config
+        location: Override location from config  
+        headless: Override headless mode from config
+    """
+    
+    # Use provided values or fall back to config
+    final_search_query = search_query if search_query else IndeedConfig.SEARCH_QUERY
+    final_location = location if location else IndeedConfig.LOCATION
+    final_headless = headless if headless is not None else PlaywrightConfig.HEADLESS
     
     output_dir = Path(__file__).parent / "output"
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -38,15 +100,16 @@ async def search_indeed():
     print("\n" + "=" * 60)
     print("🔍 INDEED JOB SEARCH")
     print("=" * 60)
-    print(f"   Search: {IndeedConfig.SEARCH_QUERY}")
-    print(f"   Location: {IndeedConfig.LOCATION}")
+    print(f"   Search: {final_search_query}")
+    print(f"   Location: {final_location}")
+    print(f"   Headless: {final_headless}")
     print("=" * 60)
     
     try:
         async with async_playwright() as p:
             # Launch browser
             browser = await p.chromium.launch(
-                headless=PlaywrightConfig.HEADLESS,
+                headless=final_headless,
                 slow_mo=PlaywrightConfig.SLOW_MO
             )
             
@@ -107,8 +170,8 @@ async def search_indeed():
             # Enter search query with human-like typing
             search_input = page.locator(IndeedSelectors.SEARCH_INPUT).first
             await mouse.human_click(search_input)
-            await mouse.human_type(search_input, IndeedConfig.SEARCH_QUERY, click_first=False)
-            logger.log("STEP 3", f"Search: {IndeedConfig.SEARCH_QUERY}", "⌨️")
+            await mouse.human_type(search_input, final_search_query, click_first=False)
+            logger.log("STEP 3", f"Search: {final_search_query}", "⌨️")
             
             # Enter location with human-like typing
             location_input = page.locator(IndeedSelectors.LOCATION_INPUT).first
@@ -116,8 +179,8 @@ async def search_indeed():
             # Clear existing text
             await location_input.press("Control+a")
             await asyncio.sleep(0.05)
-            await mouse.human_type(location_input, IndeedConfig.LOCATION, click_first=False)
-            logger.log("STEP 4", f"Location: {IndeedConfig.LOCATION}", "📍")
+            await mouse.human_type(location_input, final_location, click_first=False)
+            logger.log("STEP 4", f"Location: {final_location}", "📍")
             
             # Submit search with human-like click
             await asyncio.sleep(0.3)
@@ -200,8 +263,8 @@ async def search_indeed():
             # Save to JSON
             json_path = output_dir / "jobs.json"
             output = {
-                "search_query": IndeedConfig.SEARCH_QUERY,
-                "search_location": IndeedConfig.LOCATION,
+                "search_query": final_search_query,
+                "search_location": final_location,
                 "scraped_at": datetime.now().isoformat(),
                 "total_jobs": len(jobs),
                 "details_extracted_at": "",
@@ -233,8 +296,14 @@ async def search_indeed():
         return False
 
 
-async def run_all():
-    """Run all scripts sequentially with wait time between each."""
+async def run_all(search_query=None, location=None, headless=None):
+    """Run all scripts sequentially with wait time between each.
+    
+    Args:
+        search_query: Override search query from config
+        location: Override location from config
+        headless: Override headless mode from config
+    """
     
     print("\n" + "=" * 60)
     print("🚀 INDEED SCRAPER - FULL PIPELINE")
@@ -242,7 +311,7 @@ async def run_all():
     
     # Step 1: Search Indeed
     print("\n📌 STEP 1/3: Searching Indeed...")
-    success = await search_indeed()
+    success = await search_indeed(search_query, location, headless)
     
     if not success:
         print("❌ Search failed. Stopping pipeline.")
@@ -273,4 +342,19 @@ async def run_all():
 
 
 if __name__ == "__main__":
-    asyncio.run(run_all())
+    # Parse command line arguments
+    args = parse_arguments()
+    
+    # Determine headless mode
+    headless = None
+    if args.headless:
+        headless = True
+    elif args.no_headless:
+        headless = False
+    
+    # Run with provided arguments (or None to use config defaults)
+    asyncio.run(run_all(
+        search_query=args.search,
+        location=args.location,
+        headless=headless
+    ))
