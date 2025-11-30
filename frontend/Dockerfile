@@ -1,30 +1,17 @@
-FROM node:20-alpine as build-stage
+FROM node:20-alpine
 
 WORKDIR /app
 
 # Copy package files
 COPY package*.json ./
 
-# Install dependencies
+# Install dependencies (including Angular CLI)
 RUN npm install
 
 # Copy source code
 COPY . .
 
-# Build Angular application
-RUN npm run build
-
-# Production stage
-FROM node:20-alpine
-
-WORKDIR /app
-
-# Install serve to run the application
-RUN npm install -g serve
-
-# Copy built application from build stage
-COPY --from=build-stage /app/dist/frontend ./dist/frontend
-
 EXPOSE 4200
 
-CMD ["serve", "-s", "dist/frontend", "-l", "4200"]
+# Default command for development (can be overridden in docker-compose)
+CMD ["npm", "start", "--", "--host", "0.0.0.0", "--port", "4200", "--disable-host-check"]

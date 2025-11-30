@@ -17,6 +17,8 @@ def create_app():
     
     # Register blueprints
     from app.routes import api_blueprint
+    from app.jobs_routes import jobs_blueprint
     app.register_blueprint(api_blueprint, url_prefix='/api')
+    app.register_blueprint(jobs_blueprint, url_prefix='/api/jobs')
     
     return app

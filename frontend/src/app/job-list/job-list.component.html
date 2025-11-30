@@ -1,0 +1,190 @@
+<div class="container-fluid">
+  <!-- Header Section -->
+  <div class="mb-4">
+    <h2 class="fw-bold text-dark d-flex align-items-center gap-2">
+      <i class="bi bi-briefcase-fill text-purple"></i>
+      Job Listings
+    </h2>
+    <p class="text-muted mb-0">Browse and filter scraped job opportunities</p>
+  </div>
+
+  <!-- Search and Filters -->
+  <div class="card shadow-sm mb-4">
+    <div class="card-body">
+      <div class="row g-3 align-items-end">
+        <!-- Search Input -->
+        <div class="col-12 col-md-4">
+          <label for="searchInput" class="form-label fw-semibold text-secondary small">Search</label>
+          <div class="input-group-icon">
+            <i class="bi bi-search input-icon"></i>
+            <input
+              type="text"
+              id="searchInput"
+              class="form-control"
+              placeholder="Search by title or company..."
+              [(ngModel)]="searchQuery"
+              (keyup.enter)="onSearch()"
+            />
+          </div>
+        </div>
+
+        <!-- C2C Filter -->
+        <div class="col-6 col-md-2">
+          <label for="c2cFilter" class="form-label fw-semibold text-secondary small">C2C Status</label>
+          <select
+            id="c2cFilter"
+            class="form-select"
+            [value]="c2cFilter === null ? '' : c2cFilter.toString()"
+            (change)="onC2CFilterChange($any($event.target).value)"
+          >
+            <option value="">All Jobs</option>
+            <option value="true">C2C Only</option>
+            <option value="false">Non-C2C</option>
+          </select>
+        </div>
+
+        <!-- Email Filter -->
+        <div class="col-6 col-md-2">
+          <label for="emailFilter" class="form-label fw-semibold text-secondary small">Contact Email</label>
+          <select
+            id="emailFilter"
+            class="form-select"
+            [value]="hasEmailFilter === null ? '' : hasEmailFilter.toString()"
+            (change)="onEmailFilterChange($any($event.target).value)"
+          >
+            <option value="">All</option>
+            <option value="true">Has Email</option>
+            <option value="false">No Email</option>
+          </select>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="col-12 col-md-4">
+          <div class="d-flex gap-2">
+            <button class="btn btn-accent" (click)="onSearch()">
+              <i class="bi bi-search"></i> Search
+            </button>
+            <button class="btn btn-outline-secondary" (click)="clearFilters()">
+              <i class="bi bi-x-circle"></i> Clear
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Results Summary -->
+  <div class="d-flex align-items-center gap-3 mb-3 flex-wrap" *ngIf="!isLoading && !error">
+    <span class="badge bg-accent-gradient px-3 py-2">
+      <i class="bi bi-list-check me-1"></i>
+      {{ totalJobs }} job{{ totalJobs !== 1 ? 's' : '' }} found
+    </span>
+    <div class="d-flex gap-2 flex-wrap" *ngIf="searchQuery || c2cFilter !== null || hasEmailFilter !== null">
+      <span class="filter-tag" *ngIf="searchQuery">
+        Search: "{{ searchQuery }}"
+        <button class="btn-close-tag" (click)="searchQuery = ''; onSearch()">×</button>
+      </span>
+      <span class="filter-tag" *ngIf="c2cFilter !== null">
+        {{ c2cFilter ? 'C2C Only' : 'Non-C2C' }}
+        <button class="btn-close-tag" (click)="c2cFilter = null; loadJobs()">×</button>
+      </span>
+      <span class="filter-tag" *ngIf="hasEmailFilter !== null">
+        {{ hasEmailFilter ? 'Has Email' : 'No Email' }}
+        <button class="btn-close-tag" (click)="hasEmailFilter = null; loadJobs()">×</button>
+      </span>
+    </div>
+  </div>
+
+  <!-- Loading State -->
+  <div class="state-card state-loading" *ngIf="isLoading">
+    <div class="spinner-border text-purple mb-3" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <p class="text-muted mb-0">Loading jobs...</p>
+  </div>
+
+  <!-- Error State -->
+  <div class="state-card state-error" *ngIf="error">
+    <i class="bi bi-exclamation-triangle-fill state-icon"></i>
+    <p class="text-muted">{{ error }}</p>
+    <button class="btn btn-primary" (click)="loadJobs()">Try Again</button>
+  </div>
+
+  <!-- Jobs Table -->
+  <div class="card shadow" *ngIf="!isLoading && !error && jobs.length > 0">
+    <div class="table-responsive">
+      <table class="table table-hover table-accent-header mb-0">
+        <thead>
+          <tr>
+            <th>Job Title</th>
+            <th>Company</th>
+            <th>Location</th>
+            <th>Salary</th>
+            <th class="text-center">C2C</th>
+            <th>Contact</th>
+            <th class="text-center">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let job of jobs; let odd = odd" 
+              [class.table-row-c2c]="job.allows_c2c"
+              [class.table-light]="odd">
+            <td>
+              <span class="fw-semibold">{{ job.job_title }}</span>
+            </td>
+            <td>
+              <div class="fw-semibold text-purple">{{ job.company.name }}</div>
+              <small class="text-muted" *ngIf="job.company.description">
+                {{ job.company.description | slice:0:80 }}{{ job.company.description.length > 80 ? '...' : '' }}
+              </small>
+            </td>
+            <td>
+              <i class="bi bi-geo-alt text-muted me-1"></i>
+              {{ job.job_location || 'Not specified' }}
+            </td>
+            <td>
+              <span class="badge bg-success" *ngIf="job.salary">{{ job.salary }}</span>
+              <span class="text-muted fst-italic" *ngIf="!job.salary">—</span>
+            </td>
+            <td class="text-center">
+              <span class="badge" [ngClass]="job.allows_c2c ? 'bg-success-subtle text-success' : 'bg-secondary-subtle text-secondary'">
+                {{ job.allows_c2c ? 'Yes' : 'No' }}
+              </span>
+            </td>
+            <td>
+              <div class="d-flex flex-column gap-1">
+                <a *ngIf="job.company.contact_email" 
+                   [href]="'mailto:' + job.company.contact_email"
+                   class="small text-primary text-decoration-none">
+                  <i class="bi bi-envelope-fill me-1"></i>{{ job.company.contact_email }}
+                </a>
+                <span *ngIf="job.company.phone_number" class="small text-muted">
+                  <i class="bi bi-telephone-fill me-1"></i>{{ job.company.phone_number }}
+                </span>
+                <span *ngIf="!job.company.contact_email && !job.company.phone_number" class="text-muted fst-italic small">
+                  No contact info
+                </span>
+              </div>
+            </td>
+            <td class="text-center">
+              <button 
+                class="btn btn-sm btn-accent" 
+                (click)="openJobLink(job.job_link)"
+                title="View on Indeed">
+                <i class="bi bi-box-arrow-up-right"></i> View
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Empty State -->
+  <div class="state-card state-empty" *ngIf="!isLoading && !error && jobs.length === 0">
+    <i class="bi bi-inbox state-icon"></i>
+    <h4 class="text-dark">No Jobs Found</h4>
+    <p class="text-muted">Try adjusting your search criteria or filters</p>
+    <button class="btn btn-primary" (click)="clearFilters()">Clear All Filters</button>
+  </div>
+</div>

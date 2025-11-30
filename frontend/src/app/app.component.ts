@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
+import { JobListComponent } from './job-list/job-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, FooterComponent],
+  imports: [CommonModule, FooterComponent, JobListComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
