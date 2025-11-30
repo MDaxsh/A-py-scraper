@@ -1,0 +1,13 @@
+.log-container {
+  font-family: 'Consolas', 'Monaco', monospace;
+  
+  .log-entry:last-child {
+    border-bottom: none !important;
+  }
+}
+
+.form-switch .form-check-input {
+  width: 3em;
+  height: 1.5em;
+  cursor: pointer;
+}

@@ -1,0 +1,168 @@
+<div class="card shadow-sm">
+  <div class="card-header bg-accent-gradient text-white d-flex justify-content-between align-items-center">
+    <h5 class="mb-0">
+      <i class="bi bi-gear-fill me-2"></i>Scraper Control
+    </h5>
+    <span *ngIf="status" class="badge" [ngClass]="getStatusBadgeClass()">
+      {{ status.status | uppercase }}
+    </span>
+  </div>
+
+  <div class="card-body">
+    <!-- Alerts -->
+    <div *ngIf="errorMessage" class="alert alert-danger alert-dismissible fade show" role="alert">
+      <i class="bi bi-exclamation-triangle-fill me-2"></i>{{ errorMessage }}
+      <button type="button" class="btn-close" (click)="errorMessage = ''"></button>
+    </div>
+
+    <div *ngIf="successMessage" class="alert alert-success alert-dismissible fade show" role="alert">
+      <i class="bi bi-check-circle-fill me-2"></i>{{ successMessage }}
+      <button type="button" class="btn-close" (click)="successMessage = ''"></button>
+    </div>
+
+    <!-- Form -->
+    <form (ngSubmit)="startScraper()" #scraperForm="ngForm">
+      <div class="row g-3">
+        <!-- Search Query -->
+        <div class="col-md-5">
+          <label for="searchQuery" class="form-label">Search Query</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+            <input
+              type="text"
+              class="form-control"
+              id="searchQuery"
+              name="searchQuery"
+              [(ngModel)]="searchQuery"
+              placeholder="e.g., python developer"
+              [disabled]="isRunning"
+              required
+            >
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="col-md-4">
+          <label for="location" class="form-label">Location</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
+            <input
+              type="text"
+              class="form-control"
+              id="location"
+              name="location"
+              [(ngModel)]="location"
+              placeholder="e.g., Remote, New York"
+              [disabled]="isRunning"
+            >
+          </div>
+        </div>
+
+        <!-- Headless Toggle -->
+        <div class="col-md-3">
+          <label class="form-label d-block">Browser Mode</label>
+          <div class="form-check form-switch mt-2">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="headless"
+              name="headless"
+              [(ngModel)]="headless"
+              [disabled]="isRunning"
+            >
+            <label class="form-check-label" for="headless">
+              {{ headless ? 'Headless' : 'Visible' }}
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="mt-4">
+        <button
+          type="submit"
+          class="btn btn-accent btn-lg"
+          [disabled]="isRunning || !searchQuery"
+        >
+          <span *ngIf="!isRunning">
+            <i class="bi bi-play-fill me-2"></i>Start Scraper
+          </span>
+          <span *ngIf="isRunning">
+            <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+            Running...
+          </span>
+        </button>
+
+        <button
+          type="button"
+          class="btn btn-outline-secondary btn-lg ms-2"
+          (click)="fetchStatus()"
+          [disabled]="isRunning"
+        >
+          <i class="bi bi-arrow-clockwise me-1"></i>Refresh Status
+        </button>
+      </div>
+    </form>
+
+    <!-- Progress Section -->
+    <div *ngIf="status && isRunning" class="mt-4">
+      <h6 class="text-muted mb-2">Progress</h6>
+      <div class="progress" style="height: 25px;">
+        <div
+          class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+          role="progressbar"
+          [style.width.%]="status.percent"
+          [attr.aria-valuenow]="status.percent"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          {{ status.percent }}%
+        </div>
+      </div>
+      <small class="text-muted mt-1 d-block">
+        Step {{ status.completed_steps }} of {{ status.total_steps || '?' }} - {{ status.current_step }}
+      </small>
+    </div>
+
+    <!-- Logs Section -->
+    <div *ngIf="status?.logs?.length" class="mt-4">
+      <h6 class="text-muted mb-2">
+        <i class="bi bi-journal-text me-1"></i>Activity Log
+      </h6>
+      <div class="log-container border rounded p-2 bg-light" style="max-height: 200px; overflow-y: auto;">
+        <div *ngFor="let log of status!.logs" class="log-entry small py-1 border-bottom">
+          <span class="me-2">{{ getLogIcon(log) }}</span>
+          <span class="text-muted me-2">[{{ log.timestamp }}]</span>
+          <span class="badge bg-secondary me-2">{{ log.step }}</span>
+          <span>{{ log.message }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div *ngIf="status && !isRunning" class="mt-4">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="state-card text-center p-3">
+            <div class="fs-4 fw-bold text-primary">{{ status.total_jobs }}</div>
+            <div class="small text-muted">Jobs Found</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="state-card text-center p-3">
+            <div class="fs-4 fw-bold text-success">{{ status.completed_steps }}</div>
+            <div class="small text-muted">Steps Completed</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="state-card text-center p-3">
+            <div class="fs-4 fw-bold" [ngClass]="status.status === 'completed' ? 'text-success' : 'text-danger'">
+              {{ status.status | titlecase }}
+            </div>
+            <div class="small text-muted">Last Run Status</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

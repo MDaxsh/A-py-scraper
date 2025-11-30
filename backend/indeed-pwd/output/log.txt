@@ -1,16 +1,7 @@
 ============================================================
 INDEED JOB SEARCH
-Run started at: 2025-11-30 01:51:23
+Run started at: 2025-11-29 20:02:13
 ============================================================
 
-[01:51:23] STEP 1: Browser launched with stealth mode
-[01:51:30] STEP 2: Indeed homepage loaded
-[01:52:43] ERROR: Locator.press: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator("input[id=\"text-input-what\"], input[name=\"q\"]").first
-
-
-============================================================
-Run COMPLETED WITH ERRORS
-Ended at: 2025-11-30 01:52:43
-============================================================
+[20:02:16] STEP 1: Browser launched with stealth mode
+[20:02:22] STEP 2: Indeed homepage loaded
