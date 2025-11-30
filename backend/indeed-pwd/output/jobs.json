@@ -1,262 +1,252 @@
 {
   "search_query": "python developer",
   "search_location": "Remote",
-  "scraped_at": "2025-11-29T17:49:09.079450",
+  "scraped_at": "2025-11-29T18:30:05.711223",
   "total_jobs": 16,
+  "details_extracted_at": "",
+  "emails_extracted_at": "",
+  "emails_found": 0,
+  "c2c_jobs_found": 0,
   "jobs": [
     {
-      "job_title": "Software Developer",
-      "company": {
-        "name": "JB&B",
-        "description": "Join JB&B and shape the future of the built environment!  Founded in 1915, Jaros, Baum & Bolles has been a pillar of engineering innovation in New York City for over a century. Specializing in mechanical, electrical, plumbing (MEP), JB&B has contributed to some of the most iconic buildings.  In October 2025, JB&B joined forces with Trinity Consultants, a global consulting firm focused on the natural and built environments. JB&B now operates within Trinity’s Built Environment division, combining ",
-        "link": "",
-        "contact_email": "",
-        "phone_number": "1278314023"
-      },
-      "company_location": "Hybrid work",
-      "job_id": "078a0b5a11dd008d",
-      "job_link": "https://www.indeed.com/rc/clk?jk=078a0b5a11dd008d&bb=WNqI7Xm3Se-F2oe-IeWc1Lxd853tpzOZeuNdtivCV1D5yikBjpZrholUPTzlQSOkCO904oZUbCEHzLVzjvneW5zgzF5JzbDtdVX-BnGaz9vGMcYjdHR1MORH2kwEdag2GPX98r0fsQm4O7uG2yCtqw%3D%3D&xkcb=SoCU67M3qpInJMSCoZ0LbzkdCdPP&fccid=6a71012287578242&vjs=3",
-      "contact_email": "",
-      "salary": "$120,000 - $130,000 a year",
-      "allows_c2c": false
-    },
-    {
-      "job_title": "ReactJs Developer",
-      "company": {
-        "name": "Quantaleap",
-        "description": "Role: ReactJs Developer Location: Remote Only US Citizen Duration: 3 months  Job Description: We are seeking a skilled React.JS Developer with 7+ years of experience to join the dynamic team. The ideal candidate will possess strong expertise in developing user interfaces using React.JS, ensuring high performance and responsiveness of applications. Responsibilities include collaborating with UX/UI designers to translate designs into functional web applications, optimizing components for maximum e",
-        "link": "",
-        "contact_email": "",
-        "phone_number": "1278314023"
-      },
-      "company_location": "Remote",
-      "job_id": "f2c8eea58120cf7a",
-      "job_link": "https://www.indeed.com/rc/clk?jk=f2c8eea58120cf7a&bb=WNqI7Xm3Se-F2oe-IeWc1CS8ngHqstwTIjZjaIk6L5iaCjmj-SFTlMmH3VIXFhYFyeKtcPl9Uj7InAZfoUrDFTeNRQe-w-IPfBLcgjy-Mxh6AyGFDqMQooJySFYzZmawGO57zA6ClKAOlNr_-klpcg%3D%3D&xkcb=SoAg67M3qpInJMSCoZ0KbzkdCdPP&fccid=516c58cf6e77a5dd&vjs=3",
-      "contact_email": "",
-      "allows_c2c": false
-    },
-    {
-      "job_title": "Data Analyst, Tableau Developer",
-      "company": {
-        "name": "Hornblower Group, Inc",
-        "description": "Salary: $70,000-$80,000\n We are not offering C2C, this is a W2 Full time position.\n  About You:\n This person will be adaptable, dynamic, and embody City Experiences’ RESPECT Service System.\n  About the Opportunity:\n The Analyst will play a crucial role in delivering marketing, sales, operational, and financial analytics. Acting as both a Tableau developer and business analyst, this role will be responsible for developing, managing, and maintaining KPI tracking and analytics across multiple busin",
-        "link": "",
-        "contact_email": "",
-        "phone_number": "1278314023"
-      },
-      "company_location": "Remote in Florida",
-      "job_id": "e1f3b78ca47576ca",
-      "job_link": "https://www.indeed.com/rc/clk?jk=e1f3b78ca47576ca&bb=WNqI7Xm3Se-F2oe-IeWc1Lkv98JihXMoCseQE85LoNGCFEf3h3I6qR0xlSa1O0-1WE3atnmV6SR5nNQ0r5zrY5luyrr8nRNNUW2-Ox6-4OA8C9nnqHEkLwcujFEZxTm7_huWISbWbV2ocu7pWs7oqg%3D%3D&xkcb=SoC967M3qpInJMSCoZ0JbzkdCdPP&fccid=f72ece6cf436fbf8&vjs=3",
-      "contact_email": "",
-      "salary": "$70,000 - $80,000 a year",
-      "allows_c2c": true
-    },
-    {
-      "job_title": "Backend Developer",
-      "company": {
-        "name": "InstaTrainMe",
-        "description": "Role Overview:\n As a Backend Developer, you will be responsible for designing, building, and maintaining the backend systems that enable seamless user experiences and real-time interactions. You will play a crucial role in shaping the technical foundation of InstaTrainMe, ensuring scalability, reliability, and security.\n  Key Responsibilities:\n \n  \n   Backend Development:\n    \n     Design, develop, and maintain scalable APIs to support the mobile and web applications.\n     Implement server-side ",
-        "link": "",
-        "contact_email": "",
-        "phone_number": "1278314023"
-      },
-      "company_location": "Remote in Austin, TX",
-      "job_id": "7de6036903aeafe3",
-      "job_link": "https://www.indeed.com/rc/clk?jk=7de6036903aeafe3&bb=WNqI7Xm3Se-F2oe-IeWc1NISd22YVkimm6TtOYtrRGm5o3tlPQoDY2K6Vl09A13To2_kdXGE8gt5jVLaVPR7P5JNpUITLNVzGvAG_G8qdwTxCV6XZ0Mi8FCXWE8nEF6yuOuXaohtrW783S_97s0JAg%3D%3D&xkcb=SoAJ67M3qpInJMSCoZ0IbzkdCdPP&fccid=dd616958bd9ddc12&vjs=3",
-      "contact_email": "",
-      "allows_c2c": false
-    },
-    {
-      "job_title": "Backend Developer",
-      "company": {
-        "name": "InstaTrainMe",
-        "description": "",
-        "link": "",
-        "contact_email": "",
-        "phone_number": "1278314023"
-      },
-      "company_location": "Remote in Austin, TX",
-      "job_id": "0f1e2d3c4b5a6978",
-      "job_link": "https://www.indeed.com/viewjob?jk=0f1e2d3c4b5a6978",
-      "contact_email": "",
-      "allows_c2c": false
-    },
-    {
-      "job_title": "Remote Python Developer",
-      "company": {
-        "name": "LookFar Labs",
-        "description": "Our Python Developer will have the opportunity to build scalable systems and software for commercial and government use, by developing scalable solutions that leverage modern architecture and best practices, and enable significant processing at runtime. You will provide technical expertise and support in the design, development, implementation, and testing.\n You will also participate in and/or direct major deliverables of projects through all aspects of the software development lifecycle includi",
-        "link": "",
-        "contact_email": "",
-        "phone_number": "1278314023"
-      },
-      "company_location": "Remote in Washington, DC",
-      "job_id": "364f8f386d4e2224",
-      "job_link": "https://www.indeed.com/rc/clk?jk=364f8f386d4e2224&bb=WNqI7Xm3Se-F2oe-IeWc1BvEdOhNe5_xx1s-s0qOL_zN0EI0KHAJrT3bUPjNbp6KWqDM-MTZfIDki_qp0DKxFgeUokmC-kcDuUXNrPGiEbGrfzNsX7aYJpzllTk_GUXmkfP4WTaJaTz9DAVIno9deg%3D%3D&xkcb=SoCH67M3qpInJMSCoZ0PbzkdCdPP&fccid=cfcd760a68443524&vjs=3",
-      "contact_email": "",
-      "salary": "$95,000.00 - $125,000.00 per year",
-      "allows_c2c": false
-    },
-    {
-      "job_title": "Oracle/SQL DBA",
-      "company": {
-        "name": "FedScale, Inc",
-        "description": "Job Overview:\n\n Highly skilled in Oracle PL/SQL, 8+ years\n Advanced understanding of: Oracle Developer, PL/SQL, ETL, Plusses: Python, Docker, Shell Scripting, S3, Lambda, Control-M, AWS\n Design, Develop, implement, and support data processing environments using SAS, Oracle PL/SQL, Transact SQL, and scripting languages including Unix shell scripting and Python\n Analyze the impact of changes to various source systems of Compliance controls\n Create Functional Requirements Documents, Detailed Design",
-        "link": "",
-        "contact_email": "",
-        "phone_number": "1637165268"
-      },
-      "company_location": "Remote",
+      "job_title": "Senior Associate - IT Developer",
+      "job_location": "Boston, MA 02109 (Haymarket area)",
       "job_id": "",
-      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0ASgB9qpr0XNRfajk3Qo2QxNxcw46oqTi1qeabATPHfKmLW_HCza7Wo1LQjjqujLT5603HSf0GH6z2PJ7ncq4koXBfNC5Ywmdryzh87YaK8CflkfTOK7Ouipt7lxX6_5MWj00g0NUZFCk9gQgusKEVALFy4rO8lQfW6sL20fCJNuxq3td7zF321l5ZnzFShqecpU42x8gS7B-INjJSFBBJuoHhM8NWykbMJ_mmXzVoGceHLOICkUPYSptKq0XN3Gr2TjejqruVe9sDNGNMY0sJvAvp41z5-DYIJEARZALlWM8j7OJl1la5yHjp5h5tAvhOyPw-jrxLE-4EEWkGv3kcL1xlvOhgL5jivkYVmQ8mP7HgqTiYhijPpXyV07u_WHxdXEENdxIGOm4DtTgzsqIML8rPoZd0daw6FWmMqBR2BAzmNrHXU4iHg8-jLIVkLXIZJdmWgebdMvZ7SUlRF6G0h_CPYqeKVvHmNBYrrNI33tVI4ga_pA-LsVHDFGiTSzyX_LKgKSdn_0Fh2FFoCEeSRkrRkad9AMq-GkhTgUcim0GcN6m3_CHYQSFxlf9YpGbbp0p2sEiTc6-xe839Sbq9IVGz3Hd2tt8ByYGBIvJrIRIUUJ21fs6EK64hZ15YL9nxQiR_Xlf5zG4CckT92hf-O_wUE41VNJMgBjpdc7XTXl7NSwi19vn1V&xkcb=SoDH6_M3qpInJMSCoZ0ObzkdCdPP&camk=UoKtGZLa3XLNMCx-WG4jag==&p=5&fvj=0&vjs=3",
-      "contact_email": "",
-      "salary": "$95,000 - $115,000 a year",
-      "allows_c2c": false
-    },
-    {
-      "job_title": "Senior React Developer",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0DNsxMANwe1yYOstgj43-IWQk0GvtVoqNrRW5BmYqhhtPlZVBQbx0GuG2kd871XehR0jbsGEyzX8eDGMpL3HLW8QxCrpcoNWoQFdoWEETEtMZasjYMTfY6iZWNMo1-tr2CU8UrouulvaLUlmOE1bO5iIApbPiYCptTy6rnD7KIvNZF3PrWOgD5AZlNS8W046uwHGNO7x8foykalDttMY-FyColdA-El-S8AHLfbY6VE3T9zcXvStKdgygmlURqGxD5BJZ3aiUmjELdUSrbWHzNegvJyLNCFpLAZB1SBOPTnK_EB9QiSuvVtg-VeGlG-z8Tqv8kWbfcjtMgM8932xugnG7BionfRkUeNqcQXxU8ZCk7l0j3yC-jDfggx-aL5W8CwgY1lCZdMOpYovyzkf-KHL52QIrodgfH5fDQ1ILhx3-JhkKZcCf59SHjKzI_Q2txq9hR3c-wprwQbDFt6DvKa1LFJ2vPOEQJEtY0ne14f9ML2Uhx8bexKNA9OAEaFTVwEdEU5dafZTaBHlDUxweBcmJIiP00z4hwuB0C5tHlrfmBgTFgPEtU75Z-BQ9zvM83tEtG1xz7bPwKaubZSoZy2cdM0Ks1nbLLrJ8Rw61-1_nU-DSv3iqJmQt5tKzAqjitGte_LKhbU0IuHyp07ap9DjxeJt7l_eqLGpHOYDQ7tDteoSnqczOC1JfZllLXszxkomI1omIwXHe3NGfUMGx0KLiUqeEeQem-q5w4BjYY-4YdCVFXyJcdtaUaxHqOReUP3Ai2St_7ihQQXh9e4SHyJUKeJW9MnYskUWj9Js-3ZhIQP_iobpeMnWXf3f12JRaddy8A8B-SBUA==&xkcb=SoCI6_M3qpNa25AW_b0LbzkdCdPP&camk=UoKtGZLa3XJ5tATnK5Upqg==&p=0&fvj=0&vjs=3",
+      "salary": "",
+      "allows_c2c": false,
       "company": {
-        "name": "Rapideagle",
-        "description": "Job OverviewJoin our dynamic team as a Senior Developer, where your expertise will drive innovation and shape the future of our software solutions! In this role, you will leverage your extensive knowledge of various programming languages and frameworks to develop high-quality applications that meet our clients' needs. Collaborating with cross-functional teams, you will be at the forefront of exciting projects that challenge your skills and ignite your passion for technology.\nWhat you’ll do\n\n Des",
-        "link": "",
+        "name": "TIFF Advisory Services",
+        "description": "",
+        "company_link": "",
         "contact_email": "",
-        "phone_number": "1278314023"
-      },
-      "company_location": "Remote",
-      "job_id": "dc371fd0debed7de",
-      "job_link": "https://www.indeed.com/rc/clk?jk=dc371fd0debed7de&bb=WNqI7Xm3Se-F2oe-IeWc1Hnkellt50Aj2VFCKjJ67vjxp1crPa8_JU379pUWKWydLEMeKKErJgRqdUZXsc7lQZBMYFMqvK8O5zMs1M95SL7kHzlkrzhvJqtMzCTjoH-Ekpk0YVWvKOGYUrwt7mw69w%3D%3D&xkcb=SoCu67M3qpInJMSCoZ0NbzkdCdPP&fccid=5604d4e9e39992f0&cmp=Rapideagle&ti=Senior+Developer&vjs=3",
-      "contact_email": "",
-      "salary": "$53.34 - $64.23",
-      "allows_c2c": false
+        "phone_number": ""
+      }
     },
     {
-      "job_title": "Remote Instructional Designer/Curriculum Developer with Python Experience",
+      "job_title": "Python Developer",
+      "job_location": "Hybrid work in Washington, DC 20006",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0AJU-0xe5mt-VNCNk5vICqmIfcd8VRozHJq8cNCTo4wkHXpxXsaY84rV07OqBbTmpCIDHJFE6Kr8Hjr8TP5ivoMXQiz3nPOvPiJzgrHujVm9kB_Ti8J2dWpXaS5iJzz25X6BtfC-FzVIxyp9UJ0DglAOjwMgCobq6yyAyNVc6vADWQ3dwK5xRxg4wtOe3ZaFcJSVGuawIIlwqjowb5OM8rdNgorTaZRt0TSiPzeYVDvaW0HhPr1VOYwoqzFqWgwkzAN-RB1jBCfKeVetrIyE2boTbE3HYihZcWa_IDdRmmZkVyFZSlNVm7fu6K8IQkPqUkzXxC55n0XjekZj3zHqxc_OI-I1s0rk4lxNUaBMAqkeEZY24WhQWuQ1-Wm1fR8dkuPPnPqGK6DN6fG8iQuz7QLNUM7Zc9p-WENlw3xrf1ZthVgeCmOuLoCXUMsA48AP09GEo8J16Ee42zWNC7DqWqWi7vJMfdJF1kDbQx7WZ85gWW6PTViPeGsR0Z-qiF3BfX_2U5kPtLmCOPD76gR_RObrg4poDTeNvs-dOkrq6agsOTZnE13pxk7-QSQMMdWh8_Kd0fa7oPIlhPG15rMVBQ6k617cPbICoHEeiaQdKgy6q74_9tQyyPcSOtRJbOq2NSDmlpidn0yvLdp0nnFQUZdN-0900KtlCz4EQ15IzXCqA==&xkcb=SoA86_M3qpNa25AW_b0KbzkdCdPP&camk=UoKtGZLa3XJywVgOJajdAA==&p=1&fvj=0&vjs=3",
+      "salary": "",
+      "allows_c2c": false,
       "company": {
-        "name": "PulseLearning",
-        "description": "Reference number: TCD_25\n \n  Location: Remote North America - Eastern Time\n \n  About PulseLearning\n With teams in the US, Canada, Ireland, Europe, and Australia we are passionate about creating outcome-focused learning solutions.\n \n  Role description\n Instructional Designer working with a team to create AWS technical curriculum and labs using Adobe content development tools.\n \n    Key job responsibilities\n  \n   Bring your wealth of knowledge and experience Learning & Development creating content",
-        "link": "",
+        "name": "HLP Integration",
+        "description": "",
+        "company_link": "",
         "contact_email": "",
-        "phone_number": "1278314023"
-      },
-      "company_location": "Remote in Denver, CO",
-      "job_id": "ab486dcfbe2ba4e4",
-      "job_link": "https://www.indeed.com/rc/clk?jk=ab486dcfbe2ba4e4&bb=WNqI7Xm3Se-F2oe-IeWc1CIYIKU0Aw_B5ik3A-90hoAotgrmkLK-p318Qbpjr82nWk30DFP8LDTLl1nJj8xmBFGk3RsGYD11m0qn0OUzrWYXReBf_zoZJkfLXvT_Lv2OhbRE1p9DCXteoC3Jub7DTA%3D%3D&xkcb=SoAa67M3qpInJMSCoZ0MbzkdCdPP&fccid=3cd6db9077b69a23&vjs=3",
-      "contact_email": "",
-      "allows_c2c": false
+        "phone_number": ""
+      }
     },
     {
-      "job_title": "Junior RPA Developer - Remote",
+      "job_title": "Software Developer – Device Control",
+      "job_location": "Omaha, NE 68122",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0CnWOSziNZNDa7jsdzqJIgLTLuvnM5U7a_lji39uQ3sW8lm2QJLzVBGGRIl12LfEaIv42uBvFnORWc-9Hh6C67gl1v5wtTkt8LzK4fEtLCGYRih5D1ReCQevLGxHu_5zOHjU1ybSqV-F8fcltvOWg9ymXvc9NnHzvOcUy86gx5Tj-LDDBVmuXRQNEprWljMJxcyLBRX-2dtwVztvJXh1yJHNIoGcp7aE51DAp3U5lbIjy3Nx_xER-Rhhw8w5bMuL7FzbrCMrOYjKkEqrdo-w1-XzExC8Fy6MbndztmojtLVribMldPxn63gS8Zv1AG8_Ve0vPsS5CkRwOo4VznbzO_rSDTtr3GZVEg_X4mrpaSraiP8QYIpRN9NWYM9Ldx3DkN_pDSoGcB8Fi_IX8a2GmiemWs5kCq7EmyqCnBs7K9Gj84J1lVEAs8WqRFBepdXrZat4bwXMVpdGqQsQiTrKwOLgAwThu7e24mVuBGZDxe7EtxECDQ41aSOEJ6UfR2eFWqXgjuCfIVzscaB7DYZB6s7m-NdTBRs4UpjCZPCDWfbCTG6aF1LaH39_qWDPx1fuj-pAxUov23S6CGmMHZUzBG21-SX3jGMP0gUvTkZNGurm4rNfdgOZ-AfxFUHu268tO8mX4_U909lMTrs7zpwwYtsjBgNBLf06vEmQT67Jbg6cJYsV8It1ptYFbLrHH3CLCCJx8pySDJbqssDo_wgyg-Ig4XycuhJr8c=&xkcb=SoCh6_M3qpNa25AW_b0JbzkdCdPP&camk=UoKtGZLa3XJchXX8e5RuqA==&p=2&fvj=0&vjs=3",
+      "salary": "",
+      "allows_c2c": false,
       "company": {
-        "name": "OM Group Inc.",
-        "description": "Junior RPA Developer\n  \n  \n  \n   The Junior RPA Developer designs, develops, tests, and deploys automation solutions using UiPath to support NIWC Pacific. This role collaborates with SMEs and senior developers to refine automation workflows and improve process efficiency.\n  \n  \n  \n   Key Responsibilities\n  \n  \n   Build and maintain automation bots using UiPath\n   Collaborate with stakeholders to refine requirements and validate workflows\n   Test, troubleshoot, and optimize RPA solutions for reli",
-        "link": "",
-        "contact_email": "jobs@omgroupinc.us",
-        "phone_number": "1278314023"
-      },
-      "company_location": "Remote",
-      "job_id": "8c83ae8e1b46caa2",
-      "job_link": "https://www.indeed.com/rc/clk?jk=8c83ae8e1b46caa2&bb=WNqI7Xm3Se-F2oe-IeWc1MxrWQupkm9EQRUDgSDe0hC_BdBy5hX6hVh0IZpWC4OXGKV99c4V5-8RLs4bQ5UATZvxwkO4WDYgqF1KQ5E81LmCxkaFPC0NuaomsXrOnitUy1KyV19rwCzLvPj3murb2w%3D%3D&xkcb=SoDz67M3qpInJMSCoZ0DbzkdCdPP&fccid=b7dc0a32cb270ce7&vjs=3",
-      "contact_email": "jobs@omgroupinc.us",
-      "salary": "$70,000 - $90,000 a year",
-      "allows_c2c": true
-    },
-    {
-      "job_title": "Jr. Data Engineer",
-      "company": {
-        "name": "Northside Center for Child Development",
-        "description": "ABOUT NORTHSIDE CENTER\n Northside Center for Child Development serves over 4,000 children annually through high-quality, outcomes-driven behavioral health, early childhood, and enrichment services. With over $30 million in annual funding, the organization provides children and their families with the support they need to overcome adversity, thrive, and pursue their dreams.  Northside has been a staple of the Harlem community since its founding in 1946 and a pioneer at the intersection of educati",
-        "link": "",
+        "name": "Elemental Scientific Inc",
+        "description": "",
+        "company_link": "",
         "contact_email": "",
-        "phone_number": "1278314023"
-      },
-      "company_location": "Remote in New York, NY 10029",
-      "job_id": "5c2cf4755d2a052a",
-      "job_link": "https://www.indeed.com/rc/clk?jk=5c2cf4755d2a052a&bb=WNqI7Xm3Se-F2oe-IeWc1I47b8hLL-sU7GpYprClG0vxXqlHhy3ESsxF6Zes7IVnvrmVcyE9vEh1nLY1r34dfmy8rmef_mzYhbmE-NtbCh1yofGCIdTaQEY3CAGhVEcnUg9Z9DgNxzMiQDhuF-E08w%3D%3D&xkcb=SoBH67M3qpInJMSCoZ0CbzkdCdPP&fccid=36f51bd4e04d587b&vjs=3",
-      "contact_email": "",
-      "salary": "$56 - $74",
-      "allows_c2c": true
+        "phone_number": ""
+      }
     },
     {
-      "job_title": "Senior Backend Engineer (Python / Django)",
+      "job_title": "Software Developer – Device Control",
+      "job_location": "Omaha, NE 68122",
+      "job_id": "456789abcdef0123",
+      "job_link": "https://www.indeed.com/viewjob?jk=456789abcdef0123",
+      "salary": "",
+      "allows_c2c": false,
       "company": {
-        "name": "Beyond Mission Capable Solutions LLC",
-        "description": "Beyond Mission Capable Solutions (BMCS) LLC is a trusted partner in the cyber community. Our clients in the Department of Defense, Air Force, Space Force and Federal Aviation have adopted our solutions for cybersecurity acquisition, implementation, and operational risk management challenges while planning for emerging security threats. As technologically sophisticated attacks are increasing, we are looking to grow our team of laser-focused cybersecurity engineers.\n \n \n  Senior Backend Engineer (",
-        "link": "",
+        "name": "Elemental Scientific Inc",
+        "description": "",
+        "company_link": "",
         "contact_email": "",
-        "phone_number": "1278314023"
-      },
-      "company_location": "Remote in Palo Alto, CA",
-      "job_id": "85a1296d194f3042",
-      "job_link": "https://www.indeed.com/rc/clk?jk=85a1296d194f3042&bb=WNqI7Xm3Se-F2oe-IeWc1AXQF8FCIfXy_Lb5M1hhdiqo_k3Q_ZCg31EZlPsWVaRWyYXX5hgL9Khm_AAcJHmPIlcgXJ64Ovee4Rw7idw4jVmYdwleObSEjFPK4SsIbOAnjpJtcW8JnHPTqyGQRmi2tQ%3D%3D&xkcb=SoDa67M3qpInJMSCoZ0BbzkdCdPP&fccid=ff8beac309490ffa&vjs=3",
-      "contact_email": "",
-      "salary": "$175,000 - $220,000 a year",
-      "allows_c2c": false
+        "phone_number": ""
+      }
     },
     {
-      "job_title": "AI Engineering Lead",
+      "job_title": "Associate IT Developer",
+      "job_location": "Boston, MA 02109 (Haymarket area)",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0DNsxMANwe1yYOstgj43-IWQk0GvtVoqNrRW5BmYqhhtPlZVBQbx0GuKFWKQaJ2AnJU2Kk-4AfC6BW9FMN4qUK-53QckFMgsq1iL2uHJGMsKxhSVkwnaIQ9u34aMzUEPK2uWQMHIB6fv56dBN8ekZNWlSs_s6R9Xuz4NrVlMz3yLafnFr_Y7MRQURk81X2IVlh4pl_MWyskOlwPoMUeTvS4_64AhO4QXCcFh8EbwjJda7UW0kmtviOWQIfQidq-D3NXIY7tIYnotnFtpiWYFQFhX9wpoot8hTXKSBNzo-UOftMWXcDaZhzlSftH_Kvf5-k6CHUmSGDPg2UD5bOerW0bw4Mqt5wDOKIkX9Q4iiERMyscNsFVakAittP6g0GiA8iA9VzufDckcVv4F89gmiaAY_AJ0bT0DH6lmrKU6Z8H7FK7oTyqw9wgX3z67FqveLxCLeWdA34rMXfRMVubAEXwBKCOtQkvpt0PLdqgDOasN3Wgd_sHJVQMvszjiaGAYaHUMgv_pebfkPm-TM3cgvadRlw_c1o1PJa67d_3mj-GY6A5jfxdYQwOeM0SLPJYNk7_KQ2Ej5e8RIiDYb5Ry4Q0xPGAM2oS-h9JMiv_CxxN6bDvU3saH6izIvibPC4BimTnBIlu9YhX7w76DvY4xprw-v1oODTuoQEfCW7FjC2UEElQn0JLp7Ou5UcX2iM6LybY5vKu3S57SLIujJUCVVv0_NbvZ7Kfa0WfK_DBj_Iz5C5BCpnGtBUfcHXkhFb1F767pov1jjer802wa42fdQhzo9m3XyhiWPWr5sM1rngPa6k-33v58LttkHyYxULjPHDweKcZcyAAGA==&xkcb=SoAV6_M3qpNa25AW_b0IbzkdCdPP&camk=UoKtGZLa3XLBaZT-HEWT5w==&p=3&fvj=0&vjs=3",
+      "salary": "",
+      "allows_c2c": false,
       "company": {
-        "name": "Vichara",
-        "description": "Company Description\n  Vichara is a Financial Services focused products and services firm headquartered in NY and building systems for some of the largest i-banks and hedge funds in the world. Job Description\n  Key Responsibilities\n Architecture & System Design\n \n  Architect, design, and lead multi-agent LLM systems using LangGraph, LangChain, and Promptfoo for prompt lifecycle management and benchmarking.\n  Build Retrieval-Augmented Generation (RAG) pipelines leveraging hybrid vector search (den",
-        "link": "",
+        "name": "TIFF Advisory Services",
+        "description": "",
+        "company_link": "",
         "contact_email": "",
-        "phone_number": "1278314023"
-      },
-      "company_location": "Remote in Ridgewood, NJ",
-      "job_id": "90902b4c2de5dddd",
-      "job_link": "https://www.indeed.com/rc/clk?jk=90902b4c2de5dddd&bb=WNqI7Xm3Se-F2oe-IeWc1KxulCbCfnEssMoQGCABtLhpvKmTSm126yio_t8qESQ4Ui1EmG7vjzMV-Q4TIil5d0R5IxvzKyzhuftWMItKV2ON5-XucD34si9qeUTx0dhgyJbWEFYSvrsLeoBItqJq7w%3D%3D&xkcb=SoBu67M3qpInJMSCoZ0AbzkdCdPP&fccid=aa860d0beec8dbab&vjs=3",
-      "contact_email": "",
-      "salary": "$200,000 - $300,000 a year",
-      "allows_c2c": false
+        "phone_number": ""
+      }
     },
     {
-      "job_title": "Scientific Application Developer",
+      "job_title": "Full-Stack Software Developer",
+      "job_location": "Jackson, MO 63755",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0Bs9QRjItvmpbC7D_lGIHN6y939kkPeAzWOKDHFh8Cto-yxuE9xOf8oF1xcIHBOxrQbn9uI4CGTJte_nHh1Aahl_XPTIHMLhm5N0lNcB6wZF54NpbSt_Plsie2Mi6OnQlfJiaO1rVWZU9p1UKSIxKshnzNAFDp2hwBlqjTeYBEbaaSYIxf0wLvIVhMpfLwu5YIdpfj0sPg3SZzSHvv39iopJilXu4DF9RDRsq9a8IK9KpwAARUSacZEe_3-yyuYecJPMf47IVYjLjAfegdxh3Z6tD7ZLYcOAogDw-uFq9oLrluY6fXXRCklUvj2YIDaXNvr8g_6Wo1p_hIXnAtIRNdu5YrbFnU3wvp1Eejx6en44I2edv-tQz2RC72FlnXIDYT5q3E13Z3w6HgMODPgHdcoyzVX6GvFw2UHSDJUie28Ur8yvPBt_tegg4-su-1I5sX_V6hSzYsH5YnaBfud8nP0BPDyyWp9cO1o-07fqm51VT3z78S1PdC6Yif6mjYgqLYtalB5qlPsGH-uqk5ZbT7kHbhbx7nBj1oDpE1_Co9AGhlwQItP-Bzj-tXgSI43LUuzfPwZ6rCDA2_pXWtZoCTyiET6ZRNPRvikbPeb_opP5Xei9jo6Dnl6gpIHV7ZhEDjbZSp5fWA1o_UzG76tLSF5FL3x1kEfUBPxf1h5uJkALxMqQKkUhSn7xlU0J7SSluLMo3sRLz7QNLTyc334onXtotA4-1G49B4=&xkcb=SoCb6_M3qpNa25AW_b0PbzkdCdPP&camk=UoKtGZLa3XLf74L94yGgIw==&p=4&fvj=0&vjs=3",
+      "salary": "",
+      "allows_c2c": false,
       "company": {
-        "name": "Gap Solutions Inc",
-        "description": "Position Objective: Provide services as a Scientific Application Developer in support of the overall functions of the National Institute of Environmental Health Sciences (NIEHS) within the National Institutes of Health (NIH).\n  Duties and Responsibilities:\n \n  Use advanced knowledge in machine learning, statistics, text mining, natural language processing, computational semantics, computer vision, and data science to develop creative solutions to complex real-world problems\n  Conceive of and cre",
-        "link": "",
-        "contact_email": "recruiting@gapsi.com",
-        "phone_number": "1278314023"
-      },
-      "company_location": "Remote",
-      "job_id": "56f06afc2dcb11c7",
-      "job_link": "https://www.indeed.com/rc/clk?jk=56f06afc2dcb11c7&bb=WNqI7Xm3Se-F2oe-IeWc1A4vCpFOmNansZCtI3dxYbSHunxOfpOQIn_lE7jhSKMZpziBZVqzO7IxS54Xzxk53QDy3AwLzxoH_HuqBoxmxpr76KjFpVRFle3KfUvoJe6jyM1nLidORopU460bQ_Z7ew%3D%3D&xkcb=SoDg67M3qpInJMSCoZ0HbzkdCdPP&fccid=0bc8a6533b9d1918&vjs=3",
-      "contact_email": "recruiting@gapsi.com",
-      "allows_c2c": false
-    },
-    {
-      "job_title": "Software Engineer - 2 (DevOps/IaC/Bash/Python)",
-      "company": {
-        "name": "Akina, Inc.",
-        "description": "TS/SCI - Polygraph required 02-454-SWE Telework Available: None  Description: The DevOps Engineer shall be responsible for developing and maintaining complex and diverse Infrastructure as Code (IaC) solutions. This position’s focus is on automation and efficiency to reduce manual effort and increase the reliability of software builds and deployments.  The Software Engineer designs, develops, tests, deploys, documents, maintains, and enhances complex and diverse software systems based upon docume",
-        "link": "",
+        "name": "Midwest Sterilization Corporation",
+        "description": "",
+        "company_link": "",
         "contact_email": "",
-        "phone_number": "1278314023"
-      },
-      "company_location": "Remote in Fort Meade, MD",
-      "job_id": "79742e7252d3ec81",
-      "job_link": "https://www.indeed.com/rc/clk?jk=79742e7252d3ec81&bb=WNqI7Xm3Se-F2oe-IeWc1CjTZhAAOQtXAbF6kYbWnwuIwO7kkVo1_UqGaxo22skXAvAdRFdyTFxyQqbt9esMjOB3uw772F3oA9ISsnmZ3FD6HhGT_hb4WpUs2DuACizF_sjady8jqRySUbZCilbgSw%3D%3D&xkcb=SoBU67M3qpInJMSCoZ0GbzkdCdPP&fccid=01d5a8fcd1d1a587&vjs=3",
-      "contact_email": "",
-      "salary": "$144,000 - $266,000 a year",
-      "allows_c2c": false
+        "phone_number": ""
+      }
     },
     {
-      "job_title": "AI Software Engineer (Generative AI) - Remote",
+      "job_title": "Senior Software Engineer",
+      "job_location": "Carlsbad, CA 92008",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0BBaCGdItf5s2tlwgLsewy7JfY6urCYYVSeLdNauEBx4iLe43sZ-Tmh3btU7_rqKbzTgzeDFTnB2IAWLL_aSLr5w5tjCx1lRDi5GvDI-BvLMgFO4WRo4TW8FydIoErvneLNZgEQfQe-qFNxi32Fw4xdOvk1U6xdXTbmB3_Xl2ADzXkRevJw1Vh9LxBTOyttervQR6UXiPaB2YlCUll8-VN3uXs6O8Xp_FMj9eOvs6g-Uw018mY-UzDwK8T7QcYf_QOqAESrtCn1V-0Cja2KgHPPf3kVNFNVT4ZmNgJGqcZn9xsi_LLYCgU4Oy6b7Up_qxpbDGFU06Ukw6i8lLEULvpe0_tW7DUPfG6Kma003wappd-5REjs5OENL7XRwDoSl4wp4I9Kjv69GYkyHUH686mz4PElad9cjEckYgv6lfSEfvzUcjzzQjJdVaHkuNkVvb2OVrmFY6hD4ZF-FNcgIAtWdPavQB1NuZv1KAZesLwiFL-QZeAz7LQRZ1pE7pQNzoeq5ebNaVwPjm6XOitcegFuWT6_ZTKPxOZ65Kyb3rxTKjVRcjsI-9EqTOnq6aN0S672CqCNWYYOWleUyTbzcX-f_fO1_1wioa_w1c2aSaPiQToCrgq603yR4FdWs4BcD23ukJHhuGyAKcRejgwIjc3M1hKGBZkRCo3V5X0pp28zICrLDow9NJPKZw2zqX4BqvU=&xkcb=SoAv6_M3qpNa25AW_b0ObzkdCdPP&camk=ethIe0s0hedPqFCA3uSgEg==&p=5&fvj=0&vjs=3",
+      "salary": "",
+      "allows_c2c": false,
       "company": {
-        "name": "Azumo",
-        "description": "AI Software Engineer (Generative AI)\n  Azumo, a leading AI Development company, is seeking a highly motivated AI Software Engineer to join our growing team of expert AI developers. We specialize in delivering Top AI Development services, helping organizations build intelligent applications powered by Generative AI, large language models (LLMs), and advanced automation.\n As part of our team, you will collaborate with engineers, data scientists, and domain experts across SaaS, cloud, and big data ",
-        "link": "",
-        "contact_email": "people@azumo.co",
-        "phone_number": "1278314023"
-      },
-      "company_location": "Remote",
-      "job_id": "6a6d742ef0fb42f4",
-      "job_link": "https://www.indeed.com/rc/clk?jk=6a6d742ef0fb42f4&bb=WNqI7Xm3Se-F2oe-IeWc1COrVzNUCa4HTUBjdw63Y-Rx-DlWNOE1dQYKo-ygOhZMTTf-jVUIZYPEULkwOgHr28AOS_NanF2cOxBSFSeOpmvBujc83MtPqZnnukJOXn3OER9_TQYOu5-nNL2kZcuKng%3D%3D&xkcb=SoDJ67M3qpInJMSCoZ0FbzkdCdPP&fccid=5d700ccada12e0cd&vjs=3",
-      "contact_email": "people@azumo.co",
-      "allows_c2c": false
+        "name": "Confidential Company",
+        "description": "",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": ""
+      }
+    },
+    {
+      "job_title": "Lead Platform Engineer",
+      "job_location": "Hybrid work in Austin, TX 78701",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0CSYAtHtlg5whQAetFOBZw2jJtxBVHdJm6HtWPCMAs1d6BhSGCKQRjQ5bk6rgqzftJeqh4ZuX_wHNQ1PyAd2OIih5RY2WwIVh15ENtbIMZADysPEXiWv2thefYlotxPdzBftPXBDa2B6evwtbZKVEFsvI6gl6kMpq4HqqJIbda193FH22LxelbPFmb_kUj6K2R_-evTK645jaCJjx-TreU-t8EI4Xp8IWkbKdoxSVk0fayHz1e06fuKKl-JyUJ8kaL5L6yrrYtwf8JQOLd5jpT07lyKj5EDv9tHRd9vvL7djkNK6VBXWFTkC1a3oFI2L88uc3lS1TVJFaFZkD2erDO6E71Lmq5AfU4UM1s-xnVfWNUc47DuLC3Ar09k8JI0-ZbKGlxYsCrUwiO4715RHRYDqtTnpF37-SBHr8f5XQ6zNAs2RSj4kxhcgjzsDX4jMwswDtcc4DntCjPaDrRUlbaqZOlJ8JLDKEbaUApWhmLJnZ3O32zf0vWkTkWF-jddFx5fyxBLlD43ZAljTk74IpBEQzZbqRl_-2c8MapOLDHd9qnQHOkLOBqbr45Ln6RJooximkmR3j-_gy74z_I5OFxODPLaYYHQv6IcF7M46re3MKHSdnpBQ-ma-BG_yCwdHOiJhso9vcsIVeL7HdCWGpUq4KAWs3RNZHeuVQIXcZqtGqKhoZ9U3TZ28QDd7KkMem1DbWvOOlLOYsdKHyW82UlH&xkcb=SoCy6_M3qpNa25AW_b0NbzkdCdPP&camk=UoKtGZLa3XJXGsyDs6rQnw==&p=6&fvj=0&vjs=3",
+      "salary": "",
+      "allows_c2c": false,
+      "company": {
+        "name": "Future Secure AI",
+        "description": "",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": ""
+      }
+    },
+    {
+      "job_title": "Database Administrator",
+      "job_location": "Hybrid work in Chattanooga, TN 37402",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0D6Bzwk_8Y1rWlWDryMgqpXaFPLQEM_58_ndUH2-Fv1KIW8CeWHUNgkrZTP-wSlWxHZWuXFS7UKDeONs6NRbVAZVCwL_jcHr91Z9V9_9mw7oFcHmXucYjxI6l4rvZWbipDbPassbosQifOP5Dbe0hBOlrGNy7KDEBmhwNE1OJzkVuyyCNgA-zCpLo-OYSv_IF8vy2f7KH4-pIPyoYyCueZOkbQZhRljm2PS0yUHtnRreiSp1wt3ld_kocaakflECJRg1G6twEBG5zOTlm2ibSE2wtJxv8bA4CK02ai40lam3gUBM-oij4n06yyF9nXcRyxpqZTVUIFabR-eg4qH2ncl3YETPmjAKHYCdOGFCsTnQBOd72HpHl9bXi208b9oz7tmAGVUxV6YS7QbETOmFb5bQEo54RuwbA5BYMvUuwsT48h5YsTklu4sWGGidfXifMW-mCpE-HbgRHcHfT4WKoOPbNzSdu-QiTM-d9n2Yzd119UbiHoNzj_oIHsaUqRmE121nyj22xzErzOdVEJ9r5LODz86WBDVVdSDuscUbrw0fOwZUSW9sFNAQxDc8iI5VXmcv9XqHjBgkTqWZb9QCFTWcMQA-w2feAqBtcbd9J2NMFn5rGS4DTZAZvrV934uBoYyS75hLKrTHDE94nLNC9iUVxO-iw-VTlNeBB9-CIRrT5DvN9zxzxKw&xkcb=SoAG6_M3qpNa25AW_b0MbzkdCdPP&camk=nUmJqO2E8rhtbG365q3qjg==&p=7&fvj=0&vjs=3",
+      "salary": "",
+      "allows_c2c": false,
+      "company": {
+        "name": "DEVNET Inc.",
+        "description": "",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": ""
+      }
+    },
+    {
+      "job_title": "Firmware/Sr. Firmware Engineer",
+      "job_location": "Hybrid work in Broomfield, CO 80021",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0A3sWjayjC8J1_tWfzwxF5EYhNAw3ZkGKR6gwnmMQwU4GnRlflCYN-wkjnYVCj1jlgHx2ZHyGeGRYIDvVJKLEu7ef6-QPNsThSQrj20D3Sa8JLou6VsXNVyZUC4OteGDgopcgOHo5FSz3q7FpFUT9ak18MbiRnaJUFfgXpbCqeS-USpGpNCK4in0YAai-D2VvNGk4vp1sww7eBDEamnZtTzs7PHyRyWQ-NiaA5CJifBMd0rLLHxQEv_uoDU7N83vHNRx_eAgJ1n0pIe4L1LHM75iG-7YFjoKEOdPD7kgVPGNAtk5l1RhsAYUjXfvFJJiY-mcFphGjuyNOLMBAqOx0D1DUZMIbKI4QVGGQ-VWidRuW6J5ADuA8wVgC_9nd0R6E9N2cDlDkdDCguyfAOmCcD2L13vtBcidOMsbrpH1Shj48BvZ7FT93wN7V7Embxx9uCU9uMHMcoQ8vfRF1Rg2dGYIotCp2qaXO8shnheBX1cFAuDqFd1enBqQXy7BvQVYJR379sGCJ4ToheUt9N4Uwp7dBthFRL7YHi1lTry23Gq1F9yIYAj8tKXs77MvP2ZbCyuUJtryjWBPjtVtgqquI9aZmbddX1vE8dmvZZ05k3TXjvH4Fqsbjmo-0U8q_FItaGhF9zoJg_OuK0zE-ZlqQBNlMMurZhC1ZwTj4Qc3E_582y0IjudupqlaF5rVzReYWk=&xkcb=SoDv6_M3qpNa25AW_b0DbzkdCdPP&camk=ethIe0s0hed-pUiOq88IJA==&p=8&fvj=0&vjs=3",
+      "salary": "",
+      "allows_c2c": false,
+      "company": {
+        "name": "Inovonics",
+        "description": "",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": ""
+      }
+    },
+    {
+      "job_title": "Lead Software Developer",
+      "job_location": "Santa Ana, CA 92707",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0DMaSXHSW6QrHlsHJCuRTl8EWq9Jg0ybGUK3O4Tokqkn3Kwtd2oshGkIJJi62NMhIRnwW6ZBHk-eNARATKqqRvhi7MyTToUnl7tSGigQOeSIkY8hUdt8Vp6ODGI7RZzOdBkOdJbMyA1CqO1aAiMPmaZjNqIgw0MNoeh7L9NAZsKXilwuCaD0i2sbFybSQUYyub_bF5sJBhZOwe0Lnfrk6P_LtjanuKyUeyVALNc23uNOYj10OgIWzg7FLCwMK8Jqcnp0xvbvfTp0CgxUJFUhvrceSbKhc9VdUJVwT0Bkn__LtGWp1iWB2r0NAoZ5Pg7IeGmqAFYpEHDkWsiE6iIpu0S8kzKL6vHkSJJQuJk3llZsYtCCuVtAnldnE8bYlHgt3ZsHH54AqK4XI4dq53_48YDp_IJiDKHEf0uooNE1ZEkju1TPiATQU7Y7AoQh3tzThnjyJK3usI5lskWjIghWHttT9mlS16nZH6rsE2sPlVAdNDvoh2Rd2RkSlSzRkDOsHhS1A5oC8JRUUyS9prszw5NgXCR1emIocmBWBWHHcqbQ-f7sF_iDORQYiE8QffHmYL25X-eyDPwXtxHhwysV3Lshgufr3ryUGM0hNJcp2Yz9-sR6xd0U_BCdDYTqxLsfsmNyw4qRwyc3GA4nvg-GE2_v3ZO1mukJYBQGoSpzmxTutUXYqCIMa7-k361riW22a8DKokIOmF7Is6XF7zMXORMGMgsw_mWwB3Cns0a0X1dwHJXoaNj3R6iyyWmJMDpeVPSqvcBJR52vawfda0Vl7-IrJ9mNGaUVZJAnNd98nonQ9_RW9KjNYwsUuqg8lii8XKBzR4ImjVWhmXLR2c_AJWN&xkcb=SoBb6_M3qpNa25AW_b0CbzkdCdPP&camk=UoKtGZLa3XJm1hXevMZJlA==&p=9&fvj=0&vjs=3",
+      "salary": "",
+      "allows_c2c": false,
+      "company": {
+        "name": "Optima Tax Relief",
+        "description": "",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": ""
+      }
+    },
+    {
+      "job_title": "Embedded UI & Connectivity Engineer",
+      "job_location": "Raleigh, NC 27616 (Northeast area)",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0A9D46XAq5iI8bOX0Bfb4UmAjfNVrbku7LRZLu5kJ7URvKNJnfwvGyFkazmsvYSM6UZWMcsIwR97JovzmcvWnMKGIX4zzoxaU1ZdSZ5iQDqKYQP-h0LjBM57L1ee0GCLjfIrdOSZOrv5DlW0t5FC_8xBaDZzVUODCc_hwRYtbcnI2PYDSJLZVkZD6TOKZNOG9nxFciqmJDxgJTkoBFXXHOXxyRuv42sJzCCdHJPhrM3rEVXYQWRyDKbSE48Co8cEArYJV26lcFnlyxP9J6YxI5UgJyfNVC9KrulnjEJFpRf_Gt5CALGk6wOUMvO2AONLDke6CNsdYdP5CPUirVrhEKzHgO8uR9022n_2RqV7ol3D5FIn98XfqSmCTDICOMBiMHtHnFW9kS0ahbJ0xc1f-UCeK7gAlqmIbi5yLoHZZeID9AdqXLzahUiPw_gddqDX9EHqi9S9p0sQHwjk4QRpw4GxLeePW7AW_GyCI3PE6c7hYxck4FOwEBVGUMOmuCdR1C2YWMqCftljAFyWHQDEwdF2lVnI-vbV8bM4YYeApU69yU3QSo38tQKjcxYPsjWoV6NG8Sg_Na6IwSlCJdtVD3y8pr9v-IwHVKAVvuMxIv7pQ1ZCiy-wmRCN5sAYnK_LBemcH9yYfQ-_1Agc32gtwVt9VA0yyWeCBq2V_sKV2dD43BEbFMbQBESw9TlXK6L6zG7Os6VpCuW0eH_GPatr1NEAAXGksbQ7XpxltNIk7aHKw==&xkcb=SoDG6_M3qpNa25AW_b0BbzkdCdPP&camk=UoKtGZLa3XJpZRzTueBo2Q==&p=10&fvj=0&vjs=3",
+      "salary": "",
+      "allows_c2c": false,
+      "company": {
+        "name": "AFEX Div Bonaventure Group",
+        "description": "",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": ""
+      }
+    },
+    {
+      "job_title": "Camel Java DSL Specialist",
+      "job_location": "Columbus, OH 43240 (Polaris area)",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0AVZM42yR944w5gtm_-bX_pbvOXtHTwUG1lNRR4LvyfVthHT1HhBuU_c6ipi7W3bYgaxhB_Xy8Jvf2OzlsEwM7-Gm26zsuXvB-DR2WGPWTqdW3tizW4plWZ061hBh4HxpCQd4pinYapGxZjCsQ_ck_KF6mr423wsc5gbZ5X3_En1U0tgIKCWbjsdN9Lm2BJq7CdxCeR3z0poZPmmFaBlqBrbuTeboZl1QWoipp18XVTn8Yrpsmr9c1KuO4MIdVy1rq_esgtrly_VBYBOufvOEQs_m40lA1k9bgeAF7fp23nXIBgonMf9Lsw0a62ifFdJsUeeSPBdWPv6iEOeXdIsGhjcPHb4kBnTpUz8fdthGBr15i9iUI0JMLzZvxAzMYB5fzXpp3BgHUQmAd71oJLtiqPYT5Mh1UV4bemdG0wSZJX05rQ4K6v-7zkzQmdBZIT0Ng86s_OR0R6cGGNDJEL4VNgIBrnoDpDW7zGdTxsITGQ4fl-SppK7IrJTHEzpkivvtOx-HfURr6FSODSVa9ljGnNFSxX5vZMb-oIlhqjlnUaOWaXFuQ1JegEYaPjlJwt_S9CaQgBuGSUUsjm7WKtFlqGPDQfRcNjVuOXzIBrdh0Ml9CDjRSG0PdkfE6wS5o-l-s5jIRR3YOauObN2OXDDpSbFkNpuaCKszZJdM54Ic_mBIdUln5LJoZr0wqGe1TumrtWf6f-5MM96lI8gRzHvR8WXpfz1pmNwxBRps7brSvG6rTbYUkavgPSpXzyiWgUJde32ojiOXkwn3kTqz_240Bp&xkcb=SoBy6_M3qpNa25AW_b0AbzkdCdPP&camk=UoKtGZLa3XKyqXwPkVZ9ow==&p=11&fvj=0&vjs=3",
+      "salary": "",
+      "allows_c2c": false,
+      "company": {
+        "name": "Intelliguard",
+        "description": "",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": ""
+      }
+    },
+    {
+      "job_title": "Middleware Developer",
+      "job_location": "Boise, ID 83704 (West Valley area)",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0BAy-GqY7hbLeMrq8Av9t2GeZmc14cSX9mWYutz4mOT5oFHxKij_eA7_oEu2SdKOILbC5kq0KNhanWG5V0dwwBGaIm_UGbLjNrNFoQHCAybdZWWbtZBEEq3efxUJJXaJqNnQBQ4kKlUMA1wMoXtOb2XetPkbaLi9eQUfsKfVnBxr34CIzLG2M0VT69Q_vVJU-9OVG_qJHzS7yj_fuehM5NsFtLDzzQ3px-RL0I-DKBlL-RUK0copN7mhK0GZEPtDCAcRCmJ2FpYiMUQnCvEQwhKa7jiWuEByeK58roMBvl0mR3BqwRK09NLUGhjLzMnl7XvrzGT_gAIK8e5FxD3ycAjA1aPuvJDtVwkmBAOKlZwz8bzFk2xJIc8jmhVAbhGldq9w1I8wFD7RpMdeuOgMsOVe34HUh7LrvkiTO77m79F63t_fcvEaBSbsOGba7o6ihwYRYZVfxp67lYa7wo7fqK9zzUta_j84UmF83KM_UWOiD0KFP9sqBoEefCtCnpa8In3EBK5Een6GCTee1zh969TP7NaR71i9NirDo8qp-1AZ1NIDt7f2-ibw0ZnCkd22_kDFZH4f9d--eFgf2uro21APYfDiZISne7Y4zLed_t8MhqRh2f1Ny-Lpf98EvtJHSmaXU9mOdyyUlDc8vYBpaXsH2T3xTzAIqb3N4HhtZXVccw56D0PoHC-MYC6Us0R8UAhJ8_Z-dcluO95KSiyBNQPGkSzB_fKRvc1nosAmTPjGgasiaZF1tRJVjQW3ccc4XBXq7w0Os5Ab4AgzmHeE0HQSwTQI70mKepSGQE2MW4qr4j7aE39bXOC2XTpk5l_q1xGcyggmN77Y4JUE6p5CDMbRRNQbujMmPa_gE8pt5g6pYmOM8nmNVZcMU_0GrvADBrrKxdNdi8TgkTe5z7TCfxV&xkcb=SoD86_M3qpNa25AW_b0HbzkdCdPP&camk=nUmJqO2E8riTvEqPGNOrlg==&p=12&fvj=0&vjs=3",
+      "salary": "",
+      "allows_c2c": false,
+      "company": {
+        "name": "WinCo Foods",
+        "description": "",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": ""
+      }
+    },
+    {
+      "job_title": "Senior Software Engineer",
+      "job_location": "Carlsbad, CA 92008",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0BBaCGdItf5s2tlwgLsewy7JfY6urCYYVSeLdNauEBx4iLe43sZ-Tmh_PyJAHVFjyJdzrzWsubG67RmSmM6F1iT_mOHS4xAUi8q3Dx7jzmp1ZuVYp0klCjVCLiCGcKXekMhR0vcU5eXKYZfJQkm2U3zkpJRf6o2ZmFp-wUgulAKxdCa922PkpyYBXZHEy5-YawJ38gviA14uhjMd-o0Gv8EblM2Ihed93CV1gjYrTpAarH7zDK_JvEQQdTZzaWHIqNLeb9hYjVODZjUS0Yf_6dkoBQaO6W0RMl5P_4_vOrAqLYlcmCUSe0u2csMHPmA8VlwWJZbjZhZFX16Pex3pBLRsPTHCZOET5FI7kMo3POzRhGfucSa967yrs_zQ4xvsEMjQJolV4UwsjGwzDOUZTTZprscJG6I7Cq4LREgZhqXGYqqkLUbtaY-GXwXm_993ZGSXZ__DPn7zz4S1mEawKOUBGDhfO8sV3RaJrqScvlZ89-AWl_S8DfACbqf0sL1CS7rk4Z0zUAM5RrrHqmb8tcvOVJGalYX5frajZPYnetyRuqX3Z3-EG6Jh5vJii-KnjIRmW9OVWu59GDyqujuIp7EpXbLvF5SwkhpE0BY-hDyA-r1yUWIKLSdva4nNVn5pYIFXmfxrBK1ec4GJ1AGFp8W0ct-BN2eglBOVpc579Ma_18l1E1qDo6kAnBNaV1mKJA=&xkcb=SoBI6_M3qpNa25AW_b0GbzkdCdPP&camk=ethIe0s0hee_tBCFo9IJGQ==&p=13&fvj=0&vjs=3",
+      "salary": "",
+      "allows_c2c": false,
+      "company": {
+        "name": "Confidential Company",
+        "description": "",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": ""
+      }
+    },
+    {
+      "job_title": "Boomi and GoAnywhere System Specialist",
+      "job_location": "Montgomery, AL",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0Dwb_YIohz4zuU9-hizYTxpAJ9-qZQvsILXUPhgrrTAx5fz02dz_SZuFT-AN2q-uA1hyo-4_9jg1A5OiWWXc1nwmpOrtRVoLC5_EdLCs6zDOIqBN5v7E1l9QtVH2j8iLwBSzeBZwKh4Sla-Mzi2Ovbcd33LnZmJuaCo2v3GUGiRvw9_8Lw73Sy6z3KZ0siwBwsfU0npjVDigi2nDgvSj1yLXmv019BrnxcZ4dNLDwtQAr71mh0BaQ_AUumI0lxjCyMewg47ZEpsakEXurOV021vZrHjifI_-q0tbTarzVwI_SVJdDs_mG8rny3BSr_hgslRbyw9XIz9PVRnqDSrA6c-SqJFsBoy9QIPxXk9ZRw7OMMI_pqSL5sZPdpY4Ed6uJ85MufSTrJBAgTKeDnzS6ERWmHgfzlMui7xx_OrKVHYQwSm4zvgiMnQYKDedKa7j3QM7FHpqN2VwDHC5L2gpLRU6h2VVQCZ3X5JC5sfS9HBNuDvg8YqAwk-4g716jwqua-8EEBZgd58lEpII8jJNovoRqper6ETbB4Wr_sx3p5zas15rV_otv-iXkMjvhMZ0GxExeAy3kcNg8NJSjb0d7A4w6aB0Wl2xkJQ2-E7sgi0YtgjlGhmERbDgIApLwf2t-1Ll-F_Cc24sGsE-b_CHh-stCQjL9RbdYV358Fd_gDVazFIjkTzd0MdH0KAJOXONxtOJ6sfoAnLozvwFY9Y3jucmY3Cpqh6ZLnXL5QS8UPxnp8p7qcIZq3sA5pQ7f3gxwo=&xkcb=SoDV6_M3qpNa25AW_b0FbzkdCdPP&camk=UoKtGZLa3XKFB5u3qqk1UQ==&p=14&fvj=0&vjs=3",
+      "salary": "",
+      "allows_c2c": false,
+      "company": {
+        "name": "AgreeYa Solutions",
+        "description": "",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": ""
+      }
     }
-  ],
-  "emails_extracted_at": "2025-11-29T17:51:32.198713",
-  "emails_found": 3,
-  "details_extracted_at": "2025-11-29T18:00:33.711496",
-  "c2c_jobs_found": 3
+  ]
 }

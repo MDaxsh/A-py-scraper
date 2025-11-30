@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
 ============================================================
-INDEED PAGE LOADER
+INDEED JOB SCRAPER - Main Entry Point
 ============================================================
-A simple script to load the Indeed website using Playwright.
-Watch the browser open and navigate to Indeed!
+Searches Indeed and saves basic job listings to jobs.json.
+Then runs extract_details.py and extract_emails.py sequentially.
 
 Usage:
     python3 run.py
@@ -14,7 +14,6 @@ Usage:
 import asyncio
 import sys
 import json
-import re
 from pathlib import Path
 from datetime import datetime
 
@@ -24,59 +23,32 @@ sys.path.insert(0, str(Path(__file__).parent))
 from playwright.async_api import async_playwright
 from playwright_stealth import Stealth
 from config import IndeedConfig, PlaywrightConfig, IndeedSelectors
-from utils import Logger
+from utils import Logger, MouseHelper
 
 
-async def load_indeed():
-    """Load the Indeed website and perform a search."""
+async def search_indeed():
+    """Search Indeed and save basic job listings."""
     
-    # Initialize logger
     output_dir = Path(__file__).parent / "output"
-    screenshot_dir = Path(PlaywrightConfig.SCREENSHOT_DIR)
+    output_dir.mkdir(parents=True, exist_ok=True)
     
     logger = Logger(output_dir=str(output_dir))
-    
-    # Create output directories
-    output_dir.mkdir(parents=True, exist_ok=True)
-    screenshot_dir.mkdir(parents=True, exist_ok=True)
-    
-    # Clear old screenshots before starting
-    for old_screenshot in screenshot_dir.glob("*.png"):
-        old_screenshot.unlink()
-    
-    # Start logging
-    logger.start("INDEED PAGE LOADER")
+    logger.start("INDEED JOB SEARCH")
     
     print("\n" + "=" * 60)
-    print("🔍 INDEED PAGE LOADER")
+    print("🔍 INDEED JOB SEARCH")
     print("=" * 60)
-    
-    logger.log("CONFIG", f"Browser: {PlaywrightConfig.BROWSER}", "🌐")
-    logger.log("CONFIG", f"Headless: {PlaywrightConfig.HEADLESS}", "👁️")
-    logger.log("CONFIG", f"Slow Mo: {PlaywrightConfig.SLOW_MO}ms", "🐌")
-    logger.log("CONFIG", f"Search: {IndeedConfig.SEARCH_QUERY}", "🔎")
-    logger.log("CONFIG", f"Location: {IndeedConfig.LOCATION}", "📍")
-    
-    logger.separator("-")
+    print(f"   Search: {IndeedConfig.SEARCH_QUERY}")
+    print(f"   Location: {IndeedConfig.LOCATION}")
+    print("=" * 60)
     
     try:
         async with async_playwright() as p:
-            # ---------------------------------------------------------
-            # STEP 1: Launch Browser
-            # ---------------------------------------------------------
-            logger.log("STEP 1", "Launching browser...", "🚀")
-            
+            # Launch browser
             browser = await p.chromium.launch(
                 headless=PlaywrightConfig.HEADLESS,
                 slow_mo=PlaywrightConfig.SLOW_MO
             )
-            
-            logger.log("STEP 1", "Browser launched successfully!", "✅")
-            
-            # ---------------------------------------------------------
-            # STEP 2: Create Browser Context & Page
-            # ---------------------------------------------------------
-            logger.log("STEP 2", "Creating browser context...", "📄")
             
             context = await browser.new_context(
                 viewport={
@@ -87,161 +59,109 @@ async def load_indeed():
             
             page = await context.new_page()
             
-            # Apply stealth mode to bypass bot detection
+            # Apply stealth mode
             stealth = Stealth()
             await stealth.apply_stealth_async(page)
-            logger.log("STEP 2", "Stealth mode applied!", "🥷")
-            
             page.set_default_timeout(PlaywrightConfig.DEFAULT_TIMEOUT)
             
-            logger.log("STEP 2", "Browser context ready!", "✅")
+            # Initialize mouse helper for human-like movements
+            mouse = MouseHelper(page)
             
-            # ---------------------------------------------------------
-            # STEP 3: Navigate to Indeed Homepage
-            # ---------------------------------------------------------
-            logger.log("STEP 3", f"Navigating to {IndeedConfig.BASE_URL}...", "🌐")
+            logger.log("STEP 1", "Browser launched with stealth mode", "🚀")
             
+            # Navigate to Indeed
             await page.goto(IndeedConfig.BASE_URL, wait_until="domcontentloaded", timeout=60000)
-            await asyncio.sleep(2)  # Wait for page to settle
+            await asyncio.sleep(1)
             
-            logger.log("STEP 3", "Indeed homepage loaded!", "✅")
+            # Brief human-like movement
+            await mouse.idle_movement(0.5)
+            logger.log("STEP 2", "Indeed homepage loaded", "✅")
             
-            if PlaywrightConfig.SCREENSHOTS:
-                screenshot_path = screenshot_dir / "01_homepage.png"
-                await page.screenshot(path=str(screenshot_path))
-                logger.log("SCREENSHOT", f"Saved: {screenshot_path}", "📸")
+            # Check for cookie consent or other overlays
+            try:
+                cookie_btn = page.locator('button[id="onetrust-accept-btn-handler"], button:has-text("Accept")')
+                if await cookie_btn.count() > 0:
+                    await mouse.human_click(cookie_btn.first)
+                    await asyncio.sleep(1)
+                    logger.log("INFO", "Closed cookie consent", "🍪")
+            except:
+                pass
             
-            # ---------------------------------------------------------
-            # STEP 4: Enter Search Query
-            # ---------------------------------------------------------
-            logger.log("STEP 4", f"Entering search query: '{IndeedConfig.SEARCH_QUERY}'...", "⌨️")
-            
-            # Find and fill the search input
-            search_input = page.locator(IndeedSelectors.SEARCH_INPUT).first
-            await search_input.click()
-            await search_input.fill(IndeedConfig.SEARCH_QUERY)
-            
-            logger.log("STEP 4", "Search query entered!", "✅")
-            
-            # ---------------------------------------------------------
-            # STEP 5: Enter Location
-            # ---------------------------------------------------------
-            logger.log("STEP 5", f"Entering location: '{IndeedConfig.LOCATION}'...", "📍")
-            
-            # Find and fill the location input
-            location_input = page.locator(IndeedSelectors.LOCATION_INPUT).first
-            await location_input.click()
-            await location_input.clear()
-            await location_input.fill(IndeedConfig.LOCATION)
-            
-            logger.log("STEP 5", "Location entered!", "✅")
-            
-            if PlaywrightConfig.SCREENSHOTS:
-                screenshot_path = screenshot_dir / "02_search_filled.png"
-                await page.screenshot(path=str(screenshot_path))
-                logger.log("SCREENSHOT", f"Saved: {screenshot_path}", "📸")
-            
-            # ---------------------------------------------------------
-            # STEP 6: Submit Search
-            # ---------------------------------------------------------
-            logger.log("STEP 6", "Submitting search...", "🔍")
-            
-            # Click the search button
-            search_button = page.locator(IndeedSelectors.SEARCH_BUTTON).first
-            await search_button.click()
-            
-            # Wait a bit for page to start loading
-            await asyncio.sleep(3)
-            
-            logger.log("STEP 6", "Search submitted!", "✅")
-            
-            # ---------------------------------------------------------
-            # STEP 7: Handle CAPTCHA/Human Verification
-            # ---------------------------------------------------------
+            # Handle CAPTCHA/verification if it appears immediately
             title = await page.title()
-            
-            if "moment" in title.lower() or "verify" in title.lower() or "captcha" in title.lower():
-                logger.log("STEP 7", "Human verification detected!", "🤖")
-                logger.separator("-")
-                print("🔐 CAPTCHA/VERIFICATION DETECTED")
-                logger.separator("-")
-                print("👆 Please complete the verification in the browser window!")
-                print("⏳ Waiting for you to verify (up to 60 seconds)...")
-                logger.separator("-")
-                
-                if PlaywrightConfig.SCREENSHOTS:
-                    screenshot_path = screenshot_dir / "03_captcha_detected.png"
-                    await page.screenshot(path=str(screenshot_path))
-                    logger.log("SCREENSHOT", f"Saved: {screenshot_path}", "📸")
-                
-                # Wait for the verification to complete (check every 2 seconds)
-                for i in range(30):  # 30 attempts x 2 seconds = 60 seconds max
+            if "moment" in title.lower() or "verify" in title.lower() or "security" in title.lower():
+                print("\n🔐 CAPTCHA detected! Please complete verification...")
+                for i in range(60):
                     await asyncio.sleep(2)
                     title = await page.title()
-                    
-                    # Check if we're past the verification
-                    if "moment" not in title.lower() and "verify" not in title.lower():
-                        logger.log("STEP 7", "Verification completed!", "✅")
+                    if "moment" not in title.lower() and "verify" not in title.lower() and "security" not in title.lower():
+                        logger.log("INFO", "Verification completed", "✅")
                         break
-                    
-                    if i % 5 == 0:  # Every 10 seconds
-                        print(f"   ⏳ Still waiting... ({(i+1)*2} seconds)")
-                else:
-                    logger.log("STEP 7", "Verification timeout - continuing anyway", "⚠️")
-            else:
-                logger.log("STEP 7", "No verification needed!", "✅")
+                    if i % 10 == 0:
+                        print(f"   ⏳ Waiting... ({i*2}s)")
             
-            # ---------------------------------------------------------
-            # STEP 8: View Search Results
-            # ---------------------------------------------------------
-            logger.log("STEP 8", "Viewing search results page...", "📋")
+            # Random mouse movement before interacting
+            await mouse.random_mouse_move()
+            await asyncio.sleep(0.3)
             
-            # Get the page title
+            # Enter search query with human-like typing
+            search_input = page.locator(IndeedSelectors.SEARCH_INPUT).first
+            await mouse.human_click(search_input)
+            await mouse.human_type(search_input, IndeedConfig.SEARCH_QUERY, click_first=False)
+            logger.log("STEP 3", f"Search: {IndeedConfig.SEARCH_QUERY}", "⌨️")
+            
+            # Enter location with human-like typing
+            location_input = page.locator(IndeedSelectors.LOCATION_INPUT).first
+            await mouse.human_click(location_input)
+            # Clear existing text
+            await location_input.press("Control+a")
+            await asyncio.sleep(0.05)
+            await mouse.human_type(location_input, IndeedConfig.LOCATION, click_first=False)
+            logger.log("STEP 4", f"Location: {IndeedConfig.LOCATION}", "📍")
+            
+            # Submit search with human-like click
+            await asyncio.sleep(0.3)
+            search_button = page.locator(IndeedSelectors.SEARCH_BUTTON).first
+            await mouse.human_click(search_button)
+            await asyncio.sleep(2)
+            logger.log("STEP 5", "Search submitted", "🔍")
+            
+            # Handle CAPTCHA if needed
             title = await page.title()
-            logger.log("PAGE INFO", f"Title: {title}", "📄")
+            if "moment" in title.lower() or "verify" in title.lower():
+                print("\n🔐 CAPTCHA detected! Please complete verification...")
+                for i in range(30):
+                    await asyncio.sleep(2)
+                    title = await page.title()
+                    if "moment" not in title.lower() and "verify" not in title.lower():
+                        logger.log("STEP 6", "Verification completed", "✅")
+                        break
             
-            # Get current URL
-            current_url = page.url
-            logger.log("PAGE INFO", f"URL: {current_url}", "🔗")
-            
-            if PlaywrightConfig.SCREENSHOTS:
-                screenshot_path = screenshot_dir / "04_search_results.png"
-                await page.screenshot(path=str(screenshot_path), full_page=True)
-                logger.log("SCREENSHOT", f"Saved: {screenshot_path}", "📸")
-            
-            # ---------------------------------------------------------
-            # STEP 9: Parse Job Listings
-            # ---------------------------------------------------------
-            logger.log("STEP 9", "Parsing job listings...", "📊")
-            
-            # Wait for job cards to load
             await asyncio.sleep(2)
             
+            # Parse job listings
             jobs = []
-            
-            # Find all job cards
             job_cards = await page.locator(IndeedSelectors.JOB_CARD).all()
-            
-            logger.log("STEP 9", f"Found {len(job_cards)} job cards", "📋")
+            logger.log("STEP 7", f"Found {len(job_cards)} job cards", "📋")
             
             for idx, card in enumerate(job_cards):
                 try:
-                    # Extract job title
+                    # Job title
                     title_elem = card.locator(IndeedSelectors.JOB_TITLE).first
                     job_title = await title_elem.text_content() if await title_elem.count() > 0 else ""
                     job_title = job_title.strip() if job_title else ""
                     
-                    # Extract company name
+                    # Company name
                     company_elem = card.locator(IndeedSelectors.COMPANY_NAME).first
-                    company = await company_elem.text_content() if await company_elem.count() > 0 else ""
-                    company = company.strip() if company else ""
+                    company_name = await company_elem.text_content() if await company_elem.count() > 0 else ""
+                    company_name = company_name.strip() if company_name else ""
                     
-                    # Extract location
+                    # Location
                     location_elem = card.locator(IndeedSelectors.COMPANY_LOCATION).first
-                    company_location = await location_elem.text_content() if await location_elem.count() > 0 else ""
-                    company_location = company_location.strip() if company_location else ""
+                    job_location = await location_elem.text_content() if await location_elem.count() > 0 else ""
+                    job_location = job_location.strip() if job_location else ""
                     
-                    # Extract job link and ID
+                    # Job link and ID
                     link_elem = card.locator(IndeedSelectors.JOB_LINK).first
                     job_link = ""
                     job_id = ""
@@ -250,84 +170,107 @@ async def load_indeed():
                         href = await link_elem.get_attribute('href')
                         if href:
                             job_link = f"{IndeedConfig.BASE_URL}{href}" if href.startswith('/') else href
-                            # Extract job ID from URL
                             if 'jk=' in href:
                                 job_id = href.split('jk=')[1].split('&')[0]
                             elif 'vjk=' in href:
                                 job_id = href.split('vjk=')[1].split('&')[0]
                     
-                    # Extract contact email from card text
-                    card_text = await card.text_content() or ""
-                    email_match = re.search(IndeedSelectors.EMAIL_PATTERN, card_text)
-                    contact_email = email_match.group(0) if email_match else ""
-                    
-                    # Only add if we have at least a title
                     if job_title:
-                        job_data = {
+                        jobs.append({
                             "job_title": job_title,
-                            "company": company,
-                            "company_location": company_location,
+                            "job_location": job_location,
                             "job_id": job_id,
                             "job_link": job_link,
-                            "contact_email": contact_email
-                        }
-                        jobs.append(job_data)
-                        logger.log("JOB", f"{idx+1}. {job_title} @ {company}", "💼")
+                            "salary": "",
+                            "allows_c2c": False,
+                            "company": {
+                                "name": company_name,
+                                "description": "",
+                                "company_link": "",
+                                "contact_email": "",
+                                "phone_number": ""
+                            }
+                        })
+                        logger.log("JOB", f"{idx+1}. {job_title} @ {company_name}", "💼")
                 
                 except Exception as e:
-                    logger.log("PARSE", f"Error parsing job card {idx+1}: {str(e)}", "⚠️")
+                    logger.log("ERROR", f"Parse error: {str(e)[:30]}", "⚠️")
                     continue
             
-            # Save jobs to JSON file
+            # Save to JSON
             json_path = output_dir / "jobs.json"
-            jobs_output = {
+            output = {
                 "search_query": IndeedConfig.SEARCH_QUERY,
                 "search_location": IndeedConfig.LOCATION,
                 "scraped_at": datetime.now().isoformat(),
                 "total_jobs": len(jobs),
+                "details_extracted_at": "",
+                "emails_extracted_at": "",
+                "emails_found": 0,
+                "c2c_jobs_found": 0,
                 "jobs": jobs
             }
             
             with open(json_path, "w", encoding="utf-8") as f:
-                json.dump(jobs_output, f, indent=2, ensure_ascii=False)
+                json.dump(output, f, indent=2, ensure_ascii=False)
             
-            logger.log("STEP 9", f"Saved {len(jobs)} jobs to {json_path}", "✅")
+            logger.log("SAVED", f"{len(jobs)} jobs saved to jobs.json", "✅")
             
-            # ---------------------------------------------------------
-            # STEP 10: Keep Browser Open for Viewing
-            # ---------------------------------------------------------
-            logger.separator("-")
-            logger.log("DONE", "Indeed loaded successfully!", "🎉")
-            logger.separator("-")
-            
-            if not PlaywrightConfig.HEADLESS:
-                print("\n👀 Browser is open - take a look!")
-                print("⏳ Press Ctrl+C to close or wait 30 seconds...")
-                await asyncio.sleep(30)
-            
-            # ---------------------------------------------------------
-            # STEP 11: Cleanup
-            # ---------------------------------------------------------
-            logger.log("CLEANUP", "Closing browser...", "🧹")
+            # Close browser
             await browser.close()
-            logger.log("CLEANUP", "Browser closed!", "✅")
         
-        # Stop logging (success)
         logger.stop(success=True)
         
-        print("\n" + "=" * 60)
-        print("✅ SCRIPT COMPLETED")
-        print(f"📁 Screenshots saved to: {screenshot_dir}")
-        print(f"📄 Log saved to: {logger.get_log_path()}")
-        print(f"📊 Jobs saved to: {output_dir / 'jobs.json'}")
-        print("=" * 60 + "\n")
+        print(f"\n✅ Search complete! Found {len(jobs)} jobs.")
+        print(f"📊 Saved to: {output_dir / 'jobs.json'}")
+        
+        return True
         
     except Exception as e:
-        logger.log("ERROR", f"An error occurred: {str(e)}", "❌")
+        logger.log("ERROR", f"{str(e)}", "❌")
         logger.stop(success=False)
-        raise
+        print(f"\n❌ Error: {str(e)}")
+        return False
+
+
+async def run_all():
+    """Run all scripts sequentially with wait time between each."""
+    
+    print("\n" + "=" * 60)
+    print("🚀 INDEED SCRAPER - FULL PIPELINE")
+    print("=" * 60)
+    
+    # Step 1: Search Indeed
+    print("\n📌 STEP 1/3: Searching Indeed...")
+    success = await search_indeed()
+    
+    if not success:
+        print("❌ Search failed. Stopping pipeline.")
+        return
+    
+    # Wait before next step
+    print("\n⏳ Waiting 5 seconds before extracting details...")
+    await asyncio.sleep(5)
+    
+    # Step 2: Extract job details
+    print("\n📌 STEP 2/3: Extracting job details...")
+    from scripts.extract_details import extract_details
+    await extract_details()
+    
+    # Wait before next step
+    print("\n⏳ Waiting 5 seconds before extracting emails...")
+    await asyncio.sleep(5)
+    
+    # Step 3: Extract emails
+    print("\n📌 STEP 3/3: Extracting emails...")
+    from scripts.extract_emails import extract_emails
+    await extract_emails()
+    
+    print("\n" + "=" * 60)
+    print("✅ PIPELINE COMPLETE!")
+    print("📊 Results saved to: output/jobs.json")
+    print("=" * 60 + "\n")
 
 
 if __name__ == "__main__":
-    print("\n🚀 Starting Indeed Page Loader...\n")
-    asyncio.run(load_indeed())
+    asyncio.run(run_all())

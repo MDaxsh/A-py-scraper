@@ -1,94 +1,40 @@
 ============================================================
-JOB DETAILS EXTRACTOR
-Run started at: 2025-11-29 17:59:16
+EXTRACT JOB DETAILS
+Run started at: 2025-11-29 18:30:10
 ============================================================
 
-[17:59:16] INFO: Found 16 jobs to process
-------------------------------------------------------------
-[17:59:16] STEP 1: Launching browser...
-[17:59:16] STEP 1: Browser ready!
-------------------------------------------------------------
-[17:59:16] JOB 1/16: Software Developer @ JB&B
-[17:59:20] SALARY: $120,000 - $130,000 a year
-[17:59:20] DESC: Description extracted (500 chars)
-[17:59:20] PHONE: 1278314023
-[17:59:20] EMAIL: No email found on this page
-[17:59:21] JOB 2/16: ReactJs Developer @ Quantaleap
-[17:59:25] DESC: Description extracted (500 chars)
-[17:59:25] PHONE: 1278314023
-[17:59:25] EMAIL: No email found on this page
-[17:59:26] JOB 3/16: Data Analyst, Tableau Developer @ Hornblower Group, Inc
-[17:59:29] SALARY: $70,000 - $80,000 a year
-[17:59:29] DESC: Description extracted (500 chars)
-[17:59:29] PHONE: 1278314023
-[17:59:29] C2C: Corp-to-Corp allowed!
-[17:59:29] EMAIL: No email found on this page
-[17:59:30] JOB 4/16: Backend Developer @ InstaTrainMe
-[17:59:34] DESC: Description extracted (500 chars)
-[17:59:34] PHONE: 1278314023
-[17:59:34] EMAIL: No email found on this page
-[17:59:35] JOB 5/16: Backend Developer @ InstaTrainMe
-[17:59:39] PHONE: 1278314023
-[17:59:39] EMAIL: No email found on this page
-[17:59:40] JOB 6/16: Remote Python Developer @ LookFar Labs
-[17:59:44] SALARY: $95,000.00 - $125,000.00 per year
-[17:59:44] DESC: Description extracted (500 chars)
-[17:59:44] PHONE: 1278314023
-[17:59:44] EMAIL: No email found on this page
-[17:59:45] JOB 7/16: Oracle/SQL DBA @ FedScale, Inc
-[17:59:49] SALARY: $95,000 - $115,000 a year
-[17:59:49] DESC: Description extracted (500 chars)
-[17:59:49] PHONE: 1637165268
-[17:59:49] EMAIL: No email found on this page
-[17:59:50] JOB 8/16: Senior React Developer @ Rapideagle
-[17:59:54] SALARY: $53.34 - $64.23
-[17:59:54] DESC: Description extracted (500 chars)
-[17:59:54] PHONE: 1278314023
-[17:59:54] EMAIL: No email found on this page
-[17:59:55] JOB 9/16: Remote Instructional Designer/Curriculum Developer with Python Experience @ PulseLearning
-[17:59:59] DESC: Description extracted (500 chars)
-[17:59:59] PHONE: 1278314023
-[17:59:59] EMAIL: No email found on this page
-[18:00:00] JOB 10/16: Junior RPA Developer - Remote @ OM Group Inc.
-[18:00:04] SALARY: $70,000 - $90,000 a year
-[18:00:04] DESC: Description extracted (500 chars)
-[18:00:04] PHONE: 1278314023
-[18:00:04] C2C: Corp-to-Corp allowed!
-[18:00:04] EMAIL: jobs@omgroupinc.us
-[18:00:05] JOB 11/16: Jr. Data Engineer @ Northside Center for Child Development
-[18:00:09] SALARY: $56 - $74
-[18:00:09] DESC: Description extracted (500 chars)
-[18:00:09] PHONE: 1278314023
-[18:00:09] C2C: Corp-to-Corp allowed!
-[18:00:09] EMAIL: No email found on this page
-[18:00:10] JOB 12/16: Senior Backend Engineer (Python / Django) @ Beyond Mission Capable Solutions LLC
-[18:00:13] SALARY: $175,000 - $220,000 a year
-[18:00:13] DESC: Description extracted (500 chars)
-[18:00:13] PHONE: 1278314023
-[18:00:13] EMAIL: No email found on this page
-[18:00:14] JOB 13/16: AI Engineering Lead @ Vichara
-[18:00:18] SALARY: $200,000 - $300,000 a year
-[18:00:18] DESC: Description extracted (500 chars)
-[18:00:18] PHONE: 1278314023
-[18:00:18] EMAIL: No email found on this page
-[18:00:19] JOB 14/16: Scientific Application Developer @ Gap Solutions Inc
-[18:00:22] DESC: Description extracted (500 chars)
-[18:00:22] PHONE: 1278314023
-[18:00:22] EMAIL: recruiting@gapsi.com
-[18:00:23] JOB 15/16: Software Engineer - 2 (DevOps/IaC/Bash/Python) @ Akina, Inc.
-[18:00:27] SALARY: $144,000 - $266,000 a year
-[18:00:27] DESC: Description extracted (500 chars)
-[18:00:27] PHONE: 1278314023
-[18:00:27] EMAIL: No email found on this page
-[18:00:28] JOB 16/16: AI Software Engineer (Generative AI) - Remote @ Azumo
-[18:00:32] DESC: Description extracted (500 chars)
-[18:00:32] PHONE: 1278314023
-[18:00:32] EMAIL: people@azumo.co
-------------------------------------------------------------
-[18:00:33] CLEANUP: Closing browser...
-[18:00:33] SAVED: Updated jobs.json
-
-============================================================
-Run COMPLETED SUCCESSFULLY
-Ended at: 2025-11-29 18:00:33
-============================================================
+[18:30:11] READY: Browser launched
+[18:30:11] JOB 1/16: Senior Associate - IT Develope
+[18:30:21] SALARY: $92,000 - $140,000 a year
+[18:30:21] DESC: 500 chars
+[18:30:21] PHONE: 4999578714
+[18:30:27] JOB 2/16: Python Developer
+[18:30:37] SALARY: $80,000 a year
+[18:30:37] DESC: 500 chars
+[18:30:37] PHONE: 9438324988
+[18:30:41] JOB 3/16: Software Developer – Device Co
+[18:30:51] DESC: 500 chars
+[18:30:51] PHONE: 1278636560
+[18:30:54] JOB 4/16: Software Developer – Device Co
+[18:31:04] PHONE: 1278314023
+[18:31:10] JOB 5/16: Associate IT Developer
+[18:31:20] SALARY: $90,000 - $130,000 a year
+[18:31:20] DESC: 500 chars
+[18:31:20] PHONE: 4999578714
+[18:31:24] JOB 6/16: Full-Stack Software Developer
+[18:31:34] DESC: 500 chars
+[18:31:34] PHONE: 5951089952
+[18:31:40] JOB 7/16: Senior Software Engineer
+[18:31:50] SALARY: $130,000 - $180,000 a year
+[18:31:50] DESC: 500 chars
+[18:31:50] PHONE: 5272994705
+[18:31:55] JOB 8/16: Lead Platform Engineer
+[18:32:06] SALARY: $180,000.00 - $210,000.00 per year
+[18:32:06] DESC: 500 chars
+[18:32:06] PHONE: 9005175289
+[18:32:13] JOB 9/16: Database Administrator
+[18:32:23] SALARY: $85,529 - $89,353 a year
+[18:32:23] DESC: 500 chars
+[18:32:23] PHONE: 6159372686
+[18:32:23] C2C: Allowed!
+[18:32:28] JOB 10/16: Firmware/Sr. Firmware Engineer

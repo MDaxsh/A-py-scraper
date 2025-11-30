@@ -1,11 +1,13 @@
-# Indeed Page Loader
+# Indeed Job Scraper
 
-A simple Playwright-based script to load and interact with the Indeed job search website. Uses stealth mode to bypass bot detection.
+A Playwright-based job scraper for Indeed with stealth mode to bypass bot detection. Extracts job listings, company details, and contact emails.
 
 ## Features
 
 - 🥷 **Stealth Mode** - Bypasses CAPTCHA and bot detection using `playwright-stealth`
-- 📸 **Screenshots** - Captures screenshots at each step
+- 📋 **Job Parsing** - Extracts job title, company, location, salary, C2C availability
+- 📧 **Email Extraction** - Finds contact emails from job detail pages
+- 🏢 **Company Details** - Extracts company description, link, phone number
 - 📄 **Logging** - Detailed step-by-step logs saved to `output/log.txt`
 - ⚙️ **Configurable** - Separate config files for Indeed and Playwright settings
 
@@ -18,16 +20,23 @@ indeed-pwd/
 │   ├── indeed_config.env     # Indeed website settings (URL, search query, location)
 │   ├── playwright_config.env # Browser settings (headless, slow_mo, viewport size)
 │   └── page_selectors.py     # CSS selectors for Indeed page elements
+├── scripts/
+│   ├── __init__.py           # Exports extract functions
+│   ├── extract_details.py    # Extracts company details, salary, C2C from job pages
+│   └── extract_emails.py     # Extracts contact emails from job pages
+├── models/
+│   ├── __init__.py           # Exports TypedDict models
+│   ├── job_model_v1.py       # TypedDict for JobModel and CompanyModel
+│   └── job_results_v1.py     # TypedDict for JobResultsModel (output JSON)
 ├── utils/
 │   ├── __init__.py           # Exports Logger class
 │   └── logger.py             # Logger helper with documented methods
 ├── output/
-│   ├── jobs.json             # Parsed job listings (overwritten on each run)
-│   ├── log.txt               # Log file (overwritten on each run)
-│   └── screenshots/          # Screenshots captured during execution
+│   ├── jobs.json             # Parsed job listings with all extracted data
+│   └── log.txt               # Log file (overwritten on each run)
 ├── requirements.txt          # Python dependencies
-├── run.py                    # Main script - search and scrape jobs
-└── extract_emails.py         # Email extractor - visits each job page
+├── run.py                    # Main script - runs full pipeline
+└── README.md
 ```
 
 ## Installation
@@ -44,21 +53,26 @@ indeed-pwd/
 
 ## Usage
 
-Run the main script to search and scrape job listings:
+### Full Pipeline
+Run the main script to search Indeed and extract all data:
 ```bash
 python3 run.py
 ```
 
-Run the email extractor to visit each job page and find contact emails:
-```bash
-python3 extract_emails.py
-```
+This runs 3 steps sequentially:
+1. **Search Indeed** - Search jobs and save basic listings
+2. **Extract Details** - Visit each job page for company info, salary, C2C
+3. **Extract Emails** - Find contact emails from job pages
 
-The browser will open and:
-1. Navigate to Indeed homepage
-2. Enter search query and location
-3. Submit the search
-4. Display results
+### Individual Scripts
+Run scripts separately if needed:
+```bash
+# Extract details only (requires jobs.json)
+python3 scripts/extract_details.py
+
+# Extract emails only (requires jobs.json)
+python3 scripts/extract_emails.py
+```
 
 ## Configuration
 
@@ -84,28 +98,9 @@ The browser will open and:
 
 CSS selectors used to find elements on Indeed pages. Update these if Indeed changes their page structure.
 
-| Selector | Description |
-|----------|-------------|
-| `SEARCH_INPUT` | Job search input field |
-| `LOCATION_INPUT` | Location input field |
-| `SEARCH_BUTTON` | Search submit button |
-| `JOB_CARD` | Job listing container |
-| `JOB_TITLE` | Job title element |
-| `COMPANY_NAME` | Company name element |
-| `COMPANY_LOCATION` | Job location element |
-| `JOB_LINK` | Job URL anchor tag |
-| `EMAIL_PATTERN` | Regex pattern to extract contact emails |
-
 ## Output
 
-After each run:
-- **Jobs** are saved to `output/jobs.json` (parsed job listings)
-- **Screenshots** are saved to `output/screenshots/`
-- **Logs** are saved to `output/log.txt`
-
-All output files are overwritten on each run to show only the latest results.
-
-### Jobs JSON Format
+### Jobs JSON Format (`output/jobs.json`)
 
 ```json
 {
@@ -113,15 +108,33 @@ All output files are overwritten on each run to show only the latest results.
   "search_location": "Remote",
   "scraped_at": "2025-11-29T17:30:00",
   "total_jobs": 15,
+  "details_extracted_at": "2025-11-29T17:35:00",
+  "emails_extracted_at": "2025-11-29T17:40:00",
+  "emails_found": 3,
+  "c2c_jobs_found": 2,
   "jobs": [
     {
       "job_title": "Senior Python Developer",
-      "company": "Tech Company",
-      "company_location": "Remote",
+      "job_location": "Remote",
       "job_id": "abc123",
       "job_link": "https://www.indeed.com/viewjob?jk=abc123",
-      "contact_email": "jobs@techcompany.com"
+      "salary": "$120,000 - $150,000 a year",
+      "allows_c2c": true,
+      "company": {
+        "name": "Tech Company",
+        "description": "We are a leading technology company...",
+        "company_link": "https://www.indeed.com/cmp/Tech-Company",
+        "contact_email": "jobs@techcompany.com",
+        "phone_number": "555-123-4567"
+      }
     }
   ]
 }
+```
+
+### TypedDict Models
+
+Use the models for type hints in your code:
+```python
+from models import JobModel, CompanyModel, JobResultsModel
 ```
