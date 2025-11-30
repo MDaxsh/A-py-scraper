@@ -1,40 +1,9 @@
 ============================================================
-EXTRACT JOB DETAILS
-Run started at: 2025-11-29 18:30:10
+INDEED JOB SEARCH
+Run started at: 2025-11-29 19:10:36
 ============================================================
 
-[18:30:11] READY: Browser launched
-[18:30:11] JOB 1/16: Senior Associate - IT Develope
-[18:30:21] SALARY: $92,000 - $140,000 a year
-[18:30:21] DESC: 500 chars
-[18:30:21] PHONE: 4999578714
-[18:30:27] JOB 2/16: Python Developer
-[18:30:37] SALARY: $80,000 a year
-[18:30:37] DESC: 500 chars
-[18:30:37] PHONE: 9438324988
-[18:30:41] JOB 3/16: Software Developer – Device Co
-[18:30:51] DESC: 500 chars
-[18:30:51] PHONE: 1278636560
-[18:30:54] JOB 4/16: Software Developer – Device Co
-[18:31:04] PHONE: 1278314023
-[18:31:10] JOB 5/16: Associate IT Developer
-[18:31:20] SALARY: $90,000 - $130,000 a year
-[18:31:20] DESC: 500 chars
-[18:31:20] PHONE: 4999578714
-[18:31:24] JOB 6/16: Full-Stack Software Developer
-[18:31:34] DESC: 500 chars
-[18:31:34] PHONE: 5951089952
-[18:31:40] JOB 7/16: Senior Software Engineer
-[18:31:50] SALARY: $130,000 - $180,000 a year
-[18:31:50] DESC: 500 chars
-[18:31:50] PHONE: 5272994705
-[18:31:55] JOB 8/16: Lead Platform Engineer
-[18:32:06] SALARY: $180,000.00 - $210,000.00 per year
-[18:32:06] DESC: 500 chars
-[18:32:06] PHONE: 9005175289
-[18:32:13] JOB 9/16: Database Administrator
-[18:32:23] SALARY: $85,529 - $89,353 a year
-[18:32:23] DESC: 500 chars
-[18:32:23] PHONE: 6159372686
-[18:32:23] C2C: Allowed!
-[18:32:28] JOB 10/16: Firmware/Sr. Firmware Engineer
+[19:10:36] STEP 1: Browser launched with stealth mode
+[19:10:43] STEP 2: Indeed homepage loaded
+[19:11:21] STEP 3: Search: python developer
+[19:11:39] STEP 4: Location: Remote
