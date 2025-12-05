@@ -1,18 +1,33 @@
 {
-  "search_query": "python developer",
-  "search_location": "Remote",
-  "scraped_at": "2025-11-29T19:38:09.444317",
+  "search_query": "react developer",
+  "search_location": "los angeles, ca",
+  "scraped_at": "2025-11-29T20:10:45.381678",
   "total_jobs": 16,
-  "details_extracted_at": "2025-11-29T19:40:46.828814",
-  "emails_extracted_at": "2025-11-29T19:44:00.649233",
-  "emails_found": 2,
+  "details_extracted_at": "2025-11-29T20:13:26.540721",
+  "emails_extracted_at": "",
+  "emails_found": 0,
   "c2c_jobs_found": 4,
   "jobs": [
+    {
+      "job_title": "Senior Software Engineer",
+      "job_location": "Albany, OR 97321",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0BRvfsfXK8U7AA_a-0PC3nU3A30kE0P2hU0xR0DFpA0cMDRwHUGCbVZkIe5Ta5HjJ3SULE6sRdpiQ9pzhcNdoN1SfsiGYDvW2v1L_vhu5dFtAQwpAn3_vdlEGTu11CAtWjQ0CxQzaWu4arGn6mADZ6f7wEVSjzJREQoe0sr0uP8re0hkb6HVzBaE5dafXtuVBUxwrjJdud-yYgbsy2o6o7C39CrGwQcowxJ6ibS_lAJS-9hu9F0kmmy9zgLVNjDk7oPacIky3wYdkmdhvtMfdw9fanxWkcRd6TCJrqo4zGorJBYFsQXGiSRHHdM3is2ecTjg9kvJwO4FAo9OOzjXg1rPj2s76ZNtr3Qo9cjbEGowwbbeWugFVMAVaZaJoc2QnBXde_kbb114FviAEojRCp_mliT4KQepOPUibUPyVih4zbfDF2JHruNmGa0YFkdkRtn3U1omuO5YV50kQ2nZPlxAS3oCDODKStAThqJl1GffR_s8dsTtt2JFTbrkgXqLEQdRQsZg6eXDy7wjuC0w_8G3fuR_Ettlhct38MfC-29qAoRrBKpkzxupYZMYjEUlf0YNcCifvpe3rtxcIHYMl4r7SMthg9SzEfWaCY4jIA7MDw78eXRTkS5hVqfeS9uHRe0112KASLG6V2L950qhsZmOT9SBuzuu06AgjSSXpeNDh9zSKwKCh1tNvK-sFcFQGNb83r8lyOXGgZNboZU3fLrsHUr0mNestU=&xkcb=SoDk6_M3qpY5gOyCoZ0LbzkdCdPP&camk=ethIe0s0hefvJ_6aQ0ny8Q==&p=0&fvj=0&vjs=3",
+      "salary": "$84,000 - $96,000 a year",
+      "allows_c2c": false,
+      "company": {
+        "name": "Adrenaline Consulting, LLC",
+        "description": "We are looking for a software engineer with the skills to take a project from start to finish. Ideal candidates are self-driven and able to work in a fast paced agile environment. You will build an exciting ecosystem with the Founder and one project manager while integrating with the rest of the team.\nResponsibilities:\n\n Develop and maintain web applications using Svelte & TypeScript.\n Maintain web APIs using Node.JS. Experience with the Fastify framework is a plus\n Create normalized relational ",
+        "company_link": "",
+        "contact_email": "", 
+        "phone_number": "5178921239"
+      }
+    },
     {
       "job_title": "Senior Associate - IT Developer",
       "job_location": "Boston, MA 02109 (Haymarket area)",
       "job_id": "",
-      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0DNsxMANwe1yYOstgj43-IWQk0GvtVoqNrRW5BmYqhhtPlZVBQbx0GuG2kd871XehR0jbsGEyzX8eDGMpL3HLW8QxCrpcoNWoQFdoWEETEtMZasjYMTfY6iZWNMo1-tr2CU8UrouulvaLUlmOE1bO5iIApbPiYCptTy6rnD7KIvNZF3PrWOgD5AZlNS8W046uwHGNO7x8foykalDttMY-FyIOeXYt70lq4IqWtKu-PNozPxhGFUPn3QhueFc1DnhhOgbsUKfSBnhSCjdpkUsUMx5jn2AhkfMlJX5QSYU8O5YPXz4F89HxFZzwfYzqAGffL70p5nwj7NOamSNUvgl2aloPJeO6LFEjSaZbtBoA27HVYBvrFpUzUldfhl6kryXiNRzbDbTXb1owar7DYLXmh6Ufxpgkqj9dk4PbvQZG_hpjtTZR4mH4pkKtgHpOppXHwwrJRz-Etzp0CkNFPi4JnzSF-fDlxc7wXakPUuWAI8RK2QJw4CdSWJZGTxwQ0Bi05H6n6sQZmHt7N0KFUfYVasOMyc7nE3hx-HQgwKnVK9fiQlSfgphTE4BhS7BDkF_4Dw2QBP6SJUeJKTOcmG5ZNjOkZw_gzFZyXCKMpy_EGeChMh8k6WFRbTOUsmOzWbvUNW6vnwWVq_oBeRmw5Ck8pxbo2Er0P-x28xNgZb5w8NziELii959DjyjtZB71U3dA1XHtEpwKe9HqZ3PaC1FJ81wxog2jY0CyN2N4Nbf-QYYBDLgVOTuRIdXQOCbPXETy22OXV4GfaMCtSHEP1mbiFs39N5SrE5HbVD_aoddfGmP26vjm13VlagrbjFRIcMF4xSB1iAr4IrZQ==&xkcb=SoAc6_M3qpFIRUyAwx0KbzkdCdPP&camk=UoKtGZLa3XJ5tATnK5Upqg==&p=0&fvj=0&vjs=3",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0DNsxMANwe1yYOstgj43-IWQk0GvtVoqNrRW5BmYqhhtPlZVBQbx0GuG2kd871XehR0jbsGEyzX8eDGMpL3HLW8QxCrpcoNWoQFdoWEETEtMZasjYMTfY6iZWNMo1-tr2CU8UrouulvaLUlmOE1bO5iIApbPiYCptTy6rnD7KIvNZF3PrWOgD5AZlNS8W046uwHGNO7x8foykalDttMY-Fy9HSSboZdPzDatG0zHTlcpozYkOQkk717_bKNrZjWAFc6C0gKrIuMYU5thOT3QESWQl-dddIjhDwAboDTZmecqQjxspqABOIMGMSYoZQ0p5LKvT862a972GIVfJsMlkk1dhKv-Nsw_BsnV85L2KcOAaTaRbkd-s3mQ3p1BbBfo8RClAyD6sjyGg_uODqq0EJjJMQcCztJInJ9ANwO76TsErEyYHLLoH08lGZ3mjj0sgGqs3JvHS1G0v7wBLxvDeXsozeSrctnA4cDqtIMh-_cOzSk7QNnvZ8TcZ-VM35zEbpuFZs7yyebfqrseoGGX0rsE225mDYNlGhi6yx8kRf1i-8bjarlCiqMz9mtmz1a-T9qKV4iRCRGbciOkgnbJlKtPfq2SKAM3g958YsPG4btD9D383WffF5Vs-ovTceihOjtNqO1yO1TFQ6zTwL9ih3Iw8EFzq_X1PqyeGghgWeMYMQnbswV0SsvMEo1JPDFGKDZ0Rg4W-gM-4YyrTo07usZK6GLUDfQ9OHwFsVClitnUGVS1Z8HUnabfL9Zcmxlj1uXzAOtHae5_lLZLzSynCsqJi_QWJRScGX6igJ-lPc9nPFIlfaIjEuOQn1P7IuEePKk4swRA2ufMIw_4dEigRC0&xkcb=SoBQ6_M3qpY5gOyCoZ0KbzkdCdPP&camk=UoKtGZLa3XJ5tATnK5Upqg==&p=1&fvj=0&vjs=3",
       "salary": "$92,000 - $140,000 a year",
       "allows_c2c": false,
       "company": {
@@ -24,192 +39,12 @@
       }
     },
     {
-      "job_title": "Python Developer",
-      "job_location": "Hybrid work in Washington, DC 20006",
-      "job_id": "",
-      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0AJU-0xe5mt-VNCNk5vICqmIfcd8VRozHJq8cNCTo4wkHXpxXsaY84rV07OqBbTmpCIDHJFE6Kr8Hjr8TP5ivoMXQiz3nPOvPiJzgrHujVm9kB_Ti8J2dWpXaS5iJzz25X6BtfC-FzVIxyp9UJ0DglAOjwMgCobq6yyAyNVc6vADWQ3dwK5xRxgfTJ1mKM5No2KCmemGE7kBFkPrXVCS29m6nzideAwUvRGd6Jbg35pK3qBbeVDKtDxKP6qF7qX6t_2T9lZ143xlaXWPW-6ZLQCk5XI2YsLuIUly4wEfsLXUxOxa40TolRX-46Ycuj1T6mQ_diT99zABVGkEo6ZKP6fQJnP59LPPz4mxD8BFFhcMRksO4Eh1gjNYNI1iNp4MWmKihsAMI2qS_zp1kEeAwFy5vXOHT0I4sKNt2llOEcYvxtLcrqN7ON6CnbvUasljhcr5Jpj4yySYVry41WUvFKTvsvJWYv3NXIk-Gwd1WKYnWwOeuXPsvleZkymTACfGd4J4yL9kztvHlh7zyI0I173QlZTERWTey0weUopimZnSxadX7bIkrg22nrrj1fAMzkIIEXoH-OZe2RtDoQneUQABu82OI9piizvH7GT62-n9Fhk_MTVn_l614L0C-MzzJ_hwc1fvRlsVOEkEzd6piDBjEgcySB2ovWz6BgFqwXjiA==&xkcb=SoCB6_M3qpFIRUyAwx0JbzkdCdPP&camk=UoKtGZLa3XJywVgOJajdAA==&p=1&fvj=0&vjs=3",
-      "salary": "$80,000 a year",
-      "allows_c2c": false,
-      "company": {
-        "name": "HLP Integration",
-        "description": "You will support the Department of Veterans Affairs (VA) with a Veteran first vision to transform the Veterans Benefits Administration (VBA) with greater visibility into claims processing. Collaborating with business analysts and stakeholders, you’ll implement a platform to improve operational efficiency, transparency, and benefits delivery for Veterans and their families.\nResponsibilities:\n\n Develop and maintain backend services and APIs using Python (e.g., Flask, FastAPI).\n Implement and suppo",
-        "company_link": "",
-        "contact_email": "",
-        "phone_number": "9438324988"
-      }
-    },
-    {
-      "job_title": "Full Stack Developer (React, Python)",
-      "job_location": "Spring, TX 77389",
-      "job_id": "",
-      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0Da55cD5SyBLpPH7k1CrVrulUOH2z8rmQzTVue5eMZiIamWJbnfrHYm0n7kNUQS182D023KjJ2n8dtkLD4dBXbC09126HMhJg5imiaX4LHLkhcGj_wQRrM0hiQa4RQN93--1NstFDh53f0LfzPBtQMAPcEn_p7avLsqy86WHwVvgTtIVpbP6OoRSSgBUXyEI10IdTgK0M2rKZjBFfcrOVXj3zA29geu4QTbHI9lRO94dwSG5Nkawuteq5WDX0KTolsxKV8viX6QPZuNNNJTXYGDh9FpM-tKfg5RxS7a7s7S9nwCAtZQSx2GPS3IY1OKtArtFulJ0R7mmO4QRVcl8oKYAUJXmETIHI8ZkUU5ecdxxjoJg4EamIoux_p2U3y97DMLNvVvt6uZktO-3Vr9Jf881bajM057brQGEZDbxBnohLBgBzhWmi4iZXiWLbGcyjkIgoBtRbcQ4t61KBHQNMMkqE39hSR2Rwzzcy14-Dd6omF8hWWiSelMGU6zeOvTZ2iGoLaCIQKQWERbzNE9I3eLdT9Hdo3SHllMepbgsr9G4W0oQwNVguCUt_swSJgzEFiqKK4o7TEUe1eq_jqdMspbbUUufXhSHUshQQndcgjcs9Nh9zhyiF74xPlZTHrjD84XHKLYb2nCyMOKwyMkSb4D&xkcb=SoA16_M3qpFIRUyAwx0IbzkdCdPP&camk=ethIe0s0hecXLOE1qxjhkQ==&p=2&fvj=0&vjs=3",
-      "salary": "$75 - $90",
-      "allows_c2c": false,
-      "company": {
-        "name": "ExxonMobil Contingent Community",
-        "description": "12-Month Contract On-site at Spring, TX  ExxonMobil has been a leader in the energy sector for over 140 years. As ExxonMobil adapts to meet the increasing global demand for oil, natural gas, and refined products, it is committed to playing a pivotal role in energy transition. ExxonMobil’s mission, to fuel the world safely and responsibly, has never been more important.  Together, Raise and ExxonMobil are building teams that are rising to meet the world’s growing energy needs through the ExxonMob",
-        "company_link": "",
-        "contact_email": "exxonmobil@raiserecruiting.com",
-        "phone_number": "9214256550"
-      }
-    },
-    {
-      "job_title": "Power BI Developer & Data Analyst",
-      "job_location": "Brooklyn, NY 11218 (Borough Park area)",
-      "job_id": "",
-      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0Du2HAGyE8GEbNMBQxU38FQgJ1msMI7PjESoD_JOXiZbAuS9KOuAl2yb-6TNWZLJBO_j3Yf4UM0K8Euz_5MY3TywDE7Gk8Y_s1Djdb-HyaC4g5Wzi8NJsvMJMPawLCaEpXtk3TW9_Tc6UmWk1QFTcQ524txtuo6ifS67g0NL5Uc-j0oKAgomfCSsE67DoP_6r5ajvaSRzwFRoCQb2bfSIVhM4UEWZ6lRbQs152F_heH1XRB5zcziaVXb7ETEyPdRM8AAd3Tt2Uv6-bWqMwnCxZMm-0BWSpMT8OZque07eJcjXFDM6JLR2kCvvh6DkgayzlvA_CukpoGhgQmX47vqelx1KSLq5WEVYRqV3rWQCAoblPjlt3QlIxJ4M7dcvFgJ99cSc9oLnVBg10yuFoPlQHNgPheh1SUtS5KvSBBoINpA5Wgej2aeOFVpcJ0-YayVpJswhXHhbrXX_aOucnT3pVjSNPEQJ0QMV0YAxyR4utKD33D08uNdDgK5mQieC_SFsi9n79qa0D8QG9MD4UlE4XaKYTMc0aT5N54axfwaHhfuES3eKFMayzyPGb8pZ8IcUHzNyJUC-E3fQASG1TbdiGs1DWb-AAv35oN5IUWPxpjbFyOUtyyN7iqEs7FAB03TyfpLQvnarNjxav15LrtyP6fBa5KNGAQQ8ipDKt8AJd78S_gvOVS7fAz1Flc-Hi8FgyIePkVkVEWEF2ovr86vVY1bQ2iDPOKbu7dZ1XTdob_4MS1xytjTzal&xkcb=SoC76_M3qpFIRUyAwx0PbzkdCdPP&camk=ethIe0s0heeSbrP6d73Bzg==&p=3&fvj=0&vjs=3",
-      "salary": "$100,000 - $130,000 a year",
-      "allows_c2c": false,
-      "company": {
-        "name": "True Care",
-        "description": "Company Overview\n \n  At True Venture Group, we are more than a leader in community-based healthcare—we are catalysts for meaningful change. Our mission is to identify and nurture business opportunities that drive innovation, enhancing the health and well-being of the communities we serve.\n \n  Our unwavering commitment to expanding access to care and promoting health equity fuels everything we do. We empower underserved populations with a diverse range of home-based care services, including Home ",
-        "company_link": "",
-        "contact_email": "",
-        "phone_number": "9052387197"
-      }
-    },
-    {
-      "job_title": "Software Developer – Device Control",
-      "job_location": "Omaha, NE 68122",
-      "job_id": "",
-      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0CnWOSziNZNDa7jsdzqJIgLTLuvnM5U7a_lji39uQ3sW8lm2QJLzVBGGRIl12LfEaIv42uBvFnORWc-9Hh6C67gl1v5wtTkt8LzK4fEtLCGYRih5D1ReCQevLGxHu_5zOHjU1ybSqV-F8fcltvOWg9ymXvc9NnHzvOcUy86gx5Tj-LDDBVmuXRQNEprWljMJxcyLBRX-2dtwXGPKJH9MSijqqd-4NO7jyk2v5bNeVOZGXx3QNORG7oDx7arJeFGQ7EwN06TNh6733-uzY_JlMoI453q8OhIFFktR8i2TAwZVWnDICFKZYYt3YT7jIYvfTtdnDad2ATt8BOOqrrqGmYJnqoLaqrFRM1oLlarscSb2OnIa_U0nO9IK-BoNFYly0SrZA21RVrRuJ6L6XiWBe3Vh0ECQR5cGAhoFa3a1YGTJ4cBWJY75pTQ91s-x_V1DLKnnEPkmwnhks_JI1kX2IE1Oevx5Qplej51Ln3fBN_XOBw4XPlkNiO3OxrzUgmMxOK0ftDhswuea-TAhPvM-hCi6zfO3XSwR-9sXRDiZDqZRUhxIu3GiP8_DBLhZbh3ZiuwZWh0E5ZQsdKubvCYPn3V3YRYXhNk9EwXtz-GWM_CLQKC0lRuyE0wazDk9zj2g-u2Pt-cZFURUtgrvEo5LoLIxibD4GmsnFMVqxz-IwrN4wiMVMcPb6Iy7Z6UlqjquoQYAwla-c6WVamVkOv8O-W9zWcY1xbb9Z0=&xkcb=SoAP6_M3qpFIRUyAwx0ObzkdCdPP&camk=UoKtGZLa3XJchXX8e5RuqA==&p=4&fvj=0&vjs=3",
-      "salary": "",
-      "allows_c2c": true,
-      "company": {
-        "name": "Elemental Scientific Inc",
-        "description": "Job Title: Software Developer – Device ControlCompany: Elemental Scientific, Inc.Location: Omaha, Nebraska (On-site)Employment Type: Full-timeDepartment: Engineering / R&D\nAbout Elemental Scientific\nElemental Scientific (ESI) is a global leader in laboratory automation and sample introduction systems for ICP-MS and other advanced analytical technologies. Our products enable the world’s leading research institutions, semiconductor manufacturers, and industrial laboratories to streamline workflows",
-        "company_link": "",
-        "contact_email": "",
-        "phone_number": "1278636560"
-      }
-    },
-    {
-      "job_title": "Senior Software Engineer",
-      "job_location": "Carlsbad, CA 92008",
-      "job_id": "",
-      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0BBaCGdItf5s2tlwgLsewy7JfY6urCYYVSeLdNauEBx4iLe43sZ-Tmh3btU7_rqKbzTgzeDFTnB2IAWLL_aSLr5w5tjCx1lRDi5GvDI-BvLMgFO4WRo4TW8FydIoErvneLNZgEQfQe-qFNxi32Fw4xdOvk1U6xdXTbmB3_Xl2ADzXkRevJw1Vh97c2Sy08gN88VGrcCknhQkmJlnLxkvFo1NO6A6UkWCVFWl7zc3o9kjezxUQMGXiKxHNHVnTJaw32ihtcdDDLe-adrsXVvKv_tb1OoaL1Ujr6G7Jc9xyAmnSmsePVbzD_tlBVnnMemX35ptP3VwYTOU7aqFzhzuV3GMWaBgX49iekjp-nBYEm8lUk_LgTNlHV8arkgIYp2UAGMOh74OYfW3_2t6mGYDj-qVNutdZIfC_X_rRDZMIRL3I2hG-u8ESKx0kSOfXDcc3r1lLayeTr-SwOuK7iMZjVEQ2XIwXM1fIqvQ5VKL9CUQ-V_r5qDMRpMGkr_LB6KooNdmtOdvjitr1w9e_bRJRgQBf4Er-z6D9A1GelaDG0gqUygsObkxWD-wA9xfVg1juJUMLiDcpEQSFceFqnFGWvBGEUuwMfgaiXAANzPl_eWcjBdPuS0esS48IkCHDatQgkItVihRKw_IwVoQZ2yehhYcBeoGq7CG1OuPcaaC7YuapFLuS8gOAIuEMv0pUIepqI=&xkcb=SoCS6_M3qpFIRUyAwx0NbzkdCdPP&camk=ethIe0s0hedPqFCA3uSgEg==&p=5&fvj=0&vjs=3",
-      "salary": "$130,000 - $180,000 a year",
-      "allows_c2c": false,
-      "company": {
-        "name": "Confidential Company",
-        "description": "OverviewThe Senior Software Engineer will be a key contributor to Bolt’s R&D team developing a therapeutic medical device.\nLeads and supports all facets of software engineering through stages of software product lifecycle (Design, Verification and Validation Testing, Release, and Post-Market) for the software for medical devices.\nResponsibilities\nSenior Software Engineer\n\n Software Development: Design, develop, and enhance product software, non-product software, and associated tools to support p",
-        "company_link": "",
-        "contact_email": "",
-        "phone_number": "5272994705"
-      }
-    },
-    {
-      "job_title": "Embedded UI & Connectivity Engineer",
-      "job_location": "Raleigh, NC 27616 (Northeast area)",
-      "job_id": "",
-      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0A9D46XAq5iI8bOX0Bfb4UmAjfNVrbku7LRZLu5kJ7URvKNJnfwvGyFkazmsvYSM6UZWMcsIwR97JovzmcvWnMKGIX4zzoxaU1ZdSZ5iQDqKYQP-h0LjBM57L1ee0GCLjfIrdOSZOrv5DlW0t5FC_8xBaDZzVUODCc_hwRYtbcnI2PYDSJLZVkZD6TOKZNOG9nxFciqmJDxgIvWZEx1lpZZVFISafhxa1dypHc5ceJVmv4h0n5eiiy51pgxaAv65zzpWgRI4HAFZjvBT5ef67BFGC4W0k4rq6Ht7PvcHUqGQ6_zwE6YbGhimLS6p4lpYMg4MC0MRCWUlayGWbXAn4gNMiDszdWIioInCO31SOqvyw57EMph8oUUv7RTgDKAxWg3jHrHmsMeEY4EcxTwSFOTOCrh1U20s83RQAXbBMSK1tHzWLLkqCyVI_NZzF6BXgLCmALwuYevhuOa14132stRhc3z5kSRExBAfyEeK77bUrZkE2tIQudoSHNYOhdb6cwcD_WpG9Erfq5nfIh7TbNZEpytF5alyummkqgM3I4cpXKO3Oe4RtdDFX8UBPqFIRbs9uP3RR-lICVvguRosbrDJfvRYbH3Jx5yWqf8h12-SSAOFhW9S_7zoahNSau8uTa5qdyJNZTegRuMnDrjGY0VCw9QsB97I4s7D45ok3oa9stO8XaJgperDg6I_45Q4tNQuVMpeUptUcwym0hkrKKd4U7MuE6QtFBCf6_3C_NM4Q==&xkcb=SoAm6_M3qpFIRUyAwx0MbzkdCdPP&camk=UoKtGZLa3XJpZRzTueBo2Q==&p=6&fvj=0&vjs=3",
-      "salary": "$50,000 - $120,000 a year",
-      "allows_c2c": false,
-      "company": {
-        "name": "AFEX Div Bonaventure Group",
-        "description": "Job Description\nWe are seeking a highly skilled Embedded UI & Connectivity Engineer to join our growing electrical and embedded systems team. This role focuses on extending our product capabilities with touchscreen interfaces, Bluetooth/Wi-Fi connectivity, PC/mobile software tools, and cloud-based data handling. In addition to embedded development, the role requires software engineering discipline and a collaborative mindset to help us improve version control, testing, and automation across our ",
-        "company_link": "",
-        "contact_email": "",
-        "phone_number": "3735747309"
-      }
-    },
-    {
-      "job_title": "Database Administrator",
-      "job_location": "Hybrid work in Chattanooga, TN 37402",
-      "job_id": "",
-      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0D6Bzwk_8Y1rWlWDryMgqpXaFPLQEM_58_ndUH2-Fv1KIW8CeWHUNgkrZTP-wSlWxHZWuXFS7UKDeONs6NRbVAZVCwL_jcHr91Z9V9_9mw7oFcHmXucYjxI6l4rvZWbipDbPassbosQifOP5Dbe0hBOlrGNy7KDEBmhwNE1OJzkVnN2O4jqOxb1oScqjabecMorihhlT9oi9JwV2Ewkxyol7nvE5MR8Um1c7NindvOyCs0tI2aBUIl4JL3n1hpYu2s2FjLWTk3baUfXWwRTZ5AlFAW9DjVYYwziqpXJK-RvQYRbAOQKiafN7wA1IRYPtZZCgRQX-nxvdbsbt7eNRatBZkZFcwQKdi--7GB7ZW5ok1BccZBjlUToVWm84pixcu4MG2oTZWgK14jwuCw10m-CgepE4bUwcv7cPX0omzE6VN5Kvwx5yUlZ87h6dBLxYCViQI_FMx6I-HPeaPnJ2HuXeqR9ne6t0wKQEa1ccA-GcoPuMkKWgg4EJV-SclTWxdSftK8qS5IwaDxT_t36zrICSIwf4Z8H-sFCFciUZoOyVCorMjoE_1d5G16zuWE8Gu_Ria8u-zihL1unfLmdXNcjWwXXvo9cty9Q37s5da6VEvZrhJF1GQUg5XyxXc9uwV4QOyyBadp_UuUmDK87_m5D_5fEeuoz6WOKRqpa4tn8CWUt0aD_y2xP&xkcb=SoDP6_M3qpFIRUyAwx0DbzkdCdPP&camk=nUmJqO2E8rhtbG365q3qjg==&p=7&fvj=0&vjs=3",
-      "salary": "$85,529 - $89,353 a year",
-      "allows_c2c": true,
-      "company": {
-        "name": "DEVNET Inc.",
-        "description": "DEVNET is a privately held company that was founded in 1997 on the principles of providing integrated software and hardware solutions to local government. DEVNET has provided dynamic and flexible Appraisal, Assessment, Collections and Online Inquiry solutions to local government for over 24 years.\nThe DEVNET products, services and customer experiences have proven positive as DEVNET currently serves over 130 jurisdictions spanning the United States.\nPosition Title: Database Administrator\nJob Type",
-        "company_link": "",
-        "contact_email": "",
-        "phone_number": "6159372686"
-      }
-    },
-    {
-      "job_title": "Lead Platform Engineer",
-      "job_location": "Hybrid work in Austin, TX 78701",
-      "job_id": "",
-      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0CSYAtHtlg5whQAetFOBZw2jJtxBVHdJm6HtWPCMAs1d6BhSGCKQRjQ5bk6rgqzftJeqh4ZuX_wHNQ1PyAd2OIih5RY2WwIVh15ENtbIMZADysPEXiWv2thefYlotxPdzBftPXBDa2B6evwtbZKVEFsvI6gl6kMpq4HqqJIbda193FH22LxelbPFmb_kUj6K2R_-evTK645jT4DCukR9G8Tm38l9Mmz2-eYuiOiBxKCCX2mI7rec4q7UUk6y5TpS-h_YEfCfSBSA_pdmkixFiHmEloyX5-mI9x279xLRQ51aymgz1j5z-A5q3RX9GBgov9hM_w_Yrxeq-VbQ7j1sNn_XxIXVIlK0-i04KL34gJiR4a6OU7fYLwcL8HVwu5sKPnBfXO-FcvwTlOJExSYS-Wfj-UKQKAocLwAED-7ERgaEHyzEGn3X66l8yuofuIncB8FHSKlx31nB0N1d64NQR413fu5_vumHJYUGp-mz0OG9PdSpjC7gDd3pBob2Bmwd3M8ehPNL9i1nl7COirlW3KqBJF_y6epn-uQ-k8uzvO-nToMbRltSD5_kVdZdNM2nAG5kZhO1D6I2bA5gEMdu_5BHQXgKbrOEdU0XEkgFGxByZu3B_zXtLfbrR9pvU949-rhFdh6tdLwmXAQeFUNQnUTfoe01S5HuuDkyPc46KivDwcwKnOZvC8KrIRVEuDMhNFqFXEqSfLeazPo7MWK4oOE&xkcb=SoB76_M3qpFIRUyAwx0CbzkdCdPP&camk=UoKtGZLa3XJXGsyDs6rQnw==&p=8&fvj=0&vjs=3",
-      "salary": "$180,000 - $210,000 a year",
-      "allows_c2c": false,
-      "company": {
-        "name": "Future Secure AI",
-        "description": "About Us Future Secure AI is a tech company that is jointly developed with one of the world's largest financial institutions. Operating as an agile startup with deep relationships at C-suite with large global enterprises, we believe humans and AI agents will work together and give everyone the ability to get 10x performance.\nWe are growing rapidly and on an extraordinary journey of transforming the world with the most leading-edge artificial intelligence.\nPosition Overview We are seeking a Sr. P",
-        "company_link": "",
-        "contact_email": "",
-        "phone_number": "9005175289"
-      }
-    },
-    {
-      "job_title": "Lead Platform Engineer",
-      "job_location": "Hybrid work in Austin, TX 78701",
-      "job_id": "a1b2c3d4e5f67890",
-      "job_link": "https://www.indeed.com/viewjob?jk=a1b2c3d4e5f67890",
-      "salary": "",
-      "allows_c2c": false,
-      "company": {
-        "name": "Future Secure AI",
-        "description": "",
-        "company_link": "",
-        "contact_email": "",
-        "phone_number": "1278314023"
-      }
-    },
-    {
-      "job_title": "Lead Software Developer",
-      "job_location": "Santa Ana, CA 92707",
-      "job_id": "",
-      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0DMaSXHSW6QrHlsHJCuRTl8EWq9Jg0ybGUK3O4Tokqkn3Kwtd2oshGkIJJi62NMhIRnwW6ZBHk-eNARATKqqRvhi7MyTToUnl7tSGigQOeSIkY8hUdt8Vp6ODGI7RZzOdBkOdJbMyA1CqO1aAiMPmaZjNqIgw0MNoeh7L9NAZsKXilwuCaD0i2sbFybSQUYyub_bF5sJBhZOwe0Lnfrk6P_XWkX6-c9x2uq6W-E6cTcjiVlPzYsum9yBkdDvEiro1O5U3B1s49v2Ie99mo6JSzDslVgcEtas9_HmZtB9sk_DR158ezQJy67LMqTXTOkivVFstcZWnIF3s56WJGani1IjAwlpYBduxiA0eh611opAtf1f0fqEinB-W3psN8puN2w4Jv0GLTfdxpJykZ9JiwBvdxpYrvc5L4lxw3eZRs3IfkRM4piNlgBD3RvtTi9dXsL135z_X6bKNvDt4JLmBSR1pw0deb9zSe_Ttj-lmE-B_Pro6nOacpbuWryC0_pgtu7MRT5YYYNe0-VY8_7pyS0gUnlJAj7jaDEuPdsB1KtVGAyBGpRlfIV0SXvbTu57tCyPnagk4suATJJjUnE0MOf37QcScaHsRlQY28WVUK7VQFyp3i4yncZVhkKoyE7MCTqgI-5p4G6A5l-eX9-OGpA7514ixhg-qCzPLBpQInk0ueSrP4ac-y7F0riKdx0iPAFGGtkfxCyVUZpq-IdMJbHbdicvgnYl7dtyoNyKccWAU9_K32koLbsYbK77z7rjZIvrNdtUKbPRTcGqpHNIByTEa96lgoYpevNs36Qs-ioas5VsleQ3Ggp5GxiHiy_xNICCDcvG04to03Aq6XTLR7d&xkcb=SoDm6_M3qpFIRUyAwx0BbzkdCdPP&camk=UoKtGZLa3XJm1hXevMZJlA==&p=9&fvj=0&vjs=3",
-      "salary": "$100,000 - $125,000 a year",
-      "allows_c2c": true,
-      "company": {
-        "name": "Optima Tax Relief",
-        "description": "POSITION SUMMARY\n The Lead Software Developer for Optima Tax Relief, LLC (“Optima”) is located in the Santa Ana, California office and reports to the Application Architect. This role must provide technical leadership and direction for software development projects. It must guide a team of developers, ensuring the delivery of high-quality software solutions. This role requires a deep understanding of various technologies, exceptional problem-solving skills, and working effectively in a dynamic en",
-        "company_link": "",
-        "contact_email": "",
-        "phone_number": "9985897988"
-      }
-    },
-    {
-      "job_title": "Camel Java DSL Specialist",
-      "job_location": "Columbus, OH 43240 (Polaris area)",
-      "job_id": "",
-      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0AVZM42yR944w5gtm_-bX_pbvOXtHTwUG1lNRR4LvyfVthHT1HhBuU_c6ipi7W3bYgaxhB_Xy8Jvf2OzlsEwM7-Gm26zsuXvB-DR2WGPWTqdW3tizW4plWZ061hBh4HxpCQd4pinYapGxZjCsQ_ck_KF6mr423wsc5gbZ5X3_En1U0tgIKCWbjsdN9Lm2BJq7CdxCeR3z0pod0R1eFt3KrLN9gMmRsNS3zZZ0prQx9_azmrsuJqYL3S1V0ITuUfIx4mHpTy3ZibptHIFGmw3Rn4aDvpjIZ88hJYCFwP0StjoCMmSEcqD3Lc7DQH6a22Jp-Py2XgSrsybu9KMVVTHlZYwoZWbuKsNw-73pF9VQQqvzI2BMYS7RSl6zICWH61kJ0d6Bly_BBwqJoXWDOGDxQZXdor98wVjImnYiaau7KkYEz1BHdgxt2m_39ZywvfmIIdtmeO7IVIlo4kIWmiKXCO1ct8c7SIBarW-GtaEuDVRHG358Oyg0q03ORZBRenpsdkdRTegYd6naA8tESZ3A5wl9mvXN-5VO4vbrJS2JAqdkhGCnyDcPs4ZBsVlgt2nSYgZ-bCKpJ7N6g2sCyJ4WlDi3b1fp3P9wKoDwZS7mJoAkbw52pdCAHXC-VyEZYg8RRlgW4FuUYbnRQuAXbaRaAe5yK5zHhoV-vO2cIQQB9RqRHNHnxNChLGIB3kWh3OXQmcBTBsIsbf8g2pCCwZDsGkGps1Tn5XvEZwtaikFY_cKV8vOYmxU6OwSZDFJghfkpqzeaKtvW9omZW5vk5VRfES&xkcb=SoBS6_M3qpFIRUyAwx0AbzkdCdPP&camk=UoKtGZLa3XKyqXwPkVZ9ow==&p=10&fvj=0&vjs=3",
-      "salary": "",
-      "allows_c2c": true,
-      "company": {
-        "name": "Intelliguard",
-        "description": "About the role:\nIntelliguard has an excellent opportunity for a Camel Java DSL Specialist to join our team in Columbus, OH reporting to Director of Software Engineering. As a Camel Java DSL Specialist, you will be responsible for owning, designing, developing, and maintaining critical applications and interfaces that handle healthcare information, with a strong focus on healthcare interoperability. The Camel Java DSL Specialist will also play a key role in guiding, teaching, and supporting non-s",
-        "company_link": "",
-        "contact_email": "",
-        "phone_number": "6338108149"
-      }
-    },
-    {
-      "job_title": "Firmware/Sr. Firmware Engineer",
-      "job_location": "Hybrid work in Broomfield, CO 80021",
-      "job_id": "",
-      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0A3sWjayjC8J1_tWfzwxF5EYhNAw3ZkGKR6gwnmMQwU4GnRlflCYN-wkjnYVCj1jlgHx2ZHyGeGRYIDvVJKLEu7ef6-QPNsThSQrj20D3Sa8JLou6VsXNVyZUC4OteGDgopcgOHo5FSz3q7FpFUT9ak18MbiRnaJUFfgXpbCqeS-UsDqijpX9uz0c7P7iMoTgWxIgI2vP6qAbpOGaYhyufnzTTVrrg3DZkGRA_vTy9rnl_NnmM0FnnBgaHPCK1DnnzBA56SIyLlLTimeXx0tg9UpTRll4LsY-QPrJHOuLP7SF2dsi4S9kgzbniGvEOT2jJBqbWQDVWJt-NbUTgQ0pKVBAUlv-tZA3_xCdxVQ2LyRx2MzfBFnAnu6cvjmnnLWPjTnfiAS9HSvOKqWvQNDak8RqsYbxPbhNLyVPk2-CB-aXwv3eqhRMOFzQ3gMtz6-KVSfaZekExIFTaTVhRsNkzb4WfXc5CCg0WNoHpJDa7f_leXk94YPntF_oCSfCgYqMXL8ToM3cyQlgMTv-0F6msDPyg6uZS4URoWhZG6WN79-8Sw1mvnDYNrocbkY63aY80-9fYtXQxIJ7OtIh-K-GloWPZpoDxmJeNfh0huDK0PuC-5vezH4n1FgfrZ8MCTWhMRWNDScCg6WbTFueTBlllp80XqJkjofYaW3Au6FYOMECVWfFaa-_uLyRrv_l7UPV0=&xkcb=SoDc6_M3qpFIRUyAwx0HbzkdCdPP&camk=ethIe0s0hed-pUiOq88IJA==&p=11&fvj=0&vjs=3",
-      "salary": "$90,000 - $130,000 a year",
-      "allows_c2c": false,
-      "company": {
-        "name": "Inovonics",
-        "description": "Salary Range $90k-$130k\nPOSITION TITLE: Firmware/ Sr. Firmware Engineer\nREPORTS TO:  Firmware Director\nSUMMARY OF POSITION:\nThe Firmware Engineer will be joining an experienced team of software and firmware developers working on a variety of development efforts, including firmware for wireless devices and software applications to support them. We expect the Firmware Engineer to come up to speed quickly on the products, tools and software development environments used within the team. The success",
-        "company_link": "",
-        "contact_email": "",
-        "phone_number": "2761047353"
-      }
-    },
-    {
       "job_title": "Associate IT Developer",
       "job_location": "Boston, MA 02109 (Haymarket area)",
       "job_id": "",
-      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0DNsxMANwe1yYOstgj43-IWQk0GvtVoqNrRW5BmYqhhtPlZVBQbx0GuKFWKQaJ2AnJU2Kk-4AfC6BW9FMN4qUK-53QckFMgsq1iL2uHJGMsKxhSVkwnaIQ9u34aMzUEPK2uWQMHIB6fv56dBN8ekZNWlSs_s6R9Xuz4NrVlMz3yLafnFr_Y7MRQURk81X2IVlh4pl_MWyskOlwPoMUeTvS4e8JlO509ka91zEhP6nnnUwxuIAdQy_lKUBiX0bevE9Q32As2z0BY7E0RDzZVQ3LrvmwTfvrb35abbu6Pr30V91pzivaztd2L4ZkOE8jsnvxfWUXe1pUGht23WzlpGYqgKmpKRak-bIqdCrSHWom7fEnxh-zZGbUC0AtlC8gd_zxyId_8g5hpLfjQhxibsVJC8xp9q22Hts6lqy2Z2G-IKYFIYU8W8pemQMon5wRM_aP7A4CAdO-buiOSvR_eZhxky1RPUZsj-YNkvbRB8YcJtFEXn6TsJDr0cEt4xcd-q0JttM0gH2wvfCLiWnkhS7xYmg4w8udZwcdYsZ0L3jO-B6lYLcqut4az8wxNEnyfjnEf08t_boaflLTJml5LMgArMK6Fpwz_emQhbwM2kf5mj_Phd3qD7xC_cl2eKcKhwlIO-HTwSRbrNIpfAJk6L6pYX79dU1eqwM-gqaUSd-ghdh0XlIK8Y_9Xr7smBdjz3x7rI7cRWFbeUwtS7hGF5jsV_PpSAjv4c7QW8ZZPCHhfGrATc5hukOc0C6tZgSS2JxGVr_2DupfDUYt0W7TQP7svMFr_R-Dd_sESQOAZrUW62rDzQWUNu1gMHUi5ijNqrJJRJK-dDRBv6Q==&xkcb=SoBo6_M3qpFIRUyAwx0GbzkdCdPP&camk=UoKtGZLa3XLBaZT-HEWT5w==&p=12&fvj=0&vjs=3",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0DNsxMANwe1yYOstgj43-IWQk0GvtVoqNrRW5BmYqhhtPlZVBQbx0GuKFWKQaJ2AnJU2Kk-4AfC6BW9FMN4qUK-53QckFMgsq1iL2uHJGMsKxhSVkwnaIQ9u34aMzUEPK2uWQMHIB6fv56dBN8ekZNWlSs_s6R9Xuz4NrVlMz3yLafnFr_Y7MRQURk81X2IVlh4pl_MWyskOlwPoMUeTvS42Dzh9CWu9OBqGAyRGFAuTbWQb9Dd1kfgG7M2Cfvarknjgmfsu2wkyIUCZO65qY6SiJrreWwhlmEjKXSJtXWFFxgwF_L4JkndlXYjdH1DEYs4tdwUnqRE5HM3TnYtaBivoHHNqbja4M5clZZrntmh1yY7fP61AvPd7jMy3rUw_gj1X4BS2-CaOF-HorFx0nSvo8nDd5_od05hbqg4OabQpytMeHDlu2ptVqsyiZ_KgkWT-yj1oF5cms03bmqlCKUZQmE4Mp92BMGwxXy1_KJVdetCmDxSeR8GVl03dEr_pfMmbeLMwlovaZj0Ewo_QlK5TZfAmW9jAd2gEBNxmraYsM8FL4-ah8Yi3TPyYN5kS2RxjCKubM9eH9W4jhyrEVltYdD2SvEqr2sCM8racl8v0F6z16LU6ceD3fqvgu4XqmPIvARQ5PANCdpV8osZHvwp8xykW0KcP4cxnLverCcKmFoDCImEtMC3Uoct-oVP2j9JULAPz2MC8i6eohZKUUkoSmVtNijvBBYJs49U1xJmFb8AAso70bBn0g17Kq73Zxe5PCvETM4Xkne86Bgnyc7kRRdHbWjZ8q0CDMmdqnhPkH3YdXGhebTURTJ2qIdYmWeoSr7CnbeRpqLqPo-xOafR&xkcb=SoDN6_M3qpY5gOyCoZ0JbzkdCdPP&camk=UoKtGZLa3XLBaZT-HEWT5w==&p=2&fvj=0&vjs=3",
       "salary": "$90,000 - $130,000 a year",
-      "allows_c2c": false,
+      "allows_c2c": true,
       "company": {
         "name": "TIFF Advisory Services",
         "description": "Position: Associate - IT Developer Location: Boston, MA Firm: 70-person firm managing ~$9 billion for about 400 US non-profits Compensation: Competitive compensation and benefits package Culture: Mission-driven, cross-disciplinary, intellectually rigorous\n  Organizational Overview  TIFF Investment Management, founded in 1991, specializes in comprehensive Outsourced Chief Investment Officer (OCIO) and private markets solutions, assisting endowments, foundations, RIAs, family offices, and other in",
@@ -219,33 +54,198 @@
       }
     },
     {
-      "job_title": "Sr. Software Engineer",
-      "job_location": "Sunnyvale, CA 94089",
+      "job_title": "Full Stack Developer",
+      "job_location": "Littleton, CO 80120",
       "job_id": "",
-      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0AnzRkaKcv1Fhr9gpPEB3PTtU25lPR4qrSrIU5pTTjTMTpwP8HNmjMBCfgUhA-uUCEWUmx8Kz4evizkFbORnPphTsVAMmCBKr2d1HsEktbZashnn6XkuOrYTkr1YwM75LZfH3C1qrstIZF41O3YLw8QVcDt6BI8dcEE6uw3-ByB6JPABYdlGukUNP3Q_tV7IApRMq1J4lJN2RugCqmq5QsX3J8OQoVduiah1W66Qc8lEHOD5hNi4XzDh3Aet5Uf6C4J05XhFahgf4SsgLZU7Cjj5qRWZ4BZot4Kvh9YEUcR34yWZiMJ8xZ3jBsX182DGVe2p6zSBow59diwCTs3HKJg-A_mDHSOvHhYi3UTUE8aTUqCbrOX1X4zOipwbPqnnYkYpegRb1mKO2G-_HCpjb3XU0-lvj0ebqsk8igrOyuJgboyNzTAlZexzfOoBaqfRcPf4Z7Fvo6VzKXnnWqqmPB9DogfH9Rug7bvp7hIhPUeUH4ikEdC5GkKNZXYo285JAdmBUaWj-b-RA7IbgP_9Q4jgJm7gIEDTgx3UXx5cPfITTgWM9japn_HSp1UDa0ltoza2wYv9JvdU5kHx4K491nm-6-6AIjSNVnR6dxU8jJqAIC0xk_yd-FVtUBIVWGqiUcetQPaahZ50dtb6I4FMvufEjGw_WOKjx1yXQ3We6-H7PXaZceHrz00dHHasOFgr4UsPT19_t1JlKmMoimokdPMcitvErZjnevkRN-Gp38PDhWzZFCnBR29FVq3MmLxRgu7XXjMNRUdOyCDstUNKwcH-cW0N0QYvd5wI_gkQUcloLDNHrPFgAudsncrCYmZ2MyQUrzUbouPZPPvemHWlS4iRdtOuJ7qz_AmjQLGawUBikbf0SO8mhfl-ePRPGsSe33aseDcdwhuJw==&xkcb=SoD16_M3qpFIRUyAwx0FbzkdCdPP&camk=ethIe0s0hecCTQFfT5_9Og==&p=13&fvj=0&vjs=3",
-      "salary": "$87,400.00-$120,000.00",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0CMtc3hEOUeO1JRxyIvvjbdfPzRPh8GedL6gDHJMEvvww2ZFslmBoQO1_emqDTX9rWhmj8rEHcK5O_FHqxVL4Q7X5o2lQYUMiPcaURAUphqCt4QiWJLMwhDIzPYcgFFBm_a_UUly471B_VBMDPkeE3LN6GtcrO_iDp5euUzYFBZafXetY9HaY6ywrxxoqwdrR1M2e3kapbfEz1A1LN_X7KoFu-SMSjmUnUptJJvKIkI8xzPM3jEvTTQiE5eU_BAYFB6trhLVfcezL7uAzG_-Or7ifNP4msWhgu06n1i0F_j7AZUZI4TGm9LEQV65-kxQAe4GzbVqx6PfpwE_Q6VME7BpQFwsTXR7tDfz2Gt_xQhi6zbJAT4FX-WW8-SnA4ugMZSopCrx5i1enozUMbgW2-uLojNJRNC4rkm1uD6v0d90edIj4bx4KQhesVcZdokSc_MMScVgSRUeDfYc2ELjpwZcummU1FEkqa4j7NW6iUQpvqoqik2jqc-C1ssHjgzKZ8B7elmrcF6K64qAzm5xy9QQD2Wn6-6dGgTvNMOHYz3GrgpBJe-TE3FyeZ4ZsdSxl7J8mB-rB9kXPAJVf2IoB4Ig2uJ6XyIiHx_Lxxm5Vn0SGW_PqRjkNyL41htVvw-2c2TE0J1GRNH9wb-w2gd3DkNNeAxZqEtJAI0phGkJvn4jypxfufDiFqns-kdCFtUhwP2fYtF0j2-LhXwBfV2HeiVzKZi1ZtLiOQ=&xkcb=SoB56_M3qpY5gOyCoZ0IbzkdCdPP&camk=UoKtGZLa3XKokP9nVZkgHA==&p=3&fvj=0&vjs=3",
+      "salary": "$90,000 - $110,000 a year",
       "allows_c2c": false,
       "company": {
-        "name": "Commscope",
-        "description": "In our ‘always on’ world, we believe it’s essential to have a genuine connection with the work you do.\n \n RUCKUS delivers purpose-driven networks powered by Artificial Intelligence (AI) and Machine Learning (ML) that have been independently validated to outperform competitors.\n \n Do you love building high-performance automation systems that make software delivery faster, smarter, and more reliable? Are you excited about integrating AI-driven innovations into DevOps workflows? If you’re passionat",
+        "name": "Lifeblood Health Foundation",
+        "description": "Position Overview & Impact: We are seeking an experienced and skilled Full Stack Developer to join our small agile team. The ideal candidate has strong expertise in developing both front-end and back-end applications. You will be responsible for the end-to-end development, maintenance and production support of our web applications, including designing and implementing new features, supporting web APIs, and optimizing performance and scalability across the entire stack.\nAs Full Stack Developer, y",
         "company_link": "",
-        "contact_email": "talentacquisition@commscope.com",
-        "phone_number": "4137143621"
+        "contact_email": "",
+        "phone_number": "2655700909"
       }
     },
     {
-      "job_title": "Senior Database Administrator",
-      "job_location": "Salt Lake City, UT 84112 (East Bench area)",
+      "job_title": "Senior Frontend Developer",
+      "job_location": "San Antonio, TX 78230 (Vance Jackson area)",
       "job_id": "",
-      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0BpoasnXOwLNxO2kcgvBNm7Wteq8-tnwuDPaD8lAt3xYU0P9GfhPLxkyWQYkWmeaiEz-mv6mRucWNuvUefWoxOAwPZTTwiY7o6fjFoLYm_xk3C3YlCKZWiAvrUFYS8wNYnH90uHyhakcRzjaPEl2qXgUElg0bT4g1j4Jp4tdKZ7AojK7R0VsDOAuXYYqVsJOJCcUJOq08e1IkYNvIeQbVgrkqjPcsqhakRie_651sMaBKNsNr82s94LfCOYrHHhcVj0NbvUWNXMuYLXFvb4PvT0HHvundP3Z2upkj0jbHlB-4QQn8uvxFdgih4ynzVzH_o0EdBsFzPxGnP7niowRBwjqHdftBbSGVlCJlQbFXEj3JUAdO8VVYNXElUUkIFPO10jAlE5rlC4o7Q0sBPmuOXHNzE-17Yg2mpxJG5n9gi3odx-uoGHBu2KAG7IsABsRbXfPuRCqEi1g_tZ7CZSetvxbJl4jgqFQ89RNTtZBrxdqIBbRh7Vs6YtZX3ptFc0wH67-HPaN5E3cQEEqO0Tl42Y5P68rrirBoDu1VJXrAg8r3SYhyMnNyVOjjhS_ESM8OEoTH-B2JP2L0ljGjk4NUTveuMv3pOIwV-C3xeuUalQ12flf8sSVg8xsZB13iwMs5pT_FxOWgEVtw==&xkcb=SoBB6_M3qpFIRUyAwx0EbzkdCdPP&camk=UoKtGZLa3XLp-9k43lBchg==&p=14&fvj=0&vjs=3",
-      "salary": "$64,122 - $161,814 a year",
-      "allows_c2c": false,
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0DNwNX1P5eHp7UGQzNNqUIYr4gagyh6KfUUMJmrHPeztnyEQxk3lCLGuFdU_Ll2NKyMCzxldcWjdDL1yus4H4KhG4qdEHJyaU1lx8BwMjKFZioIGXtkAPcREF-6un7-LTT-vey2qTdLAWIGoRLZDUAGcSe-rNpu4gSUZ4-o6xQM1_7aFFfIzwJTbePmPEQGku0BFzAF6vh8TURuw_5B1eK7mfRITS8ZI_u6mDodrplUXhwqq8bmUcbn5xW9sYXkJi6oKNv0VdSHeR26XhbWxHD2v-Hdm-bl4Pe71Jrf0CHLHLMAk-v_Q7y802lWq9Wrgi90hOsCEGYThYsJdXU-FiXAb_vDN_LqDNdz5S4ZfYW2i0BN42vZkNb2_Rio5JYwSgA4kKc5KXnYZpmO9at_x5LvrLjoC5FWS3k2JOaGJnCL7G_fe5jPNbFLlUGWUJ1m7kGW3asR5KvBK5vpq6LlphpFDhc0-wlD9Z0jZ0ukKFMJmh5XtX3lX2tg-8PNClntvWQRLEl7cADsYMxbDhDmf-LQYaT-7oiRH2c21A1RebC27CYfYxJhXtm-82Du2t6P9m3HL8t0afZmcfH_dQyjF7oLvIGwq1ugW3T-ZFWHV51FqY7_BHryr4BM74ebfbZc_3HwI0mpIqNteit8FHGpfZalYSIv480A8Tu86oRB3ppoDIx_7zefMCHaJtRXMvgB8OKRpRTeI9vX2o-EqTL-eC6uRyVo_hUNDyg=&xkcb=SoD36_M3qpY5gOyCoZ0PbzkdCdPP&camk=UoKtGZLa3XIMpD7yoiHd-Q==&p=4&fvj=0&vjs=3",
+      "salary": "$100,000 a year",
+      "allows_c2c": true,
       "company": {
-        "name": "University of Utah",
-        "description": "Senior Database Administrator\n   Job Summary  Database Administrators Perform activities related to the day-to-day administration and maintenance of transactional databases, ensuring that the database is available, performing properly, and safe. Perform installations, upgrades and patching, backup and recovery, performance tuning, security, monitoring, and configuration. Confer with appropriate managers regarding problems with and capabilities of databases. Learn more about the great benefits of",
+        "name": "Extra Duty Solutions",
+        "description": "Senior Frontend Developer\nLocation: San Antonio, TX (On-site)Department: Engineering\nSalary: $100,000+, depending on experienceReports to: Lead Software Engineer\nAbout Extra Duty Solutions\nExtra Duty Solutions (EDS) modernizes how law enforcement agencies and municipalities manage off-duty details through scalable, user-friendly software. We’re unifying multiple systems into a powerful, cohesive platform that serves thousands of active users nationwide.\nAs a Senior Frontend Developer, you’ll sha",
         "company_link": "",
         "contact_email": "",
-        "phone_number": "1473197692"
+        "phone_number": "5161490698"
+      }
+    },
+    {
+      "job_title": "Senior Frontend Developer",
+      "job_location": "San Antonio, TX 78230 (Vance Jackson area)",
+      "job_id": "456789abcdef0123",
+      "job_link": "https://www.indeed.com/viewjob?jk=456789abcdef0123",
+      "salary": "",
+      "allows_c2c": false,
+      "company": {
+        "name": "Extra Duty Solutions",
+        "description": "",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": "1278314023"
+      }
+    },
+    {
+      "job_title": "Web Developer",
+      "job_location": "Irvine, CA 92612 (San Joaquin Marsh area)",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0AZwTkcTyhLtGCod0YiU8q0FpaoIU12csQ78G-FUj6GT6MXzJxYOnNDcm1_Ct13J1PjLh2ozqXMQtWyRs1k-1q1srNxIu5a9-L4TtVjU6s_BV2yOSr1S_66g78KS8QpfuNvcRsJm4OBhzvXgXrAeHkQN9D2wDdV7uOW28V-Wywa7shrOalcYA-bWuvosVALxWaqojdrzX9yr73XegpSi7qsPj_8g_LxWBkPl57GDmc9Cf62UDznbj2Kg7AVMEpn6nRMi5GxBJYleJ3TEIzHYoSVliera0s2INS_mmIL_zumgRwqVIIcKA9Tw9SkLDOljxafv2wAly00PiGjqFHQ3r2lcIqo2RYsBFwbkVamr6vUE26LEZF0RuLSQxUrAl-UZZbXz-vH5XViVdY9mwCxpeywmaWHfAZ1YSTzKwy4VVBVzliPT237rw1bhMe1B4DBpo5NJeelZfPzmzOrm0JKpQs4JK0MCDNYqcI34fjIId-HpIH6dMZWlEztTFAm-VV8kbIZPf8XLe6SnjZjTLJIF6hkt7v26OPEJFOVJHKle1jX4fnHEw6nKsigiPkrUn-QJZ606PvZLvb2pwvHc-_qSmh7aMPoYAurV6gKUB_YkEtYEJMu1cplqWC9IZf6JJZyp47DchyTajvMlmo0scprcJJT9CWkgpX3tTGAcdr35g441ZDrO_R68WbZ&xkcb=SoBD6_M3qpY5gOyCoZ0ObzkdCdPP&camk=UoKtGZLa3XIF08pwQwebeg==&p=5&fvj=0&vjs=3",
+      "salary": "$85,000 - $125,000 a year",
+      "allows_c2c": false,
+      "company": {
+        "name": "RMD Law - Personal Injury Lawyers",
+        "description": "RMD Law - Personal Injury Lawyers\nLocation: In-Office, Irvine CA\nPosition Type: Full-Time in Office\nAbout Us: RMD Law LLP is a leading personal injury law firm dedicated to providing compassionate and effective legal representation to individuals in need. We pride ourselves on clean, scalable web development, a strong user experience, and seamless integrations across platforms. As we continue expanding our digital presence, we’re looking for an experienced Web Developer to lead a variety of proj",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": "9376346412"
+      }
+    },
+    {
+      "job_title": "Ruby on Rails Developer",
+      "job_location": "Lehi, UT 84043",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0D5Ygn1RU7Lp1bdK96w5GUkXl-n1RLIflS_Ga2hNyqx0-TWoFRXRT6_0sbPIRV5m0p7DFCcoz4-QCRfY1CAeSjrleYFZSjmXg-0Z256mialC9pI3SBMNVeSs2imtGI8EZSc8eAzWpQIxjC4QDzqwCBbbDbDq27s0QzGpXvdPDa-jy7RpwipO0_Z_4yaZXcetN17Qpd92Th6dLbz4ba6ZgpI_atGLz1CDweSXJ011LY_o9OniPj65_lCtSgVgakhTGPO6tsiFmb_NlN7v82J7ZIdOnHncL1cDsqnNi_yz1ZplNP0VZ3qWzCoH-ZxplVHTfZkQH0Fef4Y_DKxZF_iiWl48_FzDXsOdEfjcXKvjj0QDDAuHu2CKSRch7jYPKf2bRREjSQbNRtrJ1T3TviZR0SV-L12txszbv5FvnuHwxtFYS389dYVvRjUHHPqLxUvP6MKbodQzp9gYTzNUShA-1xSjR4UYDQ-Zx3QLnNZSPXIWLMpyPf40rd3ncVeijmiq0O8nqh7Fk_rTgI4ssWrWQ58HcXokLKb3Z2maHxzKpuTtIMLtyUqectdJ0weDTYZxw3vUOHHnPMJ0j88aTSEqeGiI_c_eIr4qBXVkcBmxuZAHApOAzsp8kszHlpMxi8kT0PzRsUgt9D0XcIBVQWkCJkUQ2xmp8X6uc8_iHsKGL374BSaDpfhjgoGT6qDPgbai5g=&xkcb=SoDe6_M3qpY5gOyCoZ0NbzkdCdPP&camk=ethIe0s0hee8o1TDjIeOog==&p=6&fvj=0&vjs=3",
+      "salary": "$120,286 - $175,698 a year",
+      "allows_c2c": true,
+      "company": {
+        "name": "Fluid",
+        "description": "Ruby on Rails Developer Wanted: Help Build Fluid's Open E-commerce Platform\n- Location: In Office (Lehi) | Type: Full Time\nWe’re Fluid – building an open SaaS platform to power the future of direct sales ecommerce. We need a high-energy Rails slinger who thrives in fast-paced environments and wants to architect scalable solutions for millions of entrepreneurs.\nYou’ll Own:\n- Core platform development (Rails)\n- API design for third-party integrations\n- Performance optimization at scale\n- Collabora",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": "9914798400"
+      }
+    },
+    {
+      "job_title": "Senior Golang Developer",
+      "job_location": "San Juan, CA 92675",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0C2rXn7XJIKbbDKJEnW_o_cdnAqOXxaIgFOVUKHYJ4LRSbtpg10oyiU3Xmul_rPcILqOhOiHS3VtAtcwRZNimJLZ0XsrykGIUj6Nf18rbCeBQH5pGj5aaVyhCj8fhw-wmnCDvRwKlrXUPHwYFOxJbsKHFwvHtqHA4bsMqI8clHYuFNpMQZc8Hzj64fXMOaStcfOgI4YqQSUakW8gC1mAkQm3lk7ZYjUaGzOZjAYISIg1fWfX_AqWycUjocZsCdFmMMJwpmHwCjmaxwY3mF2s13FggY5C8hoN6_PT1SqnbPb5ZW0GbCIIlb8bLWFeRZnnzevRbhMEoChSJJwM8H_mI7PxaBNgiQYbAsBrWnH7WZyc4GVhFN0s7yPQ9rUJuPUzliJ1fXqre4r4KiRE6_dPmZmqE141EzZFuJPPqWhYB7vqi3rp2519HcricDk-jVvyze0Wr-HxiAhSzHDvDAqlMvDnz7Bqga0r1ZPacPGw5DBh7qPd5vuabeNX2NSxX5La9_fXe4yErC_ajsfr-3eI4QR6DKyPchCZy8BAy-Y7LTZiqddK71wrjoqsEUA9nV1yfgiTDP8SoTFV5xuJohxPcLSn2eP_JHIHiB4oVsyW28MNVwhMQcVcthqBpIJuZfNTtpDNdEPzK56sGn4CNoxfcE4Ao-BKmdfe-7KPnO3YCREJiSW1TyRM4VYt62Q8xXSfUI=&xkcb=SoBq6_M3qpY5gOyCoZ0MbzkdCdPP&camk=UoKtGZLa3XJRXLEJMC-M0Q==&p=7&fvj=0&vjs=3",
+      "salary": "$80 - $150",
+      "allows_c2c": false,
+      "company": {
+        "name": "SNL Grant, LLC",
+        "description": "Job SummaryWe are seeking a skilled Golang Developer to join our dynamic team. The ideal candidate will have a strong background in software development and experience with various technologies, including web development frameworks and database management systems. You will be responsible for designing, developing, and maintaining high-performance server applications while collaborating with cross-functional teams to deliver innovative solutions.\nResponsibilities\n\n Develop and maintain scalable a",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": "8155275485"
+      }
+    },
+    {
+      "job_title": "Frontend Developer",
+      "job_location": "Nampa, ID 83651",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0BnuPcKeAos9oPrFb8HvhaX2MxlywlJ2Jhc4ZVMjGYZ4JOwkBpMceU0W6MQagLSQ9YHL3ApfQs_qAOsNl_1Bpvw52yKsezL8Bz4IiA8TBZMQLVGIyGsB0dbYhVAA5_I0Qorkxb0Xh81g4XJuWTcZHn9SrcTg4o5IdXgLV-rMnhBKQs2bvtvc4olgeEAEoLwrSssahJt_wy3USTEDnAZSO6sK5HQk5STM7yckgIW7DXtkJmCyg_qOvyJ2l1-Zsv9ifD4BV5SK10XwhJogwUCu3UOGEFz-S0or-xpneb-v9dS2VJgskK-pok1dU85S24d6kY_d2G3rE_BaFiVIHcQfUWNAeLpbiI2bNqgpCTcugwmOgjOUbJjarZuIxmIqWCWo_CbC2N9KZ8Uw58JTIXMCbGJsPMpjRsbgXsPTEu_vBDZv3WpZ8CJQv_3ktP_75Dz5xZhDnJl60d09gSAioatyeusFRO-z0oaVozZw6doUuEFcZXf1r4V5h-iRjVVRQ-M0_FgMTvN3QxnbZmKyEoL4W23agdGnMKhk-Q4JNcOuRZEpbKaigniA9F4XiBUIKrugebzCoQt662yuLOoV4n5ZE5HcY2XpPM4slV_ikrYb0l7_kooBhhsWx9BwGmReYsRe6KnuksiOAmNs31eCOuhG3tSU3jgER6b2o5BLzej5AV5TyvrePBCH6LzBDJGc12QbBbkve5loI1QmpE_NK7FsKoU&xkcb=SoCD6_M3qpY5gOyCoZ0DbzkdCdPP&camk=UoKtGZLa3XJexSnnKFyJtw==&p=8&fvj=0&vjs=3",
+      "salary": "$89,525.93 - $107,816.17 a year",
+      "allows_c2c": false,
+      "company": {
+        "name": "ZS Community Space Inc.",
+        "description": "Job OverviewWe are seeking a talented and innovative Front End Developer to join our dynamic development team. The ideal candidate will be responsible for designing, developing, and maintaining engaging, responsive web applications and user interfaces. This role offers an exciting opportunity to work on diverse projects, utilizing cutting-edge technologies and frameworks to deliver seamless digital experiences. The Front End Developer will collaborate closely with backend developers, UX/UI desig",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": "6958240636"
+      }
+    },
+    {
+      "job_title": "Senior Full Stack Developer (must reside OR, WA or ID)",
+      "job_location": "Hybrid work in Snoqualmie, WA 98065",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0BG4GAg8kev_OBgCaMmNFOw9RA2DP3oIZOjyxipGsrJwRp6X6WSn7PedWhw9pNgfs6OzJVm0X_UArMtsEkdgY4B-Ez2XmeURJRJ4o829qUu4lI8dHh9tcBCyh38NrX_2B1nD4huM2nnFXCL4dhVaHYd7c7IzN6DCwDOIC1DSFvLwegVASS9sM2Qn8dtMv7KOHI7mmy6un1cW5DiLqOLEx-lqicx2hiUZ_Iu3JUkIDFbWfxfzs1yhfNX3d3jI_lsyEUkJODULz6NusmwWDxP_h6_QNNiURKCq_31qAgBXQpzkesoVKB-fKSfNDCczs3ecPHrgpG7ad-b04-E5JuWc4SewCrwXviJAT4BX5DT8FQfMGXDJozETkmWGpZhnoZc_ptZ5z9zJPg64d7aT_j1KGbep5N8wkjaqgXd_mIpTG3WSjatShkq5DK1mGQvgaTHsvCU6hFRM5UZ8amcN2IP8_mY15FwLCMRAI7Pg-dLqGpygvXMN2ONUOXJJdCItOP7sMObf8TCKAqTWizXnpxmprRAk8V8PqK8FERVmRcwByFGeqGfF21tpH6NXJhQmyHMd3rtEDOE_vBU_CrCzbkmqDyDChHECNHXikpjV_7VcdSYtnkRfF4xvo8qL6rQfT8Y0h3KEiqBLoqiGZ00B7iuEOIV9f7XzGWBcTKz87tjIL6NwuUkJXl02r1Gy_8yKh4q6LkLP7fJkJ_HC7VIOAkhKFR3fWHGBVUAIS5EX3jFaberEA==&xkcb=SoA36_M3qpY5gOyCoZ0CbzkdCdPP&camk=UoKtGZLa3XKqQ6z2lwzEfg==&p=9&fvj=0&vjs=3",
+      "salary": "$100,000 - $200,000 a year",
+      "allows_c2c": false,
+      "company": {
+        "name": "Democracy Live",
+        "description": "Senior Full-Stack Developer looking for Ownership, Security, and Impact\nLocation: Remote (Pacific Northwest preferred)\nCompensation: $100,000 - $200,000 (depending on skills and experience)\nDemocracy Live is looking for a senior level developer who can do more than just ship code. We need someone who can own entire projects and see them through a development lifecycle, including architecting, developing, and deploying solutions that are secure, scalable, and accessible.\nThis is a role for someon",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": "7129391205"
+      }
+    },
+    {
+      "job_title": "Senior Web Applications Developer",
+      "job_location": "Hybrid work in Atlanta, GA 30350",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0BvJFEx3lYgPeWe8UKYmAtGcZDMlptJ25GgdvOHJhqi8xz6BZ8TLwac1t-c8oJpYYPolUSi0c5HRcApLgdVRBjRMZclKiLiwM5GrdOCzg25RDeupCs3YY8IWjxbVZNxhdGlOUJSxzkvpXXN3SidSlYsMqbbnWj8NWGP3vGWkx1P5JswDh5ewT1HwcxU1ONthMvtaZ4HcyTlAoUyP_tGKs_myZyGwJcfpPYyr5eZ1OMUTj--LRAADTdXX87KCu9L_2XG0de0IIrtDGkd8nhLg6e_Cz2f5JT5m4hrm8K5NoNNebSOcAPsjGIIA0USra7Eh1b7ejSnHLa2avrDl4ncgwkOCMm8sHBNAvjJwoRO7FRuCis0kyxReLOwfsPLFiGkiU1w8oKSxu_34dpEK5RR70lSFfgxnVDPe_zNB82dXrBse0lLko4GxoHFYX21REnIBV7xAatyavhd5oyEzbWk2G5jSMmwY7p0l9WKVM1UEzYqFL7OC2satRC5r0PMP06SwB_Q-U3AV4tuFmRr5Y6WV-tZiAzAEScnduSeudj7oGF83N7tRVy63CL6TWt04aKmdoqMP707trEWcCFl3djjBxylMeiwtXa4GCFpyRt5uF8C5QRnVF3Wk2b8pBZ18rfKDpNZn3ece604wUx3-_yvwHrzKo_1y88-F3LrhWXwS_c0ry0iuRmi6c2LrDoJm_ZNG0OvnzGd7C8snxWIt5oHjJAaw4lz28MRwW15UFVdnKcRpw==&xkcb=SoCq6_M3qpY5gOyCoZ0BbzkdCdPP&camk=UoKtGZLa3XKXhii7GT5JHg==&p=10&fvj=0&vjs=3",
+      "salary": "$95,000 - $120,000 a year",
+      "allows_c2c": false,
+      "company": {
+        "name": "TransactionTree Inc.",
+        "description": "About the Role\nWe are seeking a highly skilled Senior Web Applications Developer with deep experience in Laravel Filament, React, and modern JavaScript to take ownership of an existing, enterprise-grade web application. This role is ideal for a developer who thrives in environments where reliability, scalability, and user experience are top priorities. You will play a key role in evolving our product’s capabilities, maintaining exceptional stability, and delivering a consistently strong experien",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": "1398705063"
+      }
+    },
+    {
+      "job_title": "Software Engineer",
+      "job_location": "Hybrid work in Brookfield, WI 53045",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0A2rCy7EZMxdOrM29MP-me02HY4QMgajTqXRebwzr8t0C4_11oQWzG2J3tcikJ1NshJrTetxg2103aAqdy7OvIItLgCw6w5HHgQbIPuLE3xLt-Uh3Sw5qVketNU5tU-IV0fOm01A1MpkMZYqvOVAgXy9UVCr3ODLnx8GBkER2USni3SLo--O6De8vSVXkBpwCdtJ1PrCme33UC9hoOKIWM12EIw1O1anVOypM1G0AagNMwZOBf1gt5_bUkakU1eXZjdbPKahuSY_Kp81F1NJFS-BHtc9mB1FPbeihpOs4lhz4jTyMPBQBWOgTuqMedUi3YFm52DEUiBQJtJmaKulMkcJlgFpLsevOb7k7Mlm4bZbcg593C8oKCD1MmC36FXbsP40q3dEmBSeigzgXd04EBG0ikYmIoR-m6lJ4sMBiKLIJCdc98I-dfqWRfSRrcUDkUnC-ldDraOoG1IUd4qEsXmVbpKjyiPLHbHdKmPybt_3Yuh_3cnfhDdQhQwD-p5rLh3qp8fsyBDlneaGufDDiFrNOM-5v62z1Cj0k4bhfgDJaqoqOYB7EZdDHZr2i3cn8IqXsLmUMIYrFjhDb8_qNZe8HE9f4GyjTgTpdN4c55yjrTrub-IplMiRrdAOBPL8P0EyC7wyaGLyYSmOOAd73Q5YcZH86xFXmVepJ3eRxMY9-EaUzI0ElZy65OH50OgUWI=&xkcb=SoAe6_M3qpY5gOyCoZ0AbzkdCdPP&camk=UoKtGZLa3XICu4MI_Dh_xg==&p=11&fvj=0&vjs=3",
+      "salary": "$60,000 a year",
+      "allows_c2c": false,
+      "company": {
+        "name": "Best Version Media",
+        "description": "Please note pay and title will be dependent upon experience.\nOverview:\nBest Version Media (BVM) connects local businesses to customers with innovative print and digital solutions. Our vision is to unite the hearts and minds of communities – one person, one home, one business at a time.\nWant to make an impact with your code? We are seeking a highly skilled and experienced Software Engineer to join our dynamic team. In this role, you will be responsible for designing, developing, and maintaining h",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": "5926395080"
+      }
+    },
+    {
+      "job_title": "AI Applications Developer",
+      "job_location": "Sarasota, FL 34243",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0DS7ziiLAk4J-Trj7gwRWzcJFKkuEd80xwfxxsPyIsYLcBxRS8nJciZ43OYxPbJs0CHQhTV-MIPxht8eHpLqwBzsGbQtuTNbgVPrl3gP5CvY4wmUm16H1YBdXh1wbokTwt2TmPIJ8lgisZQqI5xMrHcW6YkiYigwIcU7-h57jaSFxM2l0gp3PuFUSZHm4O-6PCGmf_rR09551_ixulfgsIEid5Akq6PIw4suhqyuh7bqofpXV6qWpqv6-jRbKsr0vfgkOBQ_NEuFFTrFOa_U_HYYZ0xHwP64fsFcYDPgqrg7WcBUBNV7qp23GDpadzsZPI6nzEhxgDsBYIAYFgVm9B9UrsQLtm7w4gv-UKelZvywchA2nEeRmPp_K56YDAlCW4XXaHCe0rgYjvnnk64b_x7ADa99Whs0xHUhGi3VPNgg3H9O0SA7cyKtHVwNO0Zxrg8KTblqZEebecOA4ZCWgAxAJuHekbFEaTYcS26zPVKWiFPJmlk5zJlee1qQwehSL0QP2GwHhZp_sJ8nyQ9YpPR22zSWYk9g7jl-YpqN5moU1CbabT7cgOMiVwCgjNmtSIZhG8bnMBT7xBkbK2UVBkY5m_U-9QQYZvttQaUb37-EepmrZG--DulqqRAy4sww8hVcdnMcV9f9ezb0B_YtpqHXtytDJyosAKAP-R8_nw715xN7g4bn42PhOxDTUAjHoXrv2qCkNd1XQzr867xBPaPj-PNUQPnAdbDef3ngL09Cw==&xkcb=SoCQ6_M3qpY5gOyCoZ0HbzkdCdPP&camk=UoKtGZLa3XKgTRj9STRm5w==&p=12&fvj=0&vjs=3",
+      "salary": "",
+      "allows_c2c": false,
+      "company": {
+        "name": "Global Ordnance, LLC",
+        "description": "About us\nHeadquartered in Sarasota, Florida, Global Ordnance is a force multiplier within the commercial (www.globalordnance.com) and defense military (www.global-ordnance.com) industries supporting a wide array of equipment, ammunition and firearms. As a Veteran Owned Small Business, Global Ordnance strives to provide excellence to our customers with unparalleled integrity. It's important to us that our work environment reflects this core value as well. We are blessed to have an incredible core",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": "7346016148"
+      }
+    },
+    {
+      "job_title": "Android Developer",
+      "job_location": "Irving, TX 75039 (Las Colinas Urban Center area)",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0D-KSa7IRpS-a0Po3Rlrdep-ovraOTCDDA2xSbQXEa2EsYxwxVnZZzY7HkYzDFgKW0-SsWiS0D6pC8CjW7EkYXnpZRmG65ap6YwFG5uFH-jwybGl5JoK0cvAXNvOk1KO4vVPd9RFUOslPP6fqMOX6cmftDb6iLfcWbcnv1I4lbqC_TrqPq0en6VIUNqcdLhst68j-vO71A_44MIUGYkiltjOtuJuVhT36yQi0VxZNC_CF9PSIYUo624mrwOdd-X6EhgG0haWkBWaxLWI6JvBhCCZsOd24tRjAbRfGYNfocfDArB17sA0jwi_CZQN-H0ZiT9VLA_tuz-3TyM_W1QMMW890jqBLUQc-q0gAE3ys-nmocMm_NnGhQPsAc0oOmmXnj-gPOnWHBE9IBfS-tw0qhLFTSHkGwTy0w1xI1N91VrIUyLbf2BYTa7QLMTvR0OtioavwLHcZlf9migj1u6NwCCGyIAvVcXQwa7B3gYwp3zPuzLj0OuCJQylJHl-MBgPbuqCGmgnM_foJyzUoEsniEHLFRaZD8W-_mbZodmP-Iu8ESqQfB2fj9GPIFrMFNhRzTMu7KJ-jiFyCwYVdM3cawdMovWIfbq0mIaOKq7qKQ2lpQ4rjLJmYpnTcoZ8mOZHsdR6qi3eL04u60W1hl2x4xGYVPr_oVghuE1Eb65Yi6IE2V6o4GjXx9Up27DH8TAOA5w6nWEqpr6BlvnMf3okxvedmida2tq7Nw=&xkcb=SoAk6_M3qpY5gOyCoZ0GbzkdCdPP&camk=UoKtGZLa3XKzx6AkpsdYmA==&p=13&fvj=0&vjs=3",
+      "salary": "$85,000 - $105,000 a year",
+      "allows_c2c": true,
+      "company": {
+        "name": "Apptricity Corporation",
+        "description": "Apptricity Corporation, the global leader in real-time enterprise asset, inventory, field services, and spend management technology, is currently seeking a passionate Android Developer to join our fast-growing company.\nThe ideal candidate will demonstrate a good understanding of common design patterns, cross linking and importing of third party libraries and SDKs, and code optimization.\nLocation: Full-Time, Onsite in Irving, Tx\nWhat You’ll Do:\n\n Deliver software products in a collaborative, agil",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": "6166030532"
+      }
+    },
+    {
+      "job_title": "Application Developer (FileMaker)",
+      "job_location": "Portland, OR",
+      "job_id": "",
+      "job_link": "https://www.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0Axa40Prw_Q9CO6WmNfA3yJCvfirnG0rvoGOX-uoVeIngNLPpXWXHRN14mKSg64bxsVvJBkSqVTgyLrINMbOOik_mzHMS9s0MX5ARUKINtrXa4IusBc_CpUyZSw1pgoOvV8LLHOeG8qHOEtSfr90uqo4rTjksamZq-eRj0XBNaCbyajwtThOPYv-1zwk9TD-lbIKdCHjxAXH7gB7WE3icn2nDULd5K4WNCmXRYXIACJOWcIGyBwrsKsz4gP2vU8t4-Oj53TPXOCWkTQhZNNsMgLw14dv-lDRtsgocB2hFseSwl34xu-4u7CNYD0Zd4eASW2qjGGMWADGKBK2IKZnMLlXsjNrsdA9JuRDHiVBasnZvdr6xadpMALkj8EAVkdXJNyqTqT5YYAad-aGXZSAjUka28qxRGPvNeQ9DVQWPVjEI7uHYVaknUhVXPL_3S0IHuAa6E8rnB_6LDhYTEPkEueVv_OYrPJEHv5arYpmbHJi_lOok-S9WP1PM8DAQoxsvVvftiou6sSFajq4yPfcRp8qqQszz8HTfMBthcP7frqTL4F3dBwPSgTTQNuzG0plgGfAMggfUqAJ66kH4eFkRTpAx5QufVldnfuYR_1qKBH2Ng_hxJJIezwckP_JSstjSV-8G8o2STtFmmK8qQhIzfDeJD2mQYlLtGiyL1eo_Iynm9P668px72Ui6tregAWENuATY7ILToXJWc_t0uSacxwrRAIB1TBLBZ4jr_qL3TmXw==&xkcb=SoC56_M3qpY5gOyCoZ0FbzkdCdPP&camk=UoKtGZLa3XJgZYeVpdWh3A==&p=14&fvj=0&vjs=3",
+      "salary": "$54,600 - $91,000 a year",
+      "allows_c2c": false,
+      "company": {
+        "name": "Direct Impact Solutions inc.",
+        "description": "APPLICATION DEVELOPPER\nA TRUSTED TEAM\nDirect Impact Solutions is a global leader in the development, integration and optimization of custom-made solutions that drive digital transformation for businesses using Web technologies, the Claris FileMaker®platform and other rapid development tools.\nHeadquartered in Canada, the company operates a US-subsidiary with offices in New York (NY) and Portland (OR). Direct Impact Solutions is a Claris Platinum partner, in addition to being an Apple Technical Pa",
+        "company_link": "",
+        "contact_email": "",
+        "phone_number": "8139614742"
       }
     }
   ]

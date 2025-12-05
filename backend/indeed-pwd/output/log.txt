@@ -1,7 +1,43 @@
 ============================================================
-INDEED JOB SEARCH
-Run started at: 2025-11-29 20:02:13
+EXTRACT EMAILS
+Run started at: 2025-11-29 20:13:31
 ============================================================
 
-[20:02:16] STEP 1: Browser launched with stealth mode
-[20:02:22] STEP 2: Indeed homepage loaded
+[20:13:32] READY: Browser launched
+[20:13:32] JOB 1/16: Senior Software Engineer
+[20:13:39] EMAIL: No email found
+[20:13:41] JOB 2/16: Senior Associate - IT Develope
+[20:13:49] EMAIL: No email found
+[20:13:51] JOB 3/16: Associate IT Developer
+[20:13:58] EMAIL: No email found
+[20:14:02] JOB 4/16: Full Stack Developer
+[20:14:09] EMAIL: No email found
+[20:14:12] JOB 5/16: Senior Frontend Developer
+[20:14:19] EMAIL: No email found
+[20:14:21] JOB 6/16: Senior Frontend Developer
+[20:14:28] EMAIL: No email found
+[20:14:32] JOB 7/16: Web Developer
+[20:14:38] EMAIL: No email found
+[20:14:41] JOB 8/16: Ruby on Rails Developer
+[20:14:48] EMAIL: No email found
+[20:14:50] JOB 9/16: Senior Golang Developer
+[20:14:57] EMAIL: No email found
+[20:15:00] JOB 10/16: Frontend Developer
+[20:15:07] EMAIL: No email found
+[20:15:10] JOB 11/16: Senior Full Stack Developer (m
+[20:15:17] EMAIL: No email found
+[20:15:20] JOB 12/16: Senior Web Applications Develo
+[20:15:27] EMAIL: No email found
+[20:15:29] JOB 13/16: Software Engineer
+[20:15:36] EMAIL: No email found
+[20:15:40] JOB 14/16: AI Applications Developer
+[20:15:47] EMAIL: No email found
+[20:15:50] JOB 15/16: Android Developer
+[20:15:57] EMAIL: No email found
+[20:16:01] JOB 16/16: Application Developer (FileMak
+[20:16:07] EMAIL: No email found
+
+============================================================
+Run COMPLETED SUCCESSFULLY
+Ended at: 2025-11-29 20:16:10
+============================================================
